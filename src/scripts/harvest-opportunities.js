@@ -11,7 +11,7 @@ const connectors = [
 const SRC_DATA_PATH = path.join(__dirname, '../data/opportunities.json');
 const PUBLIC_DATA_PATH = path.join(__dirname, '../../public/data/opportunities.json');
 
-const VALID_TRADES = new Set(['roofing', 'hvac', 'electrical', 'concrete']);
+const VALID_TRADES = new Set(['roofing', 'hvac', 'electrical', 'concrete', 'general']);
 
 function readJson(filePath, fallback = []) {
   try {
@@ -78,6 +78,12 @@ function normalizeOpportunity(raw, connector) {
     requirements: Array.isArray(raw.requirements) ? raw.requirements : [],
     sourceName: raw.sourceName || connector.sourceName || connector.name,
     sourceUrl,
+    sourceLookupInstructions: raw.sourceLookupInstructions || '',
+    sourceLookupSteps: Array.isArray(raw.sourceLookupSteps) ? raw.sourceLookupSteps : [],
+    solicitationRef: raw.solicitationRef || raw.docRef || raw.documentReference || '',
+    solicitationNumber: raw.solicitationNumber || raw.solicitationId || raw.documentNumber || '',
+    buyer: raw.buyer || raw.buyerName || '',
+    buyerEmail: raw.buyerEmail || raw.contactEmail || '',
     matchKeywords: Array.isArray(raw.matchKeywords)
       ? raw.matchKeywords
       : [trade, raw.city, raw.county, raw.agency].filter(Boolean).map(x => String(x).toLowerCase())
@@ -85,7 +91,7 @@ function normalizeOpportunity(raw, connector) {
 }
 
 function dedupeKey(item) {
-  return [
+  return item.id || [
     item.sourceUrl || '',
     String(item.title || '').toLowerCase().trim(),
     item.postedDate || ''

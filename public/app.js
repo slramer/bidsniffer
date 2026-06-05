@@ -3,6 +3,26 @@ async function loadOpportunities() {
   return res.json();
 }
 
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function tradeLabel(trade) {
+  const labels = {
+    roofing: 'Roofing',
+    hvac: 'HVAC',
+    electrical: 'Electrical',
+    concrete: 'Concrete',
+    general: 'General Construction'
+  };
+  return labels[trade] || escapeHtml(trade || 'General');
+}
+
 function estimateMatch(item, profile) {
   let score = 35;
   if (!profile.trade || item.trade === profile.trade) score += 25;
@@ -15,13 +35,22 @@ function estimateMatch(item, profile) {
   return Math.min(98, score);
 }
 
+function displayValue(value) {
+  if (!value || String(value).toLowerCase() === 'not listed') return 'Value not listed by source';
+  return value;
+}
+
 function card(item, score) {
   const url = `/bids/${item.state}/${item.trade}/${item.postedDate}/${item.slug}/`;
-  return `<article class="card opportunity" data-trade="${item.trade}" data-city="${item.city}">
-    <div class="meta"><span class="pill">${item.trade}</span><span class="pill warn">Due ${item.dueDate}</span><span class="pill good">${score}% match</span></div>
-    <h3><a href="${url}">${item.title}</a></h3>
-    <p>${item.summary}</p>
-    <div class="meta"><span>${item.city}, CO</span><span>${item.agency}</span><span>${item.estimatedValue}</span></div>
+  const matchPill = Number.isFinite(score)
+    ? `<span class="pill good">${score}% match</span>`
+    : '';
+
+  return `<article class="card opportunity" data-trade="${escapeHtml(item.trade)}" data-city="${escapeHtml(item.city)}">
+    <div class="meta"><span class="pill">${tradeLabel(item.trade)}</span><span class="pill warn">Due ${escapeHtml(item.dueDate)}</span>${matchPill}</div>
+    <h3><a href="${url}">${escapeHtml(item.title)}</a></h3>
+    <p>${escapeHtml(item.summary)}</p>
+    <div class="meta"><span>${escapeHtml(item.city)}, CO</span><span>${escapeHtml(item.agency)}</span><span>${escapeHtml(displayValue(item.estimatedValue))}</span></div>
   </article>`;
 }
 
@@ -31,7 +60,7 @@ async function initOpportunityList() {
   const trade = mount.dataset.trade || '';
   const items = await loadOpportunities();
   const filtered = trade ? items.filter(x => x.trade === trade) : items;
-  mount.innerHTML = filtered.map(x => card(x, 84)).join('');
+  mount.innerHTML = filtered.map(x => card(x)).join('');
 }
 
 async function initProfileMatcher() {

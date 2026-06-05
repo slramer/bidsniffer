@@ -10,6 +10,7 @@ const https = require('https');
 
 const BASE_URL = 'https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4';
 const CATEGORY_CONSTRUCTION = '22';
+const DEBUG = process.env.DEBUG_VSS === 'true';
 
 function request(method, url, body = null, headers = {}) {
   return new Promise((resolve, reject) => {
@@ -95,6 +96,12 @@ function docRefSlug(docRef) {
   return slugSafe(bracketMatch ? bracketMatch[1] : docRef);
 }
 
+function extractSolicitationNumber(docRef) {
+  const match = String(docRef || '').match(/\b\d{7,}\b/);
+  return match ? match[0] : '';
+}
+
+
 function buildSearchPayload(initial) {
   const sessionInfo = initial.session_info || {};
   const viewState = initial.viewState || {};
@@ -171,6 +178,7 @@ function mapRow(row) {
   const title = row.DOC_DSCR || 'Untitled Colorado VSS Solicitation';
   const docRef = row.DOC_REF || '';
   const docSlug = docRefSlug(docRef);
+  const solicitationNumber = extractSolicitationNumber(docRef);
   const postedDate = epochToDate(row.PUB_DT);
   const dueDate = epochToDate(row.SO_CLSNG_DT_TM);
   const trade = classifyTrade(row);
@@ -188,10 +196,25 @@ function mapRow(row) {
     estimatedValue: 'Not listed',
     summary: `${title}. ${row.DOC_CD_CONCAT || 'Public solicitation'} posted by ${row.DEPT_NM || 'Colorado VSS'}.`,
     sourceName: 'Colorado Vendor Self Service',
-    //sourceUrl: `${BASE_URL}?doc=${encodeURIComponent(docRef || title)}`,
-    sourceUrl: `${BASE_URL}`,
+    sourceUrl: BASE_URL,
+    solicitationRef: docRef,
+    solicitationNumber,
+    buyer: row.BUYR_NM || '',
+    buyerEmail: row.BUYR_EMAIL_AD || '',
+    sourceLookupInstructions: solicitationNumber
+      ? `Open Colorado VSS, choose "View Published Solicitations," then search for solicitation number ${solicitationNumber}.`
+      : 'Open Colorado VSS, choose "View Published Solicitations," then search by the solicitation reference shown below.',
+    sourceLookupSteps: [
+      'Open Colorado VSS.',
+      'Click "View Published Solicitations."',
+      solicitationNumber
+        ? `Enter ${solicitationNumber} in the keyword/search field.`
+        : `Search using this solicitation reference: ${docRef}`,
+      'Open the matching solicitation record.'
+    ],
     requirements: [
-      row.DOC_REF ? `Solicitation reference: ${row.DOC_REF}` : '',
+      docRef ? `Solicitation reference: ${docRef}` : '',
+      solicitationNumber ? `Solicitation number: ${solicitationNumber}` : '',
       row.DOC_CD_CONCAT,
       row.SO_STA ? `Status code: ${row.SO_STA}` : '',
       row.BUYR_NM ? `Buyer: ${row.BUYR_NM}` : '',
@@ -199,6 +222,7 @@ function mapRow(row) {
     ].filter(Boolean),
     matchKeywords: [
       trade,
+      solicitationNumber,
       row.DOC_CD,
       row.DOC_CD_CONCAT,
       row.DEPT_NM,
@@ -240,9 +264,11 @@ async function fetchOpportunities() {
   let json;
   try {
     json = JSON.parse(postResponse.body);
-    console.log("Colorado VSS response keys:", Object.keys(json || {}));
-    console.log("Colorado VSS ds_data keys:", Object.keys(json?.data?.ds_data || {}));
-    console.log("Colorado VSS feedback:", JSON.stringify(json?.systemFeedback || {}, null, 2));    
+    if (DEBUG) {
+      console.log("Colorado VSS response keys:", Object.keys(json || {}));
+      console.log("Colorado VSS ds_data keys:", Object.keys(json?.data?.ds_data || {}));
+      console.log("Colorado VSS feedback:", JSON.stringify(json?.systemFeedback || {}, null, 2));
+    }
   } catch (err) {
     throw new Error(`Colorado VSS search response was not valid JSON: ${err.message}`);
   }
