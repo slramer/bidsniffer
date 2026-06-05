@@ -12,10 +12,19 @@
     "dueDate": "2026-06-24",
     "estimatedValue": "$250k - $750k",
     "summary": "Roof replacement scope for a public school facility, including tear-off, membrane installation, flashing, safety planning, and coordination around summer access windows.",
-    "requirements": ["Mandatory pre-bid walkthrough", "Performance bond likely required", "Public works insurance requirements"],
+    "requirements": [
+      "Mandatory pre-bid walkthrough",
+      "Performance bond likely required",
+      "Public works insurance requirements"
+    ],
     "sourceName": "Sample Source",
     "sourceUrl": "https://example.com/sample-roofing-bid",
-    "matchKeywords": ["school", "roof", "public works", "summer"]
+    "matchKeywords": [
+      "school",
+      "roof",
+      "public works",
+      "summer"
+    ]
   },
   {
     "id": "co-hvac-001",
@@ -30,10 +39,19 @@
     "dueDate": "2026-06-20",
     "estimatedValue": "$100k - $500k",
     "summary": "Upgrade of HVAC controls and related mechanical systems in a municipal facility. Likely requires coordination with building operations and phased access.",
-    "requirements": ["Controls experience", "Municipal insurance requirements", "Possible after-hours work"],
+    "requirements": [
+      "Controls experience",
+      "Municipal insurance requirements",
+      "Possible after-hours work"
+    ],
     "sourceName": "Sample Source",
     "sourceUrl": "https://example.com/sample-hvac-bid",
-    "matchKeywords": ["hvac", "controls", "municipal", "mechanical"]
+    "matchKeywords": [
+      "hvac",
+      "controls",
+      "municipal",
+      "mechanical"
+    ]
   },
   {
     "id": "co-elec-001",
@@ -48,10 +66,19 @@
     "dueDate": "2026-06-27",
     "estimatedValue": "$75k - $300k",
     "summary": "Electrical improvements for public park support facilities, including panel upgrades, conduit, service work, and site coordination.",
-    "requirements": ["Licensed electrical contractor", "Site safety plan", "Public project documentation"],
+    "requirements": [
+      "Licensed electrical contractor",
+      "Site safety plan",
+      "Public project documentation"
+    ],
     "sourceName": "Sample Source",
     "sourceUrl": "https://example.com/sample-electrical-bid",
-    "matchKeywords": ["electrical", "parks", "service", "public works"]
+    "matchKeywords": [
+      "electrical",
+      "parks",
+      "service",
+      "public works"
+    ]
   },
   {
     "id": "co-conc-001",
@@ -66,9 +93,18 @@
     "dueDate": "2026-06-18",
     "estimatedValue": "$150k - $600k",
     "summary": "Annual concrete replacement package covering sidewalk panels, curb, gutter, pedestrian ramps, restoration, and traffic/pedestrian control.",
-    "requirements": ["Traffic control plan", "ADA ramp compliance", "Unit pricing likely required"],
+    "requirements": [
+      "Traffic control plan",
+      "ADA ramp compliance",
+      "Unit pricing likely required"
+    ],
     "sourceName": "Sample Source",
     "sourceUrl": "https://example.com/sample-concrete-bid",
-    "matchKeywords": ["concrete", "sidewalk", "curb", "public works"]
+    "matchKeywords": [
+      "concrete",
+      "sidewalk",
+      "curb",
+      "public works"
+    ]
   }
 ]
