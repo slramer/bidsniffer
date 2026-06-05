@@ -188,8 +188,10 @@ function mapRow(row) {
     estimatedValue: 'Not listed',
     summary: `${title}. ${row.DOC_CD_CONCAT || 'Public solicitation'} posted by ${row.DEPT_NM || 'Colorado VSS'}.`,
     sourceName: 'Colorado Vendor Self Service',
-    sourceUrl: `${BASE_URL}?doc=${encodeURIComponent(docRef || title)}`,
+    //sourceUrl: `${BASE_URL}?doc=${encodeURIComponent(docRef || title)}`,
+    sourceUrl: `${BASE_URL}`,
     requirements: [
+      row.DOC_REF ? `Solicitation reference: ${row.DOC_REF}` : '',
       row.DOC_CD_CONCAT,
       row.SO_STA ? `Status code: ${row.SO_STA}` : '',
       row.BUYR_NM ? `Buyer: ${row.BUYR_NM}` : '',
@@ -214,15 +216,20 @@ async function fetchOpportunities() {
   }
 
   const initial = extractInitialResponse(getResponse.body);
-  const payload = buildSearchPayload(initial);
+  
+  const cookie = Array.isArray(getResponse.headers['set-cookie'])
+    ? getResponse.headers['set-cookie'].map(c => c.split(';')[0]).join('; ')
+    : '';
+
+  const navPayload = buildSolicitationsPayload(initial);
+  const navResponse = await request('POST', BASE_URL, navPayload, cookie ? { Cookie: cookie } : {});
+  const navJson = JSON.parse(navResponse.body);
+
+  const payload = buildSearchPayload(navJson);
 
   if (!payload.session_info.session_id || !payload.session_info.csrf_token || !payload.session_info.page_id) {
     throw new Error('Colorado VSS initial response did not include session_id, csrf_token, and page_id.');
   }
-
-  const cookie = Array.isArray(getResponse.headers['set-cookie'])
-    ? getResponse.headers['set-cookie'].map(c => c.split(';')[0]).join('; ')
-    : '';
 
   const postResponse = await request('POST', BASE_URL, payload, cookie ? { Cookie: cookie } : {});
 
@@ -233,6 +240,9 @@ async function fetchOpportunities() {
   let json;
   try {
     json = JSON.parse(postResponse.body);
+    console.log("Colorado VSS response keys:", Object.keys(json || {}));
+    console.log("Colorado VSS ds_data keys:", Object.keys(json?.data?.ds_data || {}));
+    console.log("Colorado VSS feedback:", JSON.stringify(json?.systemFeedback || {}, null, 2));    
   } catch (err) {
     throw new Error(`Colorado VSS search response was not valid JSON: ${err.message}`);
   }
@@ -244,6 +254,34 @@ async function fetchOpportunities() {
   }
 
   return rows.map(mapRow);
+}
+
+function buildSolicitationsPayload(initial) {
+  return {
+    action: {
+      params: {
+        targetLocation: 'noDisplay',
+        targetComponentType: 'SystemInquiryPage'
+      },
+      actionType: 'pageOpen',
+      targetQualifiedName: 'vss.page.VVSSX10019'
+    },
+    session_info: initial.session_info,
+    key: 'vss.page.VAXXX03153.carouselView.carousel.solicitations',
+    viewState: {
+      'vss.page.VAXXX03153': {
+        editable: false,
+        hidden: false,
+        closed: false,
+        required: false,
+        protected: false
+      },
+      TOP_LEVEL_KV_PAIRS_MAP: {
+        CURR_LINK_KEY: 'vss.page.VAXXX03153.carouselView.carousel.newVendor',
+        CURR_LINK_INDEX: '0'
+      }
+    }
+  };
 }
 
 module.exports = {

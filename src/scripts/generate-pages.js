@@ -3,7 +3,7 @@ const path = require('path');
 const opportunities = require('../data/opportunities.json');
 
 const root = path.join(__dirname, '../../public');
-const trades = ['roofing', 'hvac', 'electrical', 'concrete'];
+const trades = ['roofing', 'hvac', 'electrical', 'concrete', 'general'];
 
 function ensureDir(dir) { fs.mkdirSync(dir, { recursive: true }); }
 function titleCase(s) { return s.replace(/\b\w/g, c => c.toUpperCase()); }
@@ -43,7 +43,8 @@ for (const trade of trades) {
   write(path.join(root, `bids/colorado/${trade}/index.html`), layout({
     title: `Colorado ${titleCase(trade)} Bids | BidSniffer`,
     description: `Browse Colorado ${trade} bid opportunities, due dates, agencies, and project summaries.`,
-    body: `<section class="hero"><span class="badge">${titleCase(trade)} opportunities</span><h1>Colorado ${titleCase(trade)} Bids</h1><p>Public ${trade} projects, summarized and organized for contractors who have better things to do than click through seventeen portals.</p></section><main class="main"><div class="notice"><strong>Phase 1 sample data.</strong> Replace these opportunities with live harvested records as source connectors come online.</div><h2 style="margin-top:28px">Latest ${titleCase(trade)} Opportunities</h2><div class="grid" data-opportunities data-trade="${trade}"></div></main>`
+    body: `<section class="hero"><span class="badge">${titleCase(trade)} opportunities</span><h1>Colorado ${titleCase(trade)} Bids</h1><p>Public ${trade} projects, summarized and organized for contractors who have better things to do than click through seventeen portals.</p></section><main class="main"><div class="notice"><strong>Colorado Vendor Self Service opportunities harvested automatically.
+Additional public bid sources coming soon.</strong></div><h2 style="margin-top:28px">Latest ${titleCase(trade)} Opportunities</h2><div class="grid" data-opportunities data-trade="${trade}"></div></main>`
   }));
 }
 
