@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bidsniffer.com/sitemap.xml

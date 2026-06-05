@@ -1,0 +1,11 @@
+{
+  "trade": "roofing | hvac | electrical | concrete",
+  "serviceAreas": ["Denver", "Aurora", "Lakewood", "Brighton"],
+  "minProjectValue": 50000,
+  "maxProjectValue": 2000000,
+  "publicWork": true,
+  "certifications": ["DBE", "MBE", "WBE", "Veteran-Owned"],
+  "bondingLimit": 5000000,
+  "mustHaveKeywords": [],
+  "excludeKeywords": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "bidsniffer-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered construction opportunity intelligence platform that aggregates, classifies, summarizes, and matches public procurement opportunities to contractor profiles.",
+  "scripts": {
+    "build": "node src/scripts/generate-pages.js && node src/scripts/generate-sitemap.js",
+    "start": "npx serve public"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
