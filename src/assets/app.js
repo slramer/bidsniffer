@@ -42,9 +42,17 @@ async function initProfileMatcher() {
   function render() {
     const profile = Object.fromEntries(new FormData(form).entries());
     profile.publicWork = form.querySelector('[name="publicWork"]').checked;
-    const ranked = items.map(item => ({ item, score: estimateMatch(item, profile) }))
+    const tradeFiltered = profile.trade
+      ? items.filter(item => item.trade === profile.trade)
+      : items;
+
+    const ranked = tradeFiltered
+      .map(item => ({ item, score: estimateMatch(item, profile) }))
       .sort((a,b) => b.score - a.score);
-    results.innerHTML = ranked.map(({item, score}) => card(item, score)).join('');
+
+    results.innerHTML = ranked.length
+      ? ranked.map(({item, score}) => card(item, score)).join('')
+      : '<p>No matching opportunities found for this trade yet.</p>';
   }
   form.addEventListener('input', render);
   render();
