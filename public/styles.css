@@ -39,6 +39,10 @@ input, select { width: 100%; border: 1px solid var(--line); border-radius: 12px;
 .notice { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 18px; padding: 18px; }
 .score { font-size: 30px; font-weight: 900; color: var(--good); letter-spacing: -0.05em; }
 #match-results {
-  grid-template-columns: repeat(auto-fill, minmax(230px, 260px));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   align-items: start;
+}
+
+#match-results .card {
+  max-width: 260px;
 }
