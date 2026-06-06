@@ -49,12 +49,63 @@ function mergeKeywords(...groups) {
   ));
 }
 
+
+function inferProjectFilters(raw = {}, trade = 'general') {
+  const parts = [
+    raw.title,
+    raw.summary,
+    raw.description,
+    raw.scope,
+    raw.projectType,
+    raw.projectTypeLabel,
+    raw.agency,
+    raw.sourceName
+  ];
+  if (Array.isArray(raw.requirements)) parts.push(...raw.requirements);
+  const text = parts.filter(Boolean).join(' ').toLowerCase();
+
+  if (raw.projectType || raw.projectTypeLabel || raw.contractorFit || Array.isArray(raw.filterTags)) {
+    return {
+      projectType: raw.projectType || 'general-construction',
+      projectTypeLabel: raw.projectTypeLabel || 'General Construction',
+      contractorFit: raw.contractorFit || 'medium',
+      filterTags: mergeKeywords(raw.filterTags || [], [trade])
+    };
+  }
+
+  if (/\b(?:comprehensive\s+plan|master\s+plan|planning\s+services?|strategic\s+plan|feasibility\s+study|study\b|assessment\b)\b/i.test(text)) {
+    return {
+      projectType: 'planning-consulting',
+      projectTypeLabel: 'Planning / Consulting',
+      contractorFit: 'low',
+      filterTags: mergeKeywords(['planning', 'consulting'], [trade])
+    };
+  }
+
+  if (/\b(?:rfq|request\s+for\s+qualifications?|architectural\s+(?:and|&)\s+engineering|a\s*\/\s*e\b|design\s+(?:services?|team)|engineering\s+services?|consultant|design\s+professional)\b/i.test(text)) {
+    return {
+      projectType: 'design-services',
+      projectTypeLabel: 'Design Services',
+      contractorFit: 'low',
+      filterTags: mergeKeywords(['design', 'consulting'], [trade])
+    };
+  }
+
+  return {
+    projectType: trade && trade !== 'general' ? `${trade}-work` : 'construction-work',
+    projectTypeLabel: trade && trade !== 'general' ? `${trade.charAt(0).toUpperCase()}${trade.slice(1)} Work` : 'Construction Work',
+    contractorFit: 'high',
+    filterTags: mergeKeywords(['construction'], [trade])
+  };
+}
+
 function normalizeOpportunity(raw, connector) {
   const title = raw.title || raw.name || raw.projectTitle || 'Untitled Opportunity';
   const sourceUrl = raw.sourceUrl || raw.url || raw.link || connector.sourceUrl || '';
   const postedDate = raw.postedDate || raw.postDate || raw.publishedDate || todayIso();
   const classification = classifyTradeDetails(raw, { fallbackTrade: raw.trade });
   const trade = raw.trade || classification.trade || 'general';
+  const projectFilters = inferProjectFilters(raw, trade);
 
   return {
     id: raw.id || slugify(`${connector.name}-${title}-${postedDate}`),
@@ -68,6 +119,10 @@ function normalizeOpportunity(raw, connector) {
     postedDate,
     dueDate: raw.dueDate || raw.closeDate || raw.closingDate || '',
     estimatedValue: raw.estimatedValue || raw.value || 'Not listed',
+    projectType: projectFilters.projectType,
+    projectTypeLabel: projectFilters.projectTypeLabel,
+    contractorFit: projectFilters.contractorFit,
+    filterTags: projectFilters.filterTags,
     summary: raw.summary || raw.description || 'Public construction opportunity harvested by BidSniffer. Replace this placeholder summary with source-specific extraction or AI summarization when available.',
     requirements: Array.isArray(raw.requirements) ? raw.requirements : [],
     sourceName: raw.sourceName || connector.sourceName || connector.name,

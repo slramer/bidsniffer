@@ -13,7 +13,7 @@ const DEFAULT_REGION = 'colorado';
 const DEFAULT_STATE = 'colorado';
 const DEFAULT_LOCATION_ID = '49';
 const DEFAULT_CATEGORY_ID = '320204'; // Construction
-const DEFAULT_MAX_PAGES = Number(process.env.BIDNET_MAX_PAGES || 3);
+const DEFAULT_MAX_PAGES = Number(process.env.BIDNET_MAX_PAGES || 6);
 const START_URL = process.env.BIDNET_START_URL || `${BASE_URL}/public/solicitations/open?keywords=&searchContentGroupId=&publishDate=&solSearchStatus=openSolicitationsTab&sortBy=&sortDirection=&pageNumberSelect=1&category=${DEFAULT_CATEGORY_ID}&location=${DEFAULT_LOCATION_ID}`;
 
 function request(url, redirectsRemaining = 5) {
@@ -192,10 +192,51 @@ function classifyBidNetTrade(row) {
   });
 }
 
+
+function inferProjectType(row, classification = {}) {
+  const text = `${row.title || ''} ${row.rawText || ''}`.toLowerCase();
+  const trade = classification.trade || 'general';
+
+  if (/\b(?:comprehensive\s+plan|master\s+plan|planning\s+services?|strategic\s+plan|feasibility\s+study|study\b|assessment\b)\b/i.test(text)) {
+    return {
+      projectType: 'planning-consulting',
+      projectTypeLabel: 'Planning / Consulting',
+      contractorFit: 'low',
+      filterTags: ['planning', 'consulting']
+    };
+  }
+
+  if (/\b(?:rfq|request\s+for\s+qualifications?|architectural\s+(?:and|&)\s+engineering|a\s*\/\s*e\b|design\s+(?:services?|team)|engineering\s+services?|consultant|design\s+professional)\b/i.test(text)) {
+    return {
+      projectType: 'design-services',
+      projectTypeLabel: 'Design Services',
+      contractorFit: 'low',
+      filterTags: ['design', 'consulting']
+    };
+  }
+
+  if (/\b(?:maintenance|on[-\s]?call|repair|replacement|renovation|remodel|improvements?|upgrade|install(?:ation)?|construction|demolition|paving|roof|concrete|substation|switchgear|sewer|water|trail|park)\b/i.test(text)) {
+    return {
+      projectType: trade && trade !== 'general' ? `${trade}-work` : 'construction-work',
+      projectTypeLabel: trade && trade !== 'general' ? `${trade.charAt(0).toUpperCase()}${trade.slice(1)} Work` : 'Construction Work',
+      contractorFit: 'high',
+      filterTags: unique(['construction', trade && trade !== 'general' ? trade : 'general'])
+    };
+  }
+
+  return {
+    projectType: 'general-construction',
+    projectTypeLabel: 'General Construction',
+    contractorFit: 'medium',
+    filterTags: ['construction', 'general']
+  };
+}
+
 function mapRowToOpportunity(row) {
   const classification = classifyBidNetTrade(row);
   const trade = classification.trade || 'general';
   const agencyType = row.agencyType || 'BidNet public bid';
+  const projectMeta = inferProjectType(row, classification);
   const city = inferCity(row);
   const solicitationNumber = row.solicitationNumber || row.sourceId;
 
@@ -211,6 +252,10 @@ function mapRowToOpportunity(row) {
     postedDate: row.postedDate,
     dueDate: row.dueDate,
     estimatedValue: 'Not listed',
+    projectType: projectMeta.projectType,
+    projectTypeLabel: projectMeta.projectTypeLabel,
+    contractorFit: projectMeta.contractorFit,
+    filterTags: unique([...(projectMeta.filterTags || []), trade, agencyType]),
     summary: `${row.title}. ${agencyType} listed on BidNet Direct for ${row.location || 'Colorado'} construction opportunities.`,
     requirements: unique([
       agencyType ? `BidNet category: ${agencyType}` : '',
@@ -259,7 +304,7 @@ async function fetchPage(url) {
 }
 
 async function fetchOpportunities() {
-  const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 3;
+  const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 6;
   const records = [];
   const visited = new Set();
   let nextUrl = START_URL;
