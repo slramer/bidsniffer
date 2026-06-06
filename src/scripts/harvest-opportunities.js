@@ -81,14 +81,23 @@ function normalizeOpportunity(raw, connector) {
     matchedTradeKeywords: Array.isArray(raw.matchedTradeKeywords)
       ? raw.matchedTradeKeywords
       : classification.matchedKeywords,
+    canonicalKey: raw.canonicalKey || canonicalKey({title, agency: raw.agency || raw.buyer || connector.sourceName || connector.name, dueDate: raw.dueDate || raw.closeDate || raw.closingDate || ''}),
+    sourceId: raw.sourceId || '',
     matchKeywords: Array.isArray(raw.matchKeywords)
       ? mergeKeywords(raw.matchKeywords, classification.matchedKeywords)
       : mergeKeywords([trade, raw.city, raw.county, raw.agency], classification.matchedKeywords)
   };
 }
 
+function canonicalKey(item) {
+  const title = String(item.title || '').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  const agency = String(item.agency || '').toLowerCase().trim();
+  const dueDate = String(item.dueDate || '').slice(0,10);
+  return [title, agency, dueDate].join('|');
+}
+
 function dedupeKey(item) {
-  return item.id || [
+  return item.id || item.canonicalKey || [
     item.sourceUrl || '',
     String(item.title || '').toLowerCase().trim(),
     item.postedDate || ''
