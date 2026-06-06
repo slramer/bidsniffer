@@ -7,7 +7,8 @@ const connectors = [
   require('../sources/cdot'),
   require('../sources/denver'),
   require('../sources/bidnet'),
-  require('../sources/school-districts')
+  require('../sources/school-districts'),
+  require('../sources/rtd.js')
 ];
 
 const SRC_DATA_PATH = path.join(__dirname, '../data/opportunities.json');
