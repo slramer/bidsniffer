@@ -1,7 +1,7 @@
-// bidnet source connector
+// BidNet Direct source connector
 // Harvests public BidNet Direct Colorado construction solicitations.
-// The public listing HTML exposes enough normalized teaser data to create
-// source-linked opportunity records without credentials or page-generation changes.
+// Keep this connector intentionally boring: parse the public listing table,
+// follow BidNet's own rel="next" link, and never wipe existing data on a bad run.
 
 const fs = require('fs');
 const path = require('path');
@@ -11,25 +11,31 @@ const { classifyTradeDetails } = require('../lib/trade-classifier');
 
 const SOURCE_NAME = 'BidNet Direct';
 const BASE_URL = 'https://www.bidnetdirect.com';
-const DEFAULT_REGION = 'colorado';
 const DEFAULT_STATE = 'colorado';
-const DEFAULT_LOCATION_ID = '49';
+const DEFAULT_LOCATION_ID = '49'; // Colorado
 const DEFAULT_CATEGORY_ID = '320204'; // Construction
 const DEFAULT_MAX_PAGES = Number(process.env.BIDNET_MAX_PAGES || 6);
+const DEFAULT_PAGE_DELAY_MS = Number(process.env.BIDNET_PAGE_DELAY_MS || 750);
 const START_URL = process.env.BIDNET_START_URL || `${BASE_URL}/public/solicitations/open?keywords=&searchContentGroupId=&publishDate=&solSearchStatus=openSolicitationsTab&sortBy=&sortDirection=&pageNumberSelect=1&category=${DEFAULT_CATEGORY_ID}&location=${DEFAULT_LOCATION_ID}`;
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function request(url, redirectsRemaining = 5) {
   return new Promise((resolve, reject) => {
-    const req = https.request(url, {
+    const parsed = new URL(url);
+    const req = https.request(parsed, {
       method: 'GET',
       headers: {
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36',
         'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
         'Pragma': 'no-cache',
-        'Referer': 'https://www.bidnetdirect.com/public/solicitations/open',
-        'Upgrade-Insecure-Requests': '1'
+        'Referer': 'https://www.bidnetdirect.com/solicitations/open-bids',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0'
       }
     }, res => {
       const status = res.statusCode || 0;
@@ -37,14 +43,14 @@ function request(url, redirectsRemaining = 5) {
 
       if ([301, 302, 303, 307, 308].includes(status) && location && redirectsRemaining > 0) {
         res.resume();
-        request(new URL(location, url).toString(), redirectsRemaining - 1).then(resolve, reject);
+        request(new URL(location, parsed).toString(), redirectsRemaining - 1).then(resolve, reject);
         return;
       }
 
       let body = '';
       res.setEncoding('utf8');
-      res.on('data', chunk => body += chunk);
-      res.on('end', () => resolve({ statusCode: status, body, finalUrl: url }));
+      res.on('data', chunk => { body += chunk; });
+      res.on('end', () => resolve({ statusCode: status, body, finalUrl: parsed.toString() }));
     });
 
     req.on('error', reject);
@@ -62,6 +68,7 @@ function decodeEntities(value) {
     .replace(/&#39;|&apos;/gi, "'")
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
+    .replace(/&iquest;/gi, '¿')
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)));
 }
@@ -70,6 +77,7 @@ function stripHtml(value) {
   return decodeEntities(String(value || '')
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/(p|div|li|h[1-6]|tr|td|span)>/gi, '\n')
     .replace(/<[^>]+>/g, ' '))
@@ -117,9 +125,16 @@ function extractFirst(value, regex) {
   return match ? match[1].trim() : '';
 }
 
+function attrValue(tag, attrName) {
+  const re = new RegExp(`${attrName}=["']([^"']+)["']`, 'i');
+  return extractFirst(tag, re);
+}
+
 function extractDate(block, className) {
-  const re = new RegExp(`<span[^>]*class=["'][^"']*${className}[^"']*["'][^>]*>[\\s\\S]*?<span[^>]*class=["'][^"']*dateValue[^"']*["'][^>]*>([\\s\\S]*?)<\\/span>`, 'i');
-  return mmddyyyyToIso(extractFirst(block, re));
+  const classMatch = new RegExp(`<span[^>]*class=["'][^"']*${className}[^"']*["'][^>]*>`, 'i').exec(block);
+  if (!classMatch) return '';
+  const section = block.slice(classMatch.index, classMatch.index + 1500);
+  return mmddyyyyToIso(extractFirst(section, /<span[^>]*class=["'][^"']*dateValue[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
 }
 
 function extractAgencyType(block) {
@@ -127,95 +142,87 @@ function extractAgencyType(block) {
 }
 
 function extractNextUrl(html, currentUrl) {
-  const next = extractFirst(html, /<link\s+rel=["']next["']\s+href=["']([^"']+)["']/i)
+  const next = extractFirst(html, /<link\b[^>]*rel=["']next["'][^>]*href=["']([^"']+)["'][^>]*>/i)
     || extractFirst(html, /<a\b[^>]*href=["']([^"']*\/solicitations\/open-bids\/page\d+[^"']*)["'][^>]*>\s*(?:Next|›|&gt;)/i);
   return next ? absoluteUrl(next, currentUrl || BASE_URL) : '';
 }
 
 function parseSolicitationIdFromUrl(url) {
-  const path = new URL(url).pathname;
-  const ids = path.match(/\/(\d{6,})(?:\?|$|\/)?/g) || [];
-  if (ids.length) return ids[ids.length - 1].replace(/\//g, '');
+  try {
+    const pathname = new URL(url).pathname;
+    const ids = pathname.match(/\/(\d{6,})(?:\?|$|\/)?/g) || [];
+    if (ids.length) return ids[ids.length - 1].replace(/\//g, '');
+  } catch (err) {
+    // Ignore malformed URLs and fall through to regex fallback.
+  }
   return extractFirst(url, /searchResultSol_(?:solicitation|notice)_(\d+)/i);
 }
 
-function extractAttr(tag, name) {
-  return extractFirst(tag, new RegExp(`${name}=["']([^"']+)["']`, 'i'));
-}
-
-function parseListingAnchor(tag, block, currentUrl, seen) {
-  const idAttr = extractAttr(tag, 'id');
-  const href = extractAttr(tag, 'href');
-  if (!idAttr || !href || !/searchResultSol_(?:solicitation|notice)_/i.test(idAttr)) return null;
-  if (!/solicitations\/open-bids/i.test(href)) return null;
-
-  const sourceId = extractFirst(idAttr, /searchResultSol_(?:solicitation|notice)_([^"'\s]+)/i);
-  const sourceUrl = absoluteUrl(href, currentUrl);
-  if (seen.has(sourceUrl)) return null;
-
-  const title = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*rowTitle[^"']*["'][^>]*>([\s\S]*?)<\/span>/i))
-    || compactText(extractFirst(block, /<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i));
-  if (!title) return null;
-
-  seen.add(sourceUrl);
-  const location = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*location[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
-  const postedDate = extractDate(block, 'publicationDate');
-  const dueDate = extractDate(block, 'closingDate');
-  const timeRemaining = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*timeRemaining[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
-  const agencyType = extractAgencyType(block);
-  const solicitationNumber = parseSolicitationIdFromUrl(sourceUrl) || sourceId;
-
-  return {
-    sourceId,
-    sourceUrl,
-    title,
-    location: location || 'Colorado',
-    postedDate: postedDate || todayIso(),
-    dueDate,
-    timeRemaining,
-    agencyType,
-    solicitationNumber,
-    rawText: compactText(block)
-  };
+function extractRowsFromTable(html) {
+  const table = extractFirst(html, /<table\b[^>]*id=["']solicitationsList["'][^>]*>([\s\S]*?)<\/table>/i);
+  const body = extractFirst(table || html, /<tbody\b[^>]*>([\s\S]*?)<\/tbody>/i) || table || html;
+  const rows = [];
+  const rowRe = /<tr\b[^>]*data-index=["']?\d+["']?[^>]*>([\s\S]*?)<\/tr>/gi;
+  let match;
+  while ((match = rowRe.exec(body)) !== null) rows.push(match[0]);
+  return rows;
 }
 
 function extractListingRows(html, currentUrl = BASE_URL) {
   const rows = [];
   const seen = new Set();
-  const anchorRe = /<a\b([^>]*\b(?:id|href|class)=["'][^"']+["'][^>]*)>([\s\S]*?)<\/a>/gi;
-  let match;
 
-  while ((match = anchorRe.exec(html)) !== null) {
-    const tag = match[0].slice(0, match[0].indexOf('>') + 1);
-    const block = match[2];
-    const row = parseListingAnchor(tag, block, currentUrl, seen);
-    if (row) rows.push(row);
+  for (const rowHtml of extractRowsFromTable(html)) {
+    const anchorMatch = rowHtml.match(/<a\b([^>]*\bclass=["'][^"']*solicitation-link[^"']*["'][^>]*)>([\s\S]*?)<\/a>/i)
+      || rowHtml.match(/<a\b([^>]*\bid=["']searchResultSol_(?:solicitation|notice)_\d+["'][^>]*)>([\s\S]*?)<\/a>/i);
+    if (!anchorMatch) continue;
+
+    const anchorAttrs = anchorMatch[1];
+    const block = anchorMatch[2];
+    const href = attrValue(anchorAttrs, 'href');
+    const anchorId = attrValue(anchorAttrs, 'id');
+    const sourceId = extractFirst(anchorId, /searchResultSol_(?:solicitation|notice)_([0-9]+)/i) || parseSolicitationIdFromUrl(href);
+    const sourceUrl = href ? absoluteUrl(href, currentUrl) : '';
+    const title = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*rowTitle[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
+    const location = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*location[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
+    const postedDate = extractDate(block, 'publicationDate');
+    const dueDate = extractDate(block, 'closingDate');
+    const timeRemaining = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*timeRemaining[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
+    const agencyType = extractAgencyType(block);
+    const solicitationNumber = parseSolicitationIdFromUrl(sourceUrl) || sourceId;
+
+    if (!title || !sourceUrl || seen.has(sourceUrl)) continue;
+    seen.add(sourceUrl);
+
+    rows.push({
+      sourceId,
+      sourceUrl,
+      title,
+      location: location || 'Colorado',
+      postedDate: postedDate || todayIso(),
+      dueDate,
+      timeRemaining,
+      agencyType,
+      solicitationNumber,
+      rawText: compactText(block)
+    });
   }
 
   return rows;
 }
 
-function writeDebugHtml(response, reason) {
-  if (process.env.BIDNET_DEBUG_HTML !== '1') return;
-  try {
-    const debugDir = path.join(process.cwd(), '.debug');
-    fs.mkdirSync(debugDir, { recursive: true });
-    const safeReason = String(reason || 'unknown').replace(/[^a-z0-9]+/gi, '-').toLowerCase();
-    const filePath = path.join(debugDir, `bidnet-${safeReason}.html`);
-    fs.writeFileSync(filePath, response.body || '', 'utf8');
-    console.warn(`BidNet debug HTML written to ${filePath}`);
-  } catch (err) {
-    console.warn(`BidNet debug HTML write failed: ${err.message}`);
-  }
+function extractResultCount(html) {
+  const raw = extractFirst(html, /<span[^>]*class=["'][^"']*simpleSolResultsNumResults[^"']*["'][^>]*>\s*([\d,]+)\s+results/i)
+    || extractFirst(html, /\(([\d,]+)\s+results\)/i);
+  return raw ? Number(raw.replace(/,/g, '')) : 0;
 }
 
 function inferCity(row) {
-  const title = row.title || '';
-  const text = `${title} ${row.sourceUrl}`;
+  const text = `${row.title || ''} ${row.sourceUrl || ''}`;
   const cityHints = [
     'Denver', 'Boulder', 'Aurora', 'Greeley', 'Littleton', 'Lakewood', 'Longmont', 'Pueblo', 'Colorado Springs',
     'Fort Collins', 'Grand Junction', 'Loveland', 'Arvada', 'Centennial', 'Thornton', 'Westminster', 'Durango',
-    'Englewood', 'Wheat Ridge', 'Golden', 'Commerce City', 'Castle Rock', 'Brighton', 'Pitkin'
+    'Englewood', 'Wheat Ridge', 'Golden', 'Commerce City', 'Castle Rock', 'Brighton', 'Pitkin', 'Gunnison'
   ];
   return cityHints.find(city => new RegExp(`\\b${city.replace(/\s+/g, '\\s+')}\\b`, 'i').test(text)) || row.location || 'Colorado';
 }
@@ -230,30 +237,19 @@ function classifyBidNetTrade(row) {
   });
 }
 
-
 function inferProjectType(row, classification = {}) {
   const text = `${row.title || ''} ${row.rawText || ''}`.toLowerCase();
   const trade = classification.trade || 'general';
 
   if (/\b(?:comprehensive\s+plan|master\s+plan|planning\s+services?|strategic\s+plan|feasibility\s+study|study\b|assessment\b)\b/i.test(text)) {
-    return {
-      projectType: 'planning-consulting',
-      projectTypeLabel: 'Planning / Consulting',
-      contractorFit: 'low',
-      filterTags: ['planning', 'consulting']
-    };
+    return { projectType: 'planning-consulting', projectTypeLabel: 'Planning / Consulting', contractorFit: 'low', filterTags: ['planning', 'consulting'] };
   }
 
   if (/\b(?:rfq|request\s+for\s+qualifications?|architectural\s+(?:and|&)\s+engineering|a\s*\/\s*e\b|design\s+(?:services?|team)|engineering\s+services?|consultant|design\s+professional)\b/i.test(text)) {
-    return {
-      projectType: 'design-services',
-      projectTypeLabel: 'Design Services',
-      contractorFit: 'low',
-      filterTags: ['design', 'consulting']
-    };
+    return { projectType: 'design-services', projectTypeLabel: 'Design Services', contractorFit: 'low', filterTags: ['design', 'consulting'] };
   }
 
-  if (/\b(?:maintenance|on[-\s]?call|repair|replacement|renovation|remodel|improvements?|upgrade|install(?:ation)?|construction|demolition|paving|roof|concrete|substation|switchgear|sewer|water|trail|park)\b/i.test(text)) {
+  if (/\b(?:maintenance|on[-\s]?call|repair|replacement|renovation|remodel|improvements?|upgrade|install(?:ation)?|construction|demolition|paving|roof|concrete|substation|switchgear|sewer|water|trail|park|ramp|turf|airport)\b/i.test(text)) {
     return {
       projectType: trade && trade !== 'general' ? `${trade}-work` : 'construction-work',
       projectTypeLabel: trade && trade !== 'general' ? `${trade.charAt(0).toUpperCase()}${trade.slice(1)} Work` : 'Construction Work',
@@ -262,12 +258,7 @@ function inferProjectType(row, classification = {}) {
     };
   }
 
-  return {
-    projectType: 'general-construction',
-    projectTypeLabel: 'General Construction',
-    contractorFit: 'medium',
-    filterTags: ['construction', 'general']
-  };
+  return { projectType: 'general-construction', projectTypeLabel: 'General Construction', contractorFit: 'medium', filterTags: ['construction', 'general'] };
 }
 
 function mapRowToOpportunity(row) {
@@ -281,7 +272,7 @@ function mapRowToOpportunity(row) {
   return {
     id: `bidnet-${row.sourceId || solicitationNumber || slugSafe(row.title)}`,
     title: row.title,
-    slug: `${slugSafe(row.title)}-${solicitationNumber}`.replace(/-+$/g, ''),
+    slug: `${slugSafe(row.title)}-${solicitationNumber || ''}`.replace(/-+$/g, ''),
     state: DEFAULT_STATE,
     city,
     county: '',
@@ -333,48 +324,52 @@ function mapRowToOpportunity(row) {
   };
 }
 
-async function fetchPage(url) {
+function writeDebugHtml(pageLabel, html) {
+  if (!process.env.BIDNET_DEBUG_HTML) return;
+  const dir = path.join(process.cwd(), '.debug');
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, `bidnet-${pageLabel}.html`), html);
+}
+
+async function fetchPage(url, pageLabel) {
   const response = await request(url);
+  writeDebugHtml(pageLabel, response.body);
   if (response.statusCode < 200 || response.statusCode >= 300) {
-    writeDebugHtml(response, `http-${response.statusCode}`);
     throw new Error(`BidNet GET failed with status ${response.statusCode} for ${url}`);
   }
   return response;
 }
 
 async function fetchOpportunities() {
-  module.exports.replaceExisting = false;
-
   const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 6;
   const records = [];
   const visited = new Set();
   let nextUrl = START_URL;
+  let expectedCount = 0;
 
-  for (let page = 0; page < maxPages && nextUrl && !visited.has(nextUrl); page += 1) {
+  for (let page = 1; page <= maxPages && nextUrl && !visited.has(nextUrl); page += 1) {
     visited.add(nextUrl);
-    let response;
+    if (page > 1) await sleep(DEFAULT_PAGE_DELAY_MS);
 
-    try {
-      response = await fetchPage(nextUrl);
-    } catch (err) {
-      console.warn(`BidNet skipped after request failure: ${err.message}`);
-      return records;
-    }
-
+    const response = await fetchPage(nextUrl, `page-${page}`);
     const rows = extractListingRows(response.body, response.finalUrl);
 
+    if (page === 1) expectedCount = extractResultCount(response.body);
+
     if (!rows.length) {
-      writeDebugHtml(response, page === 0 ? 'no-rows-first-page' : `no-rows-page-${page + 1}`);
-      console.warn(`BidNet page ${page + 1} loaded but no solicitation rows were parsed; keeping existing BidNet records.`);
-      return records;
+      const message = page === 1
+        ? 'BidNet first page loaded but no solicitation rows were parsed; skipping BidNet for this run and preserving existing records.'
+        : `BidNet page ${page} loaded but no solicitation rows were parsed; stopping BidNet pagination.`;
+      console.warn(message);
+      break;
     }
 
     records.push(...rows.map(mapRowToOpportunity));
     nextUrl = extractNextUrl(response.body, response.finalUrl);
   }
 
-  if (records.length > 0) {
-    module.exports.replaceExisting = true;
+  if (expectedCount && records.length && records.length < Math.min(expectedCount, maxPages * 20)) {
+    console.warn(`BidNet harvested ${records.length} of ${expectedCount} listed results. Pagination may have stopped early.`);
   }
 
   return records;
@@ -389,6 +384,7 @@ module.exports = {
   _test: {
     extractListingRows,
     extractNextUrl,
+    extractResultCount,
     mapRowToOpportunity,
     mmddyyyyToIso
   }
