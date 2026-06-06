@@ -6,6 +6,7 @@ const connectors = [
   require('../sources/colorado-vss'),
   require('../sources/cdot'),
   require('../sources/denver'),
+  require('../sources/bidnet'),
   require('../sources/school-districts')
 ];
 
