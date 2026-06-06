@@ -38,3 +38,22 @@ input, select { width: 100%; border: 1px solid var(--line); border-radius: 12px;
 .footer { margin-top: 54px; padding: 28px 24px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }
 .notice { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 18px; padding: 18px; }
 .score { font-size: 30px; font-weight: 900; color: var(--good); letter-spacing: -0.05em; }
+
+#match-results {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 250px));
+  justify-content: start;
+  align-items: start;
+}
+
+#match-results .card {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .header { padding: 16px; }
+  .nav { align-items: flex-start; flex-direction: column; }
+  .hero { padding: 46px 18px 34px; }
+  .main { padding: 18px; }
+  .filters { grid-template-columns: 1fr; }
+  #match-results { grid-template-columns: 1fr; }
+}

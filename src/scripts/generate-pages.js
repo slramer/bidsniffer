@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const opportunities = require('../data/opportunities.json');
 
 const root = path.join(__dirname, '../../public');
+const assetsRoot = path.join(__dirname, '../assets');
 const trades = ['roofing', 'hvac', 'electrical', 'concrete', 'general'];
 
 // Remove previously generated pages so deleted/stale opportunities do not linger.
@@ -18,6 +20,20 @@ const tradeLabels = {
 };
 
 function ensureDir(dir) { fs.mkdirSync(dir, { recursive: true }); }
+
+function copyAsset(name) {
+  const source = path.join(assetsRoot, name);
+  const destination = path.join(root, name);
+  const content = fs.readFileSync(source);
+  fs.copyFileSync(source, destination);
+  return crypto.createHash('sha1').update(content).digest('hex').slice(0, 10);
+}
+
+ensureDir(root);
+const assetVersions = {
+  css: copyAsset('styles.css'),
+  app: copyAsset('app.js')
+};
 
 function escapeHtml(value) {
   return String(value ?? '')
@@ -85,13 +101,13 @@ function layout({ title, description, body }) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeAttr(description)}" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/styles.css?v=${assetVersions.css}" />
 </head>
 <body>
   <header class="header"><nav class="nav"><a class="logo" href="/">Bid<span>Sniffer</span></a><div class="navlinks"><a href="/bids/colorado/">Colorado Bids</a><a href="/contractors/profile.html">Contractor Profile</a></div></nav></header>
   ${body}
   <footer class="footer">BidSniffer tracks public construction opportunities and turns bid chaos into something slightly less cursed.</footer>
-  <script src="/app.js"></script>
+  <script src="/app.js?v=${assetVersions.app}"></script>
 </body>
 </html>`;
 }
@@ -132,5 +148,5 @@ for (const o of opportunities) {
 write(path.join(root, 'contractors/profile.html'), layout({
   title: 'Contractor Profile Matcher | BidSniffer',
   description: 'Create a sample contractor profile and see matched Colorado construction opportunities.',
-  body: `<section class="hero"><span class="badge">Monetization wedge</span><h1>Match bids to a contractor profile.</h1><p>This is the paid-feature seed: saved profiles, alerts, match scoring, deadline tracking, and bid-packet analysis.</p></section><main class="main"><form id="contractor-profile" class="card"><h2>Contractor Profile</h2><div class="filters"><label>Trade<select name="trade"><option value="">Any trade</option>${trades.map(t=>`<option value="${t}">${escapeHtml(tradeLabel(t))}</option>`).join('')}</select></label><label>City / service area<input name="city" placeholder="Denver, Aurora, Lakewood" /></label><label>Must-have keywords<input name="keywords" placeholder="school, municipal, controls" /></label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" name="publicWork" checked style="width:auto" /> Public work preferred</label></div></form><h2 style="margin-top:28px">Matched Opportunities</h2><div id="match-results" class="grid"></div></main>`
+  body: `<section class="hero"><span class="badge">Monetization wedge</span><h1>Match bids to a contractor profile.</h1><p>This is the paid-feature seed: saved profiles, alerts, match scoring, deadline tracking, and bid-packet analysis.</p></section><main class="main"><form id="contractor-profile" class="card"><h2>Contractor Profile</h2><p class="form-note">Fit scores consider trade, service area, must-have keywords, deadline window, listed value, source completeness, and classification confidence.</p><div class="filters"><label>Trade<select name="trade"><option value="">Any trade</option>${trades.map(t=>`<option value="${t}">${escapeHtml(tradeLabel(t))}</option>`).join('')}</select></label><label>City / service area<input name="city" placeholder="Denver, Aurora, Lakewood" /></label><label>Must-have keywords<input name="keywords" placeholder="school, municipal, controls" /></label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" name="publicWork" checked style="width:auto" /> Public work preferred</label></div></form><h2 style="margin-top:28px">Matched Opportunities</h2><div id="match-results" class="grid"></div></main>`
 }));
