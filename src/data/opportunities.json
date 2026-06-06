@@ -22,6 +22,19 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000042.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000042 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[RFQ1,GJEA,2026000042,1][RFQ1-GJEA-2026000042-1]",
+    "solicitationNumber": "2026000042",
+    "buyer": "Shari Browder",
+    "buyerEmail": "shari.browder@frontrange.edu",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
     "matchKeywords": [
       "general",
       "2026000042",
@@ -30,20 +43,60 @@
       "front range community college",
       "shari browder",
       "shari.browder@frontrange.edu"
+    ]
+  },
+  {
+    "id": "denver-202684561",
+    "title": "RFQ: Boettcher Concert Hall Renovation",
+    "slug": "rfq-boettcher-concert-hall-renovation-202684561",
+    "state": "colorado",
+    "city": "Denver",
+    "county": "Denver",
+    "trade": "general",
+    "agency": "City and County of Denver Department of Transportation & Infrastructure",
+    "postedDate": "2026-06-01",
+    "dueDate": "2026-07-21",
+    "estimatedValue": "Not listed",
+    "summary": "The City seeks qualified design teams for renovating Boettcher Concert Hall, including major system replacements, interior upgrades, acoustics, seating, lighting, AV, tech, circulation, ADA improvements, and necessary exterior work. Design must also incorporate youth education spaces.",
+    "requirements": [
+      "Reference number: Solicitation No. 202684561",
+      "Status: Open",
+      "Publication date: 2026-06-01",
+      "Questions deadline: June 29, 2026, at 2:00 p.m., local time.",
+      "Pre-Submittal Meeting will be held on June 9, 2026, at 8:00 a.m., local time. To access the meeting, please call 720-388-6219 and enter the conference ID: 223 209 119# or join via Microsoft Teams . Consultants are responsible for any information conveyed at this meeting. **Optional Site Visit: An optional site visit will be held on June 10, 2026, 10:00 a.m. &ndash; 12:00 p.m. , local time . Please RSVP and the site visit details will be sent via email.",
+      "MWBE Participation Goal: 19%",
+      "Bid documents/submittals are handled through BidNet/Rocky Mountain E-Purchasing.",
+      "Contract administrator: Michele Foust",
+      "Contact email: DOTI.Procurement@denvergov.org"
     ],
-    "solicitationRef": "[RFQ1,GJEA,2026000042,1][RFQ1-GJEA-2026000042-1]",
-    "solicitationNumber": "2026000042",
-    "buyer": "Shari Browder",
-    "buyerEmail": "shari.browder@frontrange.edu",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000042.",
+    "sourceName": "Denver Contract Administration",
+    "sourceUrl": "https://www.denvergov.org/Business/Contract-Administration/Bids/202684561",
+    "sourceLookupInstructions": "Open the Denver bid detail page or search Denver Contract Administration for 202684561. Bid documents are typically handled through BidNet/Rocky Mountain E-Purchasing.",
     "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000042 in the keyword/search field.",
-      "Open the matching solicitation record."
+      "Open Denver Contract Administration current bidding opportunities.",
+      "Search for 202684561.",
+      "Open the matching bid detail page.",
+      "Use the BidNet/Rocky Mountain E-Purchasing link on the Denver detail page for documents and electronic submission."
     ],
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": []
+    "solicitationRef": "Solicitation No. 202684561",
+    "solicitationNumber": "202684561",
+    "buyer": "Michele Foust",
+    "buyerEmail": "DOTI.Procurement@denvergov.org",
+    "tradeConfidence": "source",
+    "matchedTradeKeywords": [
+      "design services"
+    ],
+    "matchKeywords": [
+      "general",
+      "denver",
+      "doti",
+      "202684561",
+      "solicitation no. 202684561",
+      "michele foust",
+      "doti.procurement@denvergov.org",
+      "design services",
+      "lighting"
+    ]
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000193-1",
@@ -68,6 +121,21 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000193.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000193 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
+    "solicitationNumber": "2026000193",
+    "buyer": "Kimberlie Smith",
+    "buyerEmail": "kimberlie.smith@dmva.state.co.us",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "generator"
+    ],
     "matchKeywords": [
       "electrical",
       "2026000193",
@@ -76,21 +144,6 @@
       "dmva - department of military and veterans affairs",
       "kimberlie smith",
       "kimberlie.smith@dmva.state.co.us",
-      "generator"
-    ],
-    "solicitationRef": "[IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
-    "solicitationNumber": "2026000193",
-    "buyer": "Kimberlie Smith",
-    "buyerEmail": "kimberlie.smith@dmva.state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000193.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000193 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "medium",
-    "matchedTradeKeywords": [
       "generator"
     ]
   },
@@ -117,6 +170,19 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000181.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000181 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[IFB1,RFAA,2026000181,5][IFB1-RFAA-2026000181-5]",
+    "solicitationNumber": "2026000181",
+    "buyer": "Nancy Guzman",
+    "buyerEmail": "nancy.guzman@state.co.us",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
     "matchKeywords": [
       "general",
       "2026000181",
@@ -125,20 +191,7 @@
       "cdps - division of homeland security & emergency management",
       "nancy guzman",
       "nancy.guzman@state.co.us"
-    ],
-    "solicitationRef": "[IFB1,RFAA,2026000181,5][IFB1-RFAA-2026000181-5]",
-    "solicitationNumber": "2026000181",
-    "buyer": "Nancy Guzman",
-    "buyerEmail": "nancy.guzman@state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000181.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000181 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": []
+    ]
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000192-2",
@@ -163,6 +216,21 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000192.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000192 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[IFB1,OAAA,2026000192,2][IFB1-OAAA-2026000192-2]",
+    "solicitationNumber": "2026000192",
+    "buyer": "Kimberlie Smith",
+    "buyerEmail": "kimberlie.smith@dmva.state.co.us",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "fire alarm"
+    ],
     "matchKeywords": [
       "electrical",
       "2026000192",
@@ -171,21 +239,6 @@
       "dmva - department of military and veterans affairs",
       "kimberlie smith",
       "kimberlie.smith@dmva.state.co.us",
-      "fire alarm"
-    ],
-    "solicitationRef": "[IFB1,OAAA,2026000192,2][IFB1-OAAA-2026000192-2]",
-    "solicitationNumber": "2026000192",
-    "buyer": "Kimberlie Smith",
-    "buyerEmail": "kimberlie.smith@dmva.state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000192.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000192 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "medium",
-    "matchedTradeKeywords": [
       "fire alarm"
     ]
   },
@@ -212,6 +265,19 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000499.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000499 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[DQ1,PKAA,2026000499,1][DQ1-PKAA-2026000499-1]",
+    "solicitationNumber": "2026000499",
+    "buyer": "Teresa Donaldson",
+    "buyerEmail": "teresa.donaldson@state.co.us",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
     "matchKeywords": [
       "general",
       "2026000499",
@@ -220,20 +286,7 @@
       "dnr - division of reclamation mining & safety",
       "teresa donaldson",
       "teresa.donaldson@state.co.us"
-    ],
-    "solicitationRef": "[DQ1,PKAA,2026000499,1][DQ1-PKAA-2026000499-1]",
-    "solicitationNumber": "2026000499",
-    "buyer": "Teresa Donaldson",
-    "buyerEmail": "teresa.donaldson@state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000499.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000499 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": []
+    ]
   },
   {
     "id": "colorado-vss-dq1-pkaa-2026000470-2",
@@ -258,6 +311,19 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000470.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000470 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[DQ1,PKAA,2026000470,2][DQ1-PKAA-2026000470-2]",
+    "solicitationNumber": "2026000470",
+    "buyer": "Teresa Donaldson",
+    "buyerEmail": "teresa.donaldson@state.co.us",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
     "matchKeywords": [
       "general",
       "2026000470",
@@ -266,20 +332,7 @@
       "dnr - division of reclamation mining & safety",
       "teresa donaldson",
       "teresa.donaldson@state.co.us"
-    ],
-    "solicitationRef": "[DQ1,PKAA,2026000470,2][DQ1-PKAA-2026000470-2]",
-    "solicitationNumber": "2026000470",
-    "buyer": "Teresa Donaldson",
-    "buyerEmail": "teresa.donaldson@state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000470.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000470 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": []
+    ]
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000189-1",
@@ -304,6 +357,21 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000189.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000189 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[IFB1,OAAA,2026000189,1][IFB1-OAAA-2026000189-1]",
+    "solicitationNumber": "2026000189",
+    "buyer": "dana stansbury",
+    "buyerEmail": "dana.stansbury@dmva.state.co.us",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "roof"
+    ],
     "matchKeywords": [
       "roofing",
       "2026000189",
@@ -312,21 +380,6 @@
       "dmva - department of military and veterans affairs",
       "dana stansbury",
       "dana.stansbury@dmva.state.co.us",
-      "roof"
-    ],
-    "solicitationRef": "[IFB1,OAAA,2026000189,1][IFB1-OAAA-2026000189-1]",
-    "solicitationNumber": "2026000189",
-    "buyer": "dana stansbury",
-    "buyerEmail": "dana.stansbury@dmva.state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000189.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000189 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "tradeConfidence": "medium",
-    "matchedTradeKeywords": [
       "roof"
     ]
   },
@@ -353,6 +406,21 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000191.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000191 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[IFB1,OAAA,2026000191,1][IFB1-OAAA-2026000191-1]",
+    "solicitationNumber": "2026000191",
+    "buyer": "dana stansbury",
+    "buyerEmail": "dana.stansbury@dmva.state.co.us",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "roof"
+    ],
     "matchKeywords": [
       "roofing",
       "2026000191",
@@ -362,21 +430,116 @@
       "dana stansbury",
       "dana.stansbury@dmva.state.co.us",
       "roof"
+    ]
+  },
+  {
+    "id": "denver-202684500",
+    "title": "2026 Emergency Wastewater Repairs",
+    "slug": "2026-emergency-wastewater-repairs-202684500",
+    "state": "colorado",
+    "city": "Denver",
+    "county": "Denver",
+    "trade": "concrete",
+    "agency": "City and County of Denver Department of Transportation & Infrastructure",
+    "postedDate": "2026-05-19",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "$3,000,000.00",
+    "summary": "The City and County of Denver Department of Transportation & Infrastructure Wastewater Management Division requires a 3-year long contract to perform wastewater emergency repair construction work. This contract will be utilized on an as-needed basis for multiple emergency repairs. Contract term is three years and the maximum contract amount is $3,000,000.00.",
+    "requirements": [
+      "Reference number: Contract No. 202684500",
+      "Status: Open",
+      "Publication date: 2026-05-19",
+      "Questions deadline: June 4, 2026 at 10:00 a.m. local time.",
+      "Virtual Pre-Bid Meeting on May 28, 2026 at 10:00 a.m. - Meeting Agenda (PDF, 57KB) To access the meeting, please call 720-388-6219 and enter conference ID: ­­­­304 384 006# or join via Microsoft Teams .",
+      "DSBO Goal: No Program",
+      "Prequalification: Each bidder must be prequalified in category 1A Heavy Civil at or above the $3,000,000.00 monetary level in accordance with the City&rsquo;s Rules and Regulations Governing Prequalification of Contractors. Each bidder must have submitted a prequalification application a minimum of ten (10) calendar days prior to the response due date. Applications must be submitted via B2Gnow . To view the Rules and information on how to apply, please visit our website at www.denvergov.org/prequalification .",
+      "Bid documents/submittals are handled through BidNet/Rocky Mountain E-Purchasing.",
+      "Contract administrator: Micaela Martinez",
+      "Contact email: DOTI.Procurement@denvergov.org"
     ],
-    "solicitationRef": "[IFB1,OAAA,2026000191,1][IFB1-OAAA-2026000191-1]",
-    "solicitationNumber": "2026000191",
-    "buyer": "dana stansbury",
-    "buyerEmail": "dana.stansbury@dmva.state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000191.",
+    "sourceName": "Denver Contract Administration",
+    "sourceUrl": "https://www.denvergov.org/Business/Contract-Administration/Bids/202684500",
+    "sourceLookupInstructions": "Open the Denver bid detail page or search Denver Contract Administration for 202684500. Bid documents are typically handled through BidNet/Rocky Mountain E-Purchasing.",
     "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000191 in the keyword/search field.",
-      "Open the matching solicitation record."
+      "Open Denver Contract Administration current bidding opportunities.",
+      "Search for 202684500.",
+      "Open the matching bid detail page.",
+      "Use the BidNet/Rocky Mountain E-Purchasing link on the Denver detail page for documents and electronic submission."
     ],
-    "tradeConfidence": "medium",
+    "solicitationRef": "Contract No. 202684500",
+    "solicitationNumber": "202684500",
+    "buyer": "Micaela Martinez",
+    "buyerEmail": "DOTI.Procurement@denvergov.org",
+    "tradeConfidence": "high",
     "matchedTradeKeywords": [
-      "roof"
+      "concrete",
+      "flatwork",
+      "paving/asphalt",
+      "bridge/civil"
+    ],
+    "matchKeywords": [
+      "concrete",
+      "denver",
+      "doti",
+      "202684500",
+      "contract no. 202684500",
+      "micaela martinez",
+      "doti.procurement@denvergov.org",
+      "flatwork",
+      "paving/asphalt",
+      "bridge/civil"
+    ]
+  },
+  {
+    "id": "denver-202684399",
+    "title": "RFQ: Denver Public Library Branch Renovations + Shade Structure",
+    "slug": "rfq-denver-public-library-branch-renovations-shade-structure-202684399",
+    "state": "colorado",
+    "city": "Denver",
+    "county": "Denver",
+    "trade": "general",
+    "agency": "City and County of Denver Department of Transportation & Infrastructure",
+    "postedDate": "2026-05-14",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "summary": "Architectural & Engineering Design Services for: • Blair-Caldwell African American Research Library & Museum Renovation • Montbello Branch Library Renovation • Montbello Civic Center Park Shade Structure",
+    "requirements": [
+      "Reference number: Solicitation No. 202684399",
+      "Status: Open",
+      "Publication date: 2026-05-14",
+      "Questions deadline: June 2, 2026, at 11:00 a.m., local time.",
+      "Pre-Submittal Meeting will be held on May 20, 2026, at 10:00 a.m., local time. ( Meeting Agenda (PDF, 45KB) ) To access the meeting, please call 720-388-6219 and enter the conference ID: 741-454-520# or join via Microsoft Teams . Consultants are responsible for any information conveyed at this meeting. **Optional Site Visits: Optional site visits to both library locations will be held on May 21, 2026: - 9:00-10:00 a.m. &ndash; Montbello Branch Library , 12955 Albrook Dr, Denver, CO 80239. Meet at the library entrance - 10:30-11:30 a.m. &ndash; Blair-Caldwell African American Research Library, 2401 Welton St, Denver, CO 80205 Transportation to and from each site is the responsibility of prospective bidder. Please RSVP and the site visit details will be sent via email.",
+      "MWBE Participation Goal: 21%",
+      "Bid documents/submittals are handled through BidNet/Rocky Mountain E-Purchasing.",
+      "Contract administrator: Michele Foust",
+      "Contact email: DOTI.Procurement@denvergov.org"
+    ],
+    "sourceName": "Denver Contract Administration",
+    "sourceUrl": "https://www.denvergov.org/Business/Contract-Administration/Bids/202684399",
+    "sourceLookupInstructions": "Open the Denver bid detail page or search Denver Contract Administration for 202684399. Bid documents are typically handled through BidNet/Rocky Mountain E-Purchasing.",
+    "sourceLookupSteps": [
+      "Open Denver Contract Administration current bidding opportunities.",
+      "Search for 202684399.",
+      "Open the matching bid detail page.",
+      "Use the BidNet/Rocky Mountain E-Purchasing link on the Denver detail page for documents and electronic submission."
+    ],
+    "solicitationRef": "Solicitation No. 202684399",
+    "solicitationNumber": "202684399",
+    "buyer": "Michele Foust",
+    "buyerEmail": "DOTI.Procurement@denvergov.org",
+    "tradeConfidence": "source",
+    "matchedTradeKeywords": [
+      "design services"
+    ],
+    "matchKeywords": [
+      "general",
+      "denver",
+      "doti",
+      "202684399",
+      "solicitation no. 202684399",
+      "michele foust",
+      "doti.procurement@denvergov.org",
+      "design services"
     ]
   },
   {
@@ -402,6 +565,19 @@
     ],
     "sourceName": "Colorado Vendor Self Service",
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
+    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000476.",
+    "sourceLookupSteps": [
+      "Open Colorado VSS.",
+      "Click \"View Published Solicitations.\"",
+      "Enter 2026000476 in the keyword/search field.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "[DQ1,PKAA,2026000476,1][DQ1-PKAA-2026000476-1]",
+    "solicitationNumber": "2026000476",
+    "buyer": "Teresa Donaldson",
+    "buyerEmail": "teresa.donaldson@state.co.us",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
     "matchKeywords": [
       "general",
       "2026000476",
@@ -410,19 +586,61 @@
       "dnr - division of reclamation mining & safety",
       "teresa donaldson",
       "teresa.donaldson@state.co.us"
+    ]
+  },
+  {
+    "id": "denver-202684240",
+    "title": "Traffic Signals Preventative Maintenance CDOT Intersections",
+    "slug": "traffic-signals-preventative-maintenance-cdot-intersections-202684240",
+    "state": "colorado",
+    "city": "Denver",
+    "county": "Denver",
+    "trade": "electrical",
+    "agency": "City and County of Denver Department of Transportation & Infrastructure",
+    "postedDate": "2026-05-05",
+    "dueDate": "2026-06-09",
+    "estimatedValue": "$985,000.00",
+    "summary": "Contractor must maintain, inspect, test, and replace all non-structural traffic signal components, ensuring proper operation of controllers, wiring, indications, detection, preemption, communication, timing, backup power, and luminaires, and verify all equipment, structures, and cabinets are in good condition.",
+    "requirements": [
+      "Reference number: Contract No. 202684240",
+      "Status: Open",
+      "Publication date: 2026-05-05",
+      "Questions deadline: May 27, 2026 at 11:00 a.m. local time.",
+      "Virtual Pre-Bid Meeting on May 12, 2026 at 11:00 a.m. To access the meeting, please call 720-388-6219 and enter conference ID: 699 337 656# or join via Microsoft Teams .",
+      "DSBO Goal: No Program",
+      "Prequalification: N/A",
+      "Bid documents/submittals are handled through BidNet/Rocky Mountain E-Purchasing.",
+      "Contract administrator: Tricia Ortega",
+      "Contact email: DOTI.Procurement@denvergov.org"
     ],
-    "solicitationRef": "[DQ1,PKAA,2026000476,1][DQ1-PKAA-2026000476-1]",
-    "solicitationNumber": "2026000476",
-    "buyer": "Teresa Donaldson",
-    "buyerEmail": "teresa.donaldson@state.co.us",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000476.",
+    "sourceName": "Denver Contract Administration",
+    "sourceUrl": "https://www.denvergov.org/Business/Contract-Administration/Bids/202684240",
+    "sourceLookupInstructions": "Open the Denver bid detail page or search Denver Contract Administration for 202684240. Bid documents are typically handled through BidNet/Rocky Mountain E-Purchasing.",
     "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000476 in the keyword/search field.",
-      "Open the matching solicitation record."
+      "Open Denver Contract Administration current bidding opportunities.",
+      "Search for 202684240.",
+      "Open the matching bid detail page.",
+      "Use the BidNet/Rocky Mountain E-Purchasing link on the Denver detail page for documents and electronic submission."
     ],
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": []
+    "solicitationRef": "Contract No. 202684240",
+    "solicitationNumber": "202684240",
+    "buyer": "Tricia Ortega",
+    "buyerEmail": "DOTI.Procurement@denvergov.org",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "generator",
+      "electrical gear"
+    ],
+    "matchKeywords": [
+      "electrical",
+      "denver",
+      "doti",
+      "202684240",
+      "contract no. 202684240",
+      "tricia ortega",
+      "doti.procurement@denvergov.org",
+      "generator",
+      "electrical gear"
+    ]
   }
 ]

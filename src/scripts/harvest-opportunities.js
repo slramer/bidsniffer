@@ -53,7 +53,7 @@ function normalizeOpportunity(raw, connector) {
   const sourceUrl = raw.sourceUrl || raw.url || raw.link || connector.sourceUrl || '';
   const postedDate = raw.postedDate || raw.postDate || raw.publishedDate || todayIso();
   const classification = classifyTradeDetails(raw, { fallbackTrade: raw.trade });
-  const trade = classification.trade || 'general';
+  const trade = raw.trade || classification.trade || 'general';
 
   return {
     id: raw.id || slugify(`${connector.name}-${title}-${postedDate}`),
@@ -95,9 +95,14 @@ function dedupeKey(item) {
   ].join('|');
 }
 
-function mergeOpportunities(existing, incoming) {
+function mergeOpportunities(existing, incoming, replaceSourceNames = []) {
+  const replaceSet = new Set(replaceSourceNames.filter(Boolean));
   const byKey = new Map();
-  for (const item of existing) byKey.set(dedupeKey(item), item);
+
+  for (const item of existing) {
+    if (replaceSet.has(item.sourceName)) continue;
+    byKey.set(dedupeKey(item), item);
+  }
 
   let added = 0;
   let updated = 0;
@@ -122,6 +127,7 @@ function mergeOpportunities(existing, incoming) {
 async function main() {
   const existing = readJson(SRC_DATA_PATH, []);
   const incoming = [];
+  const replaceSourceNames = [];
 
   console.log(`Loaded ${existing.length} existing opportunities.`);
 
@@ -132,6 +138,9 @@ async function main() {
         .map(raw => normalizeOpportunity(raw, connector))
         .filter(item => item.title && item.sourceUrl);
       incoming.push(...normalized);
+      if (connector.replaceExisting) {
+        replaceSourceNames.push(connector.sourceName || connector.name);
+      }
       console.log(`${connector.name}: ${normalized.length} normalized records.`);
     } catch (err) {
       console.error(`${connector.name}: harvest failed:`, err.message);
@@ -139,7 +148,7 @@ async function main() {
     }
   }
 
-  const { merged, added, updated } = mergeOpportunities(existing, incoming);
+  const { merged, added, updated } = mergeOpportunities(existing, incoming, replaceSourceNames);
   writeJson(SRC_DATA_PATH, merged);
   writeJson(PUBLIC_DATA_PATH, merged);
 

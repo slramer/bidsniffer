@@ -308,5 +308,6 @@ module.exports = {
   name: 'colorado-vss',
   sourceName: 'Colorado Vendor Self Service',
   sourceUrl: BASE_URL,
+  replaceExisting: true,
   fetchOpportunities
 };
