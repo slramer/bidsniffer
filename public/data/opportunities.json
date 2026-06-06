@@ -11,6 +11,14 @@
     "postedDate": "2026-06-04",
     "dueDate": "2026-07-10",
     "estimatedValue": "Not listed",
+    "projectType": "planning-consulting",
+    "projectTypeLabel": "Planning / Consulting",
+    "contractorFit": "low",
+    "filterTags": [
+      "planning",
+      "consulting",
+      "general"
+    ],
     "summary": "FRCC Facilities Master Plan. Request for Qualifications (RFQ1) posted by Front Range Community College.",
     "requirements": [
       "Solicitation reference: [RFQ1,GJEA,2026000042,1][RFQ1-GJEA-2026000042-1]",
@@ -35,6 +43,8 @@
     "buyerEmail": "shari.browder@frontrange.edu",
     "tradeConfidence": "low",
     "matchedTradeKeywords": [],
+    "canonicalKey": "frcc facilities master plan|front range community college|2026-07-10",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "2026000042",
@@ -57,6 +67,14 @@
     "postedDate": "2026-06-01",
     "dueDate": "2026-07-21",
     "estimatedValue": "Not listed",
+    "projectType": "design-services",
+    "projectTypeLabel": "Design Services",
+    "contractorFit": "low",
+    "filterTags": [
+      "design",
+      "consulting",
+      "general"
+    ],
     "summary": "The City seeks qualified design teams for renovating Boettcher Concert Hall, including major system replacements, interior upgrades, acoustics, seating, lighting, AV, tech, circulation, ADA improvements, and necessary exterior work. Design must also incorporate youth education spaces.",
     "requirements": [
       "Reference number: Solicitation No. 202684561",
@@ -86,6 +104,8 @@
     "matchedTradeKeywords": [
       "design services"
     ],
+    "canonicalKey": "rfq boettcher concert hall renovation|city and county of denver department of transportation & infrastructure|2026-07-21",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "denver",
@@ -96,6 +116,517 @@
       "doti.procurement@denvergov.org",
       "design services",
       "lighting"
+    ]
+  },
+  {
+    "id": "cdot-apr-104-2026",
+    "title": "CDOT APR 104-2026 - on call asphalt paving services under a master task order contracting process.",
+    "slug": "cdot-apr-104-2026-on-call-asphalt-paving-services-under-a-master-task-order-contracting-pr",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-12",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT APR 104-2026 - on call asphalt paving services under a master task order contracting process.. This is a Region 1 Invitation for Bids for non-project specific on call asphalt paving services under a master task order contracting process. Please contact Mark Kyrimis at 720-376-1203 for scope of work-related questions. Questions regarding the bid solicitation and contract award process should be directed to RB Simmons via email at [email protected] or by phone at 303-246-4559. Note: A Pre-bid meeting is scheduled for May 27, 2026 at 10:00AM. The meeting will be held virtually online via Google Meets. Contractors interested in attending should send an email a request to [email protected] to be added to the meeting. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: APR 104-2026",
+      "Bid letting / due date: 2026-06-12",
+      "CDOT Region 1",
+      "Project contact: Mark Kyrimis, 720-376-1203",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number APR 104-2026. Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number APR 104-2026.",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "APR 104-2026",
+    "solicitationNumber": "APR 104-2026",
+    "buyer": "Mark Kyrimis",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "apr 104-2026|colorado department of transportation|2026-06-12",
+    "sourceId": "APR 104-2026",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 1",
+      "apr 104-2026",
+      "paving/asphalt"
+    ]
+  },
+  {
+    "id": "cdot-mtce-r100-444-27389",
+    "title": "CDOT MTCE R100-444 (27389) - striping improvements on roadways in the region.",
+    "slug": "cdot-mtce-r100-444-27389-striping-improvements-on-roadways-in-the-region",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-11",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "CDOT MTCE R100-444 (27389) - striping improvements on roadways in the region.. Project is in Region 1 at various locations. Project work consists of striping improvements on roadways in the region. Please contact Bradley Wood at 303-704-2152 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: MTCE R100-444 (27389)",
+      "Bid letting / due date: 2026-06-11",
+      "CDOT Region 1",
+      "Project contact: Bradley Wood, 303-704-2152",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number MTCE R100-444 (27389). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number MTCE R100-444 (27389).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "MTCE R100-444 (27389)",
+    "solicitationNumber": "MTCE R100-444 (27389)",
+    "buyer": "Bradley Wood",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "mtce r100-444 (27389)|colorado department of transportation|2026-06-11",
+    "sourceId": "MTCE R100-444 (27389)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 1",
+      "mtce r100-444 (27389)"
+    ]
+  },
+  {
+    "id": "cdot-mtce-r200-315-27276",
+    "title": "CDOT MTCE R200-315 (27276) - sign replacements on roadways in the region.",
+    "slug": "cdot-mtce-r200-315-27276-sign-replacements-on-roadways-in-the-region",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "CDOT MTCE R200-315 (27276) - sign replacements on roadways in the region.. Project is in Region 2 at various locations. Project work consists of sign replacements on roadways in the region. Please contact Pepper Whittlef at 719-248-5011 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: MTCE R200-315 (27276)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 2",
+      "Project contact: Pepper Whittlef, 719-248-5011",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number MTCE R200-315 (27276). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number MTCE R200-315 (27276).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "MTCE R200-315 (27276)",
+    "solicitationNumber": "MTCE R200-315 (27276)",
+    "buyer": "Pepper Whittlef",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "mtce r200-315 (27276)|colorado department of transportation|2026-06-18",
+    "sourceId": "MTCE R200-315 (27276)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 2",
+      "mtce r200-315 (27276)"
+    ]
+  },
+  {
+    "id": "cdot-mtce-r300-297-27473",
+    "title": "CDOT MTCE R300-297 (27473) - pavement marking/stencil improvements on roadways in the region.",
+    "slug": "cdot-mtce-r300-297-27473-pavement-marking-stencil-improvements-on-roadways-in-the-region",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT MTCE R300-297 (27473) - pavement marking/stencil improvements on roadways in the region.. Project is in Region 3 at various locations. Project work consists of pavement marking/stencil improvements on roadways in the region. Please contact Andi Staley at 970-683-6278 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: MTCE R300-297 (27473)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 3",
+      "Project contact: Andi Staley, 970-683-6278",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number MTCE R300-297 (27473). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number MTCE R300-297 (27473).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "MTCE R300-297 (27473)",
+    "solicitationNumber": "MTCE R300-297 (27473)",
+    "buyer": "Andi Staley",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "mtce r300-297 (27473)|colorado department of transportation|2026-06-18",
+    "sourceId": "MTCE R300-297 (27473)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 3",
+      "mtce r300-297 (27473)",
+      "paving/asphalt"
+    ]
+  },
+  {
+    "id": "cdot-mtce-r300-298-27486",
+    "title": "CDOT MTCE R300-298 (27486) - striping improvements on roadways in the region.",
+    "slug": "cdot-mtce-r300-298-27486-striping-improvements-on-roadways-in-the-region",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "CDOT MTCE R300-298 (27486) - striping improvements on roadways in the region.. Project is in Region 3 at various locations. Project work consists of striping improvements on roadways in the region. Please contact Andi Staley at 970-683-6278 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: MTCE R300-298 (27486)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 3",
+      "Project contact: Andi Staley, 970-683-6278",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number MTCE R300-298 (27486). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number MTCE R300-298 (27486).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "MTCE R300-298 (27486)",
+    "solicitationNumber": "MTCE R300-298 (27486)",
+    "buyer": "Andi Staley",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "mtce r300-298 (27486)|colorado department of transportation|2026-06-18",
+    "sourceId": "MTCE R300-298 (27486)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 3",
+      "mtce r300-298 (27486)"
+    ]
+  },
+  {
+    "id": "cdot-nhpp-1211-111-26942combo",
+    "title": "CDOT NHPP 1211-111 (26942Combo) - interchange reconstruction and bridge replacement at US 6 and SH 121 (West 6th Avenue and Wadsworth Boulevard).",
+    "slug": "cdot-nhpp-1211-111-26942combo-interchange-reconstruction-and-bridge-replacement-at-us-6-an",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "Jefferson",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-11",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT NHPP 1211-111 (26942Combo) - interchange reconstruction and bridge replacement at US 6 and SH 121 (West 6th Avenue and Wadsworth Boulevard).. This project is located in Region 1 in Jefferson County. Project work consists of interchange reconstruction and bridge replacement at US 6 and SH 121 (West 6th Avenue and Wadsworth Boulevard). Please contact Cody Daigneault at 720-628-6919 or all project related questions. Note: A mandatory pre-bid meeting will be held on Friday May 29, 2026, beginning at 09:00 at CDOT Headquarters (2829 W. Howard Pl. Denver, CO 80204) in Room 159. In-person attendees should arrive at least 15 minutes prior to the meeting start time. Virtual attendees can join at the link ( meet.google.com/xzg-keob-bhk ) and must provide their full contact information to the meeting host in order to have their attendance recorded. Bids will be accepted only from pre-qualified bidders who attend the mandatory pre-bid meeting. Bid Letting deferred to June 25, 2026",
+    "requirements": [
+      "Project number: NHPP 1211-111 (26942Combo)",
+      "Bid letting / due date: 2026-06-11",
+      "CDOT Region 1",
+      "County: Jefferson",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number NHPP 1211-111 (26942Combo). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number NHPP 1211-111 (26942Combo).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "NHPP 1211-111 (26942Combo)",
+    "solicitationNumber": "NHPP 1211-111 (26942Combo)",
+    "buyer": "",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [
+      "bridge/civil"
+    ],
+    "canonicalKey": "nhpp 1211-111 (26942combo)|colorado department of transportation|2026-06-11",
+    "sourceId": "NHPP 1211-111 (26942Combo)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 1",
+      "jefferson",
+      "nhpp 1211-111 (26942combo)",
+      "bridge/civil"
+    ]
+  },
+  {
+    "id": "cdot-she-095a-024-25543",
+    "title": "CDOT SHE 095A-024 (25543) - traffic signal and curb ramp improvements on SH 95 at 64th and 68th Avenues.",
+    "slug": "cdot-she-095a-024-25543-traffic-signal-and-curb-ramp-improvements-on-sh-95-at-64th-and-68t",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "Jefferson",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT SHE 095A-024 (25543) - traffic signal and curb ramp improvements on SH 95 at 64th and 68th Avenues.. Project is in Region 1 in Jefferson County. Project work consists of the traffic signal and curb ramp improvements on SH 95 at 64th and 68th Avenues. Please contact Bradley Wood at 303-365-7301 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: SHE 095A-024 (25543)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 1",
+      "County: Jefferson",
+      "Project contact: Bradley Wood, 303-365-7301",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number SHE 095A-024 (25543). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number SHE 095A-024 (25543).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "SHE 095A-024 (25543)",
+    "solicitationNumber": "SHE 095A-024 (25543)",
+    "buyer": "Bradley Wood",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "flatwork"
+    ],
+    "canonicalKey": "she 095a-024 (25543)|colorado department of transportation|2026-06-18",
+    "sourceId": "SHE 095A-024 (25543)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 1",
+      "jefferson",
+      "she 095a-024 (25543)",
+      "flatwork"
+    ]
+  },
+  {
+    "id": "cdot-stm-0243-098-26947",
+    "title": "CDOT STM 0243-098 (26947) - traffic signal and curb ramp improvements on SH 24 at Academy Park Loop and at Stapleton Drive.",
+    "slug": "cdot-stm-0243-098-26947-traffic-signal-and-curb-ramp-improvements-on-sh-24-at-academy-park",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "El Paso",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT STM 0243-098 (26947) - traffic signal and curb ramp improvements on SH 24 at Academy Park Loop and at Stapleton Drive.. Project is in Region 2 in El Paso County. Project work consists of the traffic signal and curb ramp improvements on SH 24 at Academy Park Loop and at Stapleton Drive. Please contact Matthew Jagow at 719-546-5751 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: STM 0243-098 (26947)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 2",
+      "County: El Paso",
+      "Project contact: Matthew Jagow, 719-546-5751",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number STM 0243-098 (26947). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number STM 0243-098 (26947).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "STM 0243-098 (26947)",
+    "solicitationNumber": "STM 0243-098 (26947)",
+    "buyer": "Matthew Jagow",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "flatwork"
+    ],
+    "canonicalKey": "stm 0243-098 (26947)|colorado department of transportation|2026-06-18",
+    "sourceId": "STM 0243-098 (26947)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 2",
+      "el paso",
+      "stm 0243-098 (26947)",
+      "flatwork"
+    ]
+  },
+  {
+    "id": "cdot-str-348a-001-25237combo",
+    "title": "CDOT STR 348A-001 (25237Combo) - resurfacing on SH 386 and US 50 with other improvements including a bridge structure replacement on SH 386 for J-04-X.",
+    "slug": "cdot-str-348a-001-25237combo-resurfacing-on-sh-386-and-us-50-with-other-improvements-inclu",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "Delta, Montrose",
+    "trade": "concrete",
+    "agency": "Colorado Department of Transportation",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "CDOT STR 348A-001 (25237Combo) - resurfacing on SH 386 and US 50 with other improvements including a bridge structure replacement on SH 386 for J-04-X.. Project is in Region 3 in Delta and Montrose Counties. Project work consists of the resurfacing on SH 386 and US 50 with other improvements including a bridge structure replacement on SH 386 for J-04-X. Please contact Nathan Jean at 970-210-9578 for all project related questions. All bid solicitation documents are provided through the CDOT B2G system B2G",
+    "requirements": [
+      "Project number: STR 348A-001 (25237Combo)",
+      "Bid letting / due date: 2026-06-18",
+      "CDOT Region 3",
+      "County: Delta, Montrose",
+      "Project contact: Nathan Jean, 970-210-9578",
+      "Bid solicitation documents are provided through CDOT B2G."
+    ],
+    "sourceName": "Colorado Department of Transportation",
+    "sourceUrl": "https://www.codot.gov/business/bidding/future-bidding-opportunities",
+    "sourceLookupInstructions": "Open CDOT Current & Future Bidding Opportunities and search for project number STR 348A-001 (25237Combo). Bid documents are handled through CDOT B2G.",
+    "sourceLookupSteps": [
+      "Open the CDOT Current & Future Bidding Opportunities page.",
+      "Find project number STR 348A-001 (25237Combo).",
+      "Review the bid letting / due date and project description.",
+      "Use CDOT B2G for bid solicitation documents, plans, specifications, revisions, Q&A, and plan holder lists."
+    ],
+    "solicitationRef": "STR 348A-001 (25237Combo)",
+    "solicitationNumber": "STR 348A-001 (25237Combo)",
+    "buyer": "Nathan Jean",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [
+      "bridge/civil"
+    ],
+    "canonicalKey": "str 348a-001 (25237combo)|colorado department of transportation|2026-06-18",
+    "sourceId": "STR 348A-001 (25237Combo)",
+    "matchKeywords": [
+      "cdot",
+      "transportation",
+      "highway",
+      "bridge",
+      "civil",
+      "region 3",
+      "delta, montrose",
+      "str 348a-001 (25237combo)",
+      "bridge/civil"
     ]
   },
   {
@@ -110,6 +641,13 @@
     "postedDate": "2026-05-28",
     "dueDate": "2026-07-08",
     "estimatedValue": "Not listed",
+    "projectType": "electrical-work",
+    "projectTypeLabel": "Electrical Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "electrical"
+    ],
     "summary": "OAAA, 2010, 082519 Fort Collins Emergency Generator. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
@@ -136,6 +674,8 @@
     "matchedTradeKeywords": [
       "generator"
     ],
+    "canonicalKey": "oaaa 2010 082519 fort collins emergency generator|dmva - department of military and veterans affairs|2026-07-08",
+    "sourceId": "",
     "matchKeywords": [
       "electrical",
       "2026000193",
@@ -159,6 +699,13 @@
     "postedDate": "2026-05-28",
     "dueDate": "2026-06-16",
     "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
     "summary": "Tower Replacement - Monarch Pass. Invitation for Bids (IFB1) posted by CDPS - Division of Homeland Security & Emergency Management.",
     "requirements": [
       "Solicitation reference: [IFB1,RFAA,2026000181,5][IFB1-RFAA-2026000181-5]",
@@ -183,6 +730,8 @@
     "buyerEmail": "nancy.guzman@state.co.us",
     "tradeConfidence": "low",
     "matchedTradeKeywords": [],
+    "canonicalKey": "tower replacement monarch pass|cdps - division of homeland security & emergency management|2026-06-16",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "2026000181",
@@ -205,6 +754,13 @@
     "postedDate": "2026-05-27",
     "dueDate": "2026-06-25",
     "estimatedValue": "Not listed",
+    "projectType": "electrical-work",
+    "projectTypeLabel": "Electrical Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "electrical"
+    ],
     "summary": "OAAA, 2010, 082516 Watkins Fire Alarm Replacement. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000192,2][IFB1-OAAA-2026000192-2]",
@@ -231,6 +787,8 @@
     "matchedTradeKeywords": [
       "fire alarm"
     ],
+    "canonicalKey": "oaaa 2010 082516 watkins fire alarm replacement|dmva - department of military and veterans affairs|2026-06-25",
+    "sourceId": "",
     "matchKeywords": [
       "electrical",
       "2026000192",
@@ -254,6 +812,13 @@
     "postedDate": "2026-05-27",
     "dueDate": "2026-06-23",
     "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
     "summary": "PKAA, Walsen Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000499,1][DQ1-PKAA-2026000499-1]",
@@ -278,6 +843,8 @@
     "buyerEmail": "teresa.donaldson@state.co.us",
     "tradeConfidence": "low",
     "matchedTradeKeywords": [],
+    "canonicalKey": "pkaa walsen project|dnr - division of reclamation mining & safety|2026-06-23",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "2026000499",
@@ -300,6 +867,13 @@
     "postedDate": "2026-05-26",
     "dueDate": "2026-06-24",
     "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
     "summary": "PKAA, Madonna Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000470,2][DQ1-PKAA-2026000470-2]",
@@ -324,6 +898,8 @@
     "buyerEmail": "teresa.donaldson@state.co.us",
     "tradeConfidence": "low",
     "matchedTradeKeywords": [],
+    "canonicalKey": "pkaa madonna project|dnr - division of reclamation mining & safety|2026-06-24",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "2026000470",
@@ -346,6 +922,13 @@
     "postedDate": "2026-05-20",
     "dueDate": "2026-06-23",
     "estimatedValue": "Not listed",
+    "projectType": "roofing-work",
+    "projectTypeLabel": "Roofing Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "roofing"
+    ],
     "summary": "OAAA, Roof Repair, BSFB Hangar - Building 801. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000189,1][IFB1-OAAA-2026000189-1]",
@@ -372,6 +955,8 @@
     "matchedTradeKeywords": [
       "roof"
     ],
+    "canonicalKey": "oaaa roof repair bsfb hangar building 801|dmva - department of military and veterans affairs|2026-06-23",
+    "sourceId": "",
     "matchKeywords": [
       "roofing",
       "2026000189",
@@ -395,6 +980,13 @@
     "postedDate": "2026-05-20",
     "dueDate": "2026-06-23",
     "estimatedValue": "Not listed",
+    "projectType": "roofing-work",
+    "projectTypeLabel": "Roofing Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "roofing"
+    ],
     "summary": "OAAA, Roof Repair, BSFB Wing HQ - Building 706. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000191,1][IFB1-OAAA-2026000191-1]",
@@ -421,6 +1013,8 @@
     "matchedTradeKeywords": [
       "roof"
     ],
+    "canonicalKey": "oaaa roof repair bsfb wing hq building 706|dmva - department of military and veterans affairs|2026-06-23",
+    "sourceId": "",
     "matchKeywords": [
       "roofing",
       "2026000191",
@@ -444,6 +1038,13 @@
     "postedDate": "2026-05-19",
     "dueDate": "2026-06-18",
     "estimatedValue": "$3,000,000.00",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
     "summary": "The City and County of Denver Department of Transportation & Infrastructure Wastewater Management Division requires a 3-year long contract to perform wastewater emergency repair construction work. This contract will be utilized on an as-needed basis for multiple emergency repairs. Contract term is three years and the maximum contract amount is $3,000,000.00.",
     "requirements": [
       "Reference number: Contract No. 202684500",
@@ -477,6 +1078,8 @@
       "paving/asphalt",
       "bridge/civil"
     ],
+    "canonicalKey": "2026 emergency wastewater repairs|city and county of denver department of transportation & infrastructure|2026-06-18",
+    "sourceId": "",
     "matchKeywords": [
       "concrete",
       "denver",
@@ -502,6 +1105,14 @@
     "postedDate": "2026-05-14",
     "dueDate": "2026-06-18",
     "estimatedValue": "Not listed",
+    "projectType": "design-services",
+    "projectTypeLabel": "Design Services",
+    "contractorFit": "low",
+    "filterTags": [
+      "design",
+      "consulting",
+      "general"
+    ],
     "summary": "Architectural & Engineering Design Services for: • Blair-Caldwell African American Research Library & Museum Renovation • Montbello Branch Library Renovation • Montbello Civic Center Park Shade Structure",
     "requirements": [
       "Reference number: Solicitation No. 202684399",
@@ -531,6 +1142,8 @@
     "matchedTradeKeywords": [
       "design services"
     ],
+    "canonicalKey": "rfq denver public library branch renovations shade structure|city and county of denver department of transportation & infrastructure|2026-06-18",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "denver",
@@ -554,6 +1167,13 @@
     "postedDate": "2026-05-12",
     "dueDate": "2026-06-23",
     "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
     "summary": "PKAA, Wandering Prospector Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000476,1][DQ1-PKAA-2026000476-1]",
@@ -578,6 +1198,8 @@
     "buyerEmail": "teresa.donaldson@state.co.us",
     "tradeConfidence": "low",
     "matchedTradeKeywords": [],
+    "canonicalKey": "pkaa wandering prospector project|dnr - division of reclamation mining & safety|2026-06-23",
+    "sourceId": "",
     "matchKeywords": [
       "general",
       "2026000476",
@@ -600,6 +1222,13 @@
     "postedDate": "2026-05-05",
     "dueDate": "2026-06-09",
     "estimatedValue": "$985,000.00",
+    "projectType": "electrical-work",
+    "projectTypeLabel": "Electrical Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "electrical"
+    ],
     "summary": "Contractor must maintain, inspect, test, and replace all non-structural traffic signal components, ensuring proper operation of controllers, wiring, indications, detection, preemption, communication, timing, backup power, and luminaires, and verify all equipment, structures, and cabinets are in good condition.",
     "requirements": [
       "Reference number: Contract No. 202684240",
@@ -631,6 +1260,8 @@
       "generator",
       "electrical gear"
     ],
+    "canonicalKey": "traffic signals preventative maintenance cdot intersections|city and county of denver department of transportation & infrastructure|2026-06-09",
+    "sourceId": "",
     "matchKeywords": [
       "electrical",
       "denver",

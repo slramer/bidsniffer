@@ -3,6 +3,8 @@
 // The public listing HTML exposes enough normalized teaser data to create
 // source-linked opportunity records without credentials or page-generation changes.
 
+const fs = require('fs');
+const path = require('path');
 const https = require('https');
 const { URL } = require('url');
 const { classifyTradeDetails } = require('../lib/trade-classifier');
@@ -23,7 +25,11 @@ function request(url, redirectsRemaining = 5) {
       headers: {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
-        'User-Agent': 'BidSnifferBot/0.1 (+https://bidsniffer.com)'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
+        'Referer': 'https://www.bidnetdirect.com/public/solicitations/open',
+        'Upgrade-Insecure-Requests': '1'
       }
     }, res => {
       const status = res.statusCode || 0;
@@ -133,42 +139,74 @@ function parseSolicitationIdFromUrl(url) {
   return extractFirst(url, /searchResultSol_(?:solicitation|notice)_(\d+)/i);
 }
 
+function extractAttr(tag, name) {
+  return extractFirst(tag, new RegExp(`${name}=["']([^"']+)["']`, 'i'));
+}
+
+function parseListingAnchor(tag, block, currentUrl, seen) {
+  const idAttr = extractAttr(tag, 'id');
+  const href = extractAttr(tag, 'href');
+  if (!idAttr || !href || !/searchResultSol_(?:solicitation|notice)_/i.test(idAttr)) return null;
+  if (!/solicitations\/open-bids/i.test(href)) return null;
+
+  const sourceId = extractFirst(idAttr, /searchResultSol_(?:solicitation|notice)_([^"'\s]+)/i);
+  const sourceUrl = absoluteUrl(href, currentUrl);
+  if (seen.has(sourceUrl)) return null;
+
+  const title = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*rowTitle[^"']*["'][^>]*>([\s\S]*?)<\/span>/i))
+    || compactText(extractFirst(block, /<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/i));
+  if (!title) return null;
+
+  seen.add(sourceUrl);
+  const location = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*location[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
+  const postedDate = extractDate(block, 'publicationDate');
+  const dueDate = extractDate(block, 'closingDate');
+  const timeRemaining = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*timeRemaining[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
+  const agencyType = extractAgencyType(block);
+  const solicitationNumber = parseSolicitationIdFromUrl(sourceUrl) || sourceId;
+
+  return {
+    sourceId,
+    sourceUrl,
+    title,
+    location: location || 'Colorado',
+    postedDate: postedDate || todayIso(),
+    dueDate,
+    timeRemaining,
+    agencyType,
+    solicitationNumber,
+    rawText: compactText(block)
+  };
+}
+
 function extractListingRows(html, currentUrl = BASE_URL) {
   const rows = [];
   const seen = new Set();
-  const anchorRe = /<a\b[^>]*id=["']searchResultSol_(?:solicitation|notice)_([^"']+)["'][^>]*href=["']([^"']+)["'][^>]*class=["'][^"']*solicitation-link[^"']*["'][^>]*>([\s\S]*?)<\/a>/gi;
+  const anchorRe = /<a\b([^>]*\b(?:id|href|class)=["'][^"']+["'][^>]*)>([\s\S]*?)<\/a>/gi;
   let match;
 
   while ((match = anchorRe.exec(html)) !== null) {
-    const sourceId = match[1];
-    const sourceUrl = absoluteUrl(match[2], currentUrl);
-    const block = match[3];
-    const title = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*rowTitle[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
-    const location = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*location[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
-    const postedDate = extractDate(block, 'publicationDate');
-    const dueDate = extractDate(block, 'closingDate');
-    const timeRemaining = compactText(extractFirst(block, /<span[^>]*class=["'][^"']*timeRemaining[^"']*["'][^>]*>([\s\S]*?)<\/span>/i));
-    const agencyType = extractAgencyType(block);
-    const solicitationNumber = parseSolicitationIdFromUrl(sourceUrl) || sourceId;
-
-    if (!title || seen.has(sourceUrl)) continue;
-    seen.add(sourceUrl);
-
-    rows.push({
-      sourceId,
-      sourceUrl,
-      title,
-      location: location || 'Colorado',
-      postedDate: postedDate || todayIso(),
-      dueDate,
-      timeRemaining,
-      agencyType,
-      solicitationNumber,
-      rawText: compactText(block)
-    });
+    const tag = match[0].slice(0, match[0].indexOf('>') + 1);
+    const block = match[2];
+    const row = parseListingAnchor(tag, block, currentUrl, seen);
+    if (row) rows.push(row);
   }
 
   return rows;
+}
+
+function writeDebugHtml(response, reason) {
+  if (process.env.BIDNET_DEBUG_HTML !== '1') return;
+  try {
+    const debugDir = path.join(process.cwd(), '.debug');
+    fs.mkdirSync(debugDir, { recursive: true });
+    const safeReason = String(reason || 'unknown').replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+    const filePath = path.join(debugDir, `bidnet-${safeReason}.html`);
+    fs.writeFileSync(filePath, response.body || '', 'utf8');
+    console.warn(`BidNet debug HTML written to ${filePath}`);
+  } catch (err) {
+    console.warn(`BidNet debug HTML write failed: ${err.message}`);
+  }
 }
 
 function inferCity(row) {
@@ -298,12 +336,15 @@ function mapRowToOpportunity(row) {
 async function fetchPage(url) {
   const response = await request(url);
   if (response.statusCode < 200 || response.statusCode >= 300) {
+    writeDebugHtml(response, `http-${response.statusCode}`);
     throw new Error(`BidNet GET failed with status ${response.statusCode} for ${url}`);
   }
   return response;
 }
 
 async function fetchOpportunities() {
+  module.exports.replaceExisting = false;
+
   const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 6;
   const records = [];
   const visited = new Set();
@@ -311,15 +352,29 @@ async function fetchOpportunities() {
 
   for (let page = 0; page < maxPages && nextUrl && !visited.has(nextUrl); page += 1) {
     visited.add(nextUrl);
-    const response = await fetchPage(nextUrl);
+    let response;
+
+    try {
+      response = await fetchPage(nextUrl);
+    } catch (err) {
+      console.warn(`BidNet skipped after request failure: ${err.message}`);
+      return records;
+    }
+
     const rows = extractListingRows(response.body, response.finalUrl);
 
-    if (!rows.length && page === 0) {
-      throw new Error('BidNet first page loaded but no solicitation rows were parsed.');
+    if (!rows.length) {
+      writeDebugHtml(response, page === 0 ? 'no-rows-first-page' : `no-rows-page-${page + 1}`);
+      console.warn(`BidNet page ${page + 1} loaded but no solicitation rows were parsed; keeping existing BidNet records.`);
+      return records;
     }
 
     records.push(...rows.map(mapRowToOpportunity));
     nextUrl = extractNextUrl(response.body, response.finalUrl);
+  }
+
+  if (records.length > 0) {
+    module.exports.replaceExisting = true;
   }
 
   return records;
@@ -329,7 +384,7 @@ module.exports = {
   name: 'bidnet',
   sourceName: SOURCE_NAME,
   sourceUrl: START_URL,
-  replaceExisting: true,
+  replaceExisting: false,
   fetchOpportunities,
   _test: {
     extractListingRows,
