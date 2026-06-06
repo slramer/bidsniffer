@@ -17,8 +17,20 @@ function request(url, redirectsRemaining = 5) {
     const req = https.request(url, {
       method: 'GET',
       headers: {
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'User-Agent': 'BidSnifferBot/0.1 (+https://bidsniffer.com)'
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Accept-Encoding': 'identity',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Cache-Control': 'no-cache',
+        'Connection': 'close',
+        'DNT': '1',
+        'Pragma': 'no-cache',
+        'Referer': `${BASE_URL}/`,
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0'
       }
     }, res => {
       const status = res.statusCode || 0;
@@ -278,6 +290,11 @@ function mapRow(row) {
 
 async function fetchOpportunities() {
   const response = await request(OPEN_PROJECTS_URL);
+
+  if (response.statusCode === 403) {
+    console.warn('rtd: RTD OpenGov returned HTTP 403; skipping RTD for this run.');
+    return [];
+  }
 
   if (response.statusCode < 200 || response.statusCode >= 300) {
     throw new Error(`RTD OpenGov returned HTTP ${response.statusCode}`);
