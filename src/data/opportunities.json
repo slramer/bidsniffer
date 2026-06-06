@@ -5646,6 +5646,59 @@
     ]
   },
   {
+    "id": "bidnet-8845276862",
+    "title": "2026 Emergency Wastewater Repairs",
+    "slug": "2026-emergency-wastewater-repairs-0000422670",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Member Agency Bids",
+    "postedDate": "2026-05-19",
+    "dueDate": "2026-06-18",
+    "estimatedValue": "Not listed",
+    "projectType": "general-construction",
+    "projectTypeLabel": "General Construction",
+    "contractorFit": "medium",
+    "filterTags": [
+      "construction",
+      "general",
+      "member agency bids"
+    ],
+    "summary": "2026 Emergency Wastewater Repairs. Member Agency Bids listed on BidNet Direct for Colorado construction opportunities.",
+    "requirements": [
+      "BidNet category: Member Agency Bids",
+      "Published: 2026-05-19",
+      "Closing: 2026-06-18",
+      "Time remaining: 12 day(s) left",
+      "BidNet reference: 0000422670"
+    ],
+    "sourceName": "BidNet Direct",
+    "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Emergency-Wastewater-Repairs/0000422670?origin=0",
+    "sourceLookupInstructions": "Open BidNet Direct and use the direct source link, or search BidNet for reference 0000422670.",
+    "sourceLookupSteps": [
+      "Open BidNet Direct open solicitations.",
+      "Filter to Colorado and Construction if needed.",
+      "Search or locate reference 0000422670.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "0000422670",
+    "solicitationNumber": "0000422670",
+    "buyer": "",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "2026 emergency wastewater repairs|member agency bids|2026-06-18",
+    "sourceId": "8845276862",
+    "matchKeywords": [
+      "general",
+      "bidnet",
+      "colorado",
+      "member agency bids",
+      "0000422670"
+    ]
+  },
+  {
     "id": "denver-202684500",
     "title": "2026 Emergency Wastewater Repairs",
     "slug": "2026-emergency-wastewater-repairs-202684500",
@@ -5710,59 +5763,6 @@
       "flatwork",
       "paving/asphalt",
       "bridge/civil"
-    ]
-  },
-  {
-    "id": "bidnet-8845276862",
-    "title": "2026 Emergency Wastewater Repairs",
-    "slug": "2026-emergency-wastewater-repairs-0000422670",
-    "state": "colorado",
-    "city": "Colorado",
-    "county": "",
-    "trade": "general",
-    "agency": "Member Agency Bids",
-    "postedDate": "2026-05-19",
-    "dueDate": "2026-06-18",
-    "estimatedValue": "Not listed",
-    "projectType": "general-construction",
-    "projectTypeLabel": "General Construction",
-    "contractorFit": "medium",
-    "filterTags": [
-      "construction",
-      "general",
-      "member agency bids"
-    ],
-    "summary": "2026 Emergency Wastewater Repairs. Member Agency Bids listed on BidNet Direct for Colorado construction opportunities.",
-    "requirements": [
-      "BidNet category: Member Agency Bids",
-      "Published: 2026-05-19",
-      "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
-      "BidNet reference: 0000422670"
-    ],
-    "sourceName": "BidNet Direct",
-    "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Emergency-Wastewater-Repairs/0000422670?origin=0",
-    "sourceLookupInstructions": "Open BidNet Direct and use the direct source link, or search BidNet for reference 0000422670.",
-    "sourceLookupSteps": [
-      "Open BidNet Direct open solicitations.",
-      "Filter to Colorado and Construction if needed.",
-      "Search or locate reference 0000422670.",
-      "Open the matching solicitation record."
-    ],
-    "solicitationRef": "0000422670",
-    "solicitationNumber": "0000422670",
-    "buyer": "",
-    "buyerEmail": "",
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": [],
-    "canonicalKey": "2026 emergency wastewater repairs|member agency bids|2026-06-18",
-    "sourceId": "8845276862",
-    "matchKeywords": [
-      "general",
-      "bidnet",
-      "colorado",
-      "member agency bids",
-      "0000422670"
     ]
   },
   {
