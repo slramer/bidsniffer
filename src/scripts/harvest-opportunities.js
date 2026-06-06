@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { classifyTradeDetails } = require('../lib/trade-classifier');
 
 const connectors = [
   require('../sources/colorado-vss'),
@@ -10,8 +11,6 @@ const connectors = [
 
 const SRC_DATA_PATH = path.join(__dirname, '../data/opportunities.json');
 const PUBLIC_DATA_PATH = path.join(__dirname, '../../public/data/opportunities.json');
-
-const VALID_TRADES = new Set(['roofing', 'hvac', 'electrical', 'concrete', 'general']);
 
 function readJson(filePath, fallback = []) {
   try {
@@ -40,27 +39,21 @@ function todayIso() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function inferTrade(raw) {
-  const text = [raw.trade, raw.title, raw.summary, raw.description, raw.scope]
-    .filter(Boolean)
-    .join(' ')
-    .toLowerCase();
-
-  if (/roof|membrane|flashing|shingle/.test(text)) return 'roofing';
-  if (/hvac|mechanical|boiler|chiller|controls|air handler/.test(text)) return 'hvac';
-  if (/electrical|lighting|panel|conduit|service upgrade/.test(text)) return 'electrical';
-  if (/concrete|sidewalk|curb|gutter|flatwork|paving/.test(text)) return 'concrete';
-
-  return VALID_TRADES.has(String(raw.trade || '').toLowerCase())
-    ? String(raw.trade).toLowerCase()
-    : '';
+function mergeKeywords(...groups) {
+  return Array.from(new Set(
+    groups
+      .flat()
+      .filter(Boolean)
+      .map(value => String(value).toLowerCase())
+  ));
 }
 
 function normalizeOpportunity(raw, connector) {
   const title = raw.title || raw.name || raw.projectTitle || 'Untitled Opportunity';
   const sourceUrl = raw.sourceUrl || raw.url || raw.link || connector.sourceUrl || '';
   const postedDate = raw.postedDate || raw.postDate || raw.publishedDate || todayIso();
-  const trade = inferTrade(raw) || 'general';
+  const classification = classifyTradeDetails(raw, { fallbackTrade: raw.trade });
+  const trade = classification.trade || 'general';
 
   return {
     id: raw.id || slugify(`${connector.name}-${title}-${postedDate}`),
@@ -84,9 +77,13 @@ function normalizeOpportunity(raw, connector) {
     solicitationNumber: raw.solicitationNumber || raw.solicitationId || raw.documentNumber || '',
     buyer: raw.buyer || raw.buyerName || '',
     buyerEmail: raw.buyerEmail || raw.contactEmail || '',
+    tradeConfidence: raw.tradeConfidence || classification.confidence,
+    matchedTradeKeywords: Array.isArray(raw.matchedTradeKeywords)
+      ? raw.matchedTradeKeywords
+      : classification.matchedKeywords,
     matchKeywords: Array.isArray(raw.matchKeywords)
-      ? raw.matchKeywords
-      : [trade, raw.city, raw.county, raw.agency].filter(Boolean).map(x => String(x).toLowerCase())
+      ? mergeKeywords(raw.matchKeywords, classification.matchedKeywords)
+      : mergeKeywords([trade, raw.city, raw.county, raw.agency], classification.matchedKeywords)
   };
 }
 

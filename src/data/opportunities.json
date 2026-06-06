@@ -14,6 +14,7 @@
     "summary": "FRCC Facilities Master Plan. Request for Qualifications (RFQ1) posted by Front Range Community College.",
     "requirements": [
       "Solicitation reference: [RFQ1,GJEA,2026000042,1][RFQ1-GJEA-2026000042-1]",
+      "Solicitation number: 2026000042",
       "Request for Qualifications (RFQ1)",
       "Status code: O",
       "Buyer: Shari Browder",
@@ -23,6 +24,7 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "general",
+      "2026000042",
       "rfq1",
       "request for qualifications (rfq1)",
       "front range community college",
@@ -39,7 +41,9 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000042 in the keyword/search field.",
       "Open the matching solicitation record."
-    ]
+    ],
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": []
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000193-1",
@@ -56,6 +60,7 @@
     "summary": "OAAA, 2010, 082519 Fort Collins Emergency Generator. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
+      "Solicitation number: 2026000193",
       "Invitation for Bids (IFB1)",
       "Status code: O",
       "Buyer: Kimberlie Smith",
@@ -65,11 +70,13 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "electrical",
+      "2026000193",
       "ifb1",
       "invitation for bids (ifb1)",
       "dmva - department of military and veterans affairs",
       "kimberlie smith",
-      "kimberlie.smith@dmva.state.co.us"
+      "kimberlie.smith@dmva.state.co.us",
+      "generator"
     ],
     "solicitationRef": "[IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
     "solicitationNumber": "2026000193",
@@ -81,6 +88,10 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000193 in the keyword/search field.",
       "Open the matching solicitation record."
+    ],
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "generator"
     ]
   },
   {
@@ -98,6 +109,7 @@
     "summary": "Tower Replacement - Monarch Pass. Invitation for Bids (IFB1) posted by CDPS - Division of Homeland Security & Emergency Management.",
     "requirements": [
       "Solicitation reference: [IFB1,RFAA,2026000181,5][IFB1-RFAA-2026000181-5]",
+      "Solicitation number: 2026000181",
       "Invitation for Bids (IFB1)",
       "Status code: M",
       "Buyer: Nancy Guzman",
@@ -107,6 +119,7 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "general",
+      "2026000181",
       "ifb1",
       "invitation for bids (ifb1)",
       "cdps - division of homeland security & emergency management",
@@ -123,7 +136,9 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000181 in the keyword/search field.",
       "Open the matching solicitation record."
-    ]
+    ],
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": []
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000192-2",
@@ -140,6 +155,7 @@
     "summary": "OAAA, 2010, 082516 Watkins Fire Alarm Replacement. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000192,2][IFB1-OAAA-2026000192-2]",
+      "Solicitation number: 2026000192",
       "Invitation for Bids (IFB1)",
       "Status code: M",
       "Buyer: Kimberlie Smith",
@@ -149,11 +165,13 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "electrical",
+      "2026000192",
       "ifb1",
       "invitation for bids (ifb1)",
       "dmva - department of military and veterans affairs",
       "kimberlie smith",
-      "kimberlie.smith@dmva.state.co.us"
+      "kimberlie.smith@dmva.state.co.us",
+      "fire alarm"
     ],
     "solicitationRef": "[IFB1,OAAA,2026000192,2][IFB1-OAAA-2026000192-2]",
     "solicitationNumber": "2026000192",
@@ -165,6 +183,10 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000192 in the keyword/search field.",
       "Open the matching solicitation record."
+    ],
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "fire alarm"
     ]
   },
   {
@@ -182,6 +204,7 @@
     "summary": "PKAA, Walsen Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000499,1][DQ1-PKAA-2026000499-1]",
+      "Solicitation number: 2026000499",
       "Documented Quote (DQ1)",
       "Status code: O",
       "Buyer: Teresa Donaldson",
@@ -191,6 +214,7 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "general",
+      "2026000499",
       "dq1",
       "documented quote (dq1)",
       "dnr - division of reclamation mining & safety",
@@ -207,7 +231,9 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000499 in the keyword/search field.",
       "Open the matching solicitation record."
-    ]
+    ],
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": []
   },
   {
     "id": "colorado-vss-dq1-pkaa-2026000470-2",
@@ -224,6 +250,7 @@
     "summary": "PKAA, Madonna Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000470,2][DQ1-PKAA-2026000470-2]",
+      "Solicitation number: 2026000470",
       "Documented Quote (DQ1)",
       "Status code: M",
       "Buyer: Teresa Donaldson",
@@ -233,6 +260,7 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "general",
+      "2026000470",
       "dq1",
       "documented quote (dq1)",
       "dnr - division of reclamation mining & safety",
@@ -249,7 +277,9 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000470 in the keyword/search field.",
       "Open the matching solicitation record."
-    ]
+    ],
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": []
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000189-1",
@@ -266,6 +296,7 @@
     "summary": "OAAA, Roof Repair, BSFB Hangar - Building 801. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000189,1][IFB1-OAAA-2026000189-1]",
+      "Solicitation number: 2026000189",
       "Invitation for Bids (IFB1)",
       "Status code: O",
       "Buyer: dana stansbury",
@@ -275,11 +306,13 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "roofing",
+      "2026000189",
       "ifb1",
       "invitation for bids (ifb1)",
       "dmva - department of military and veterans affairs",
       "dana stansbury",
-      "dana.stansbury@dmva.state.co.us"
+      "dana.stansbury@dmva.state.co.us",
+      "roof"
     ],
     "solicitationRef": "[IFB1,OAAA,2026000189,1][IFB1-OAAA-2026000189-1]",
     "solicitationNumber": "2026000189",
@@ -291,6 +324,10 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000189 in the keyword/search field.",
       "Open the matching solicitation record."
+    ],
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "roof"
     ]
   },
   {
@@ -308,6 +345,7 @@
     "summary": "OAAA, Roof Repair, BSFB Wing HQ - Building 706. Invitation for Bids (IFB1) posted by DMVA - Department of Military and Veterans Affairs.",
     "requirements": [
       "Solicitation reference: [IFB1,OAAA,2026000191,1][IFB1-OAAA-2026000191-1]",
+      "Solicitation number: 2026000191",
       "Invitation for Bids (IFB1)",
       "Status code: O",
       "Buyer: dana stansbury",
@@ -317,11 +355,13 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "roofing",
+      "2026000191",
       "ifb1",
       "invitation for bids (ifb1)",
       "dmva - department of military and veterans affairs",
       "dana stansbury",
-      "dana.stansbury@dmva.state.co.us"
+      "dana.stansbury@dmva.state.co.us",
+      "roof"
     ],
     "solicitationRef": "[IFB1,OAAA,2026000191,1][IFB1-OAAA-2026000191-1]",
     "solicitationNumber": "2026000191",
@@ -333,6 +373,10 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000191 in the keyword/search field.",
       "Open the matching solicitation record."
+    ],
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "roof"
     ]
   },
   {
@@ -350,6 +394,7 @@
     "summary": "PKAA, Wandering Prospector Project. Documented Quote (DQ1) posted by DNR - Division of Reclamation Mining & Safety.",
     "requirements": [
       "Solicitation reference: [DQ1,PKAA,2026000476,1][DQ1-PKAA-2026000476-1]",
+      "Solicitation number: 2026000476",
       "Documented Quote (DQ1)",
       "Status code: O",
       "Buyer: Teresa Donaldson",
@@ -359,6 +404,7 @@
     "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
     "matchKeywords": [
       "general",
+      "2026000476",
       "dq1",
       "documented quote (dq1)",
       "dnr - division of reclamation mining & safety",
@@ -375,6 +421,8 @@
       "Click \"View Published Solicitations.\"",
       "Enter 2026000476 in the keyword/search field.",
       "Open the matching solicitation record."
-    ]
+    ],
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": []
   }
 ]

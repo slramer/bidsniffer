@@ -7,6 +7,7 @@
 // The initial GET already exposes session_info in moInitialResponse.
 
 const https = require('https');
+const { classifyTradeDetails } = require('../lib/trade-classifier');
 
 const BASE_URL = 'https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4';
 const CATEGORY_CONSTRUCTION = '22';
@@ -76,19 +77,8 @@ function slugSafe(value) {
     .slice(0, 90);
 }
 
-function classifyTrade(row) {
-  const text = [
-    row.DOC_DSCR,
-    row.DEPT_NM,
-    row.DOC_CD_CONCAT
-  ].filter(Boolean).join(' ').toLowerCase();
-
-  if (/roof|roofing|membrane|flashing|shingle/.test(text)) return 'roofing';
-  if (/hvac|mechanical|boiler|chiller|controls|air handler/.test(text)) return 'hvac';
-  if (/electrical|generator|fire alarm|alarm|lighting|panel|conduit|service upgrade/.test(text)) return 'electrical';
-  if (/concrete|sidewalk|curb|gutter|flatwork|paving|asphalt/.test(text)) return 'concrete';
-
-  return 'general';
+function classifyVssTrade(row) {
+  return classifyTradeDetails(row);
 }
 
 function docRefSlug(docRef) {
@@ -181,7 +171,8 @@ function mapRow(row) {
   const solicitationNumber = extractSolicitationNumber(docRef);
   const postedDate = epochToDate(row.PUB_DT);
   const dueDate = epochToDate(row.SO_CLSNG_DT_TM);
-  const trade = classifyTrade(row);
+  const tradeClassification = classifyVssTrade(row);
+  const trade = tradeClassification.trade;
 
   return {
     id: `colorado-vss-${docSlug || slugSafe(title)}`,
@@ -201,6 +192,8 @@ function mapRow(row) {
     solicitationNumber,
     buyer: row.BUYR_NM || '',
     buyerEmail: row.BUYR_EMAIL_AD || '',
+    tradeConfidence: tradeClassification.confidence,
+    matchedTradeKeywords: tradeClassification.matchedKeywords,
     sourceLookupInstructions: solicitationNumber
       ? `Open Colorado VSS, choose "View Published Solicitations," then search for solicitation number ${solicitationNumber}.`
       : 'Open Colorado VSS, choose "View Published Solicitations," then search by the solicitation reference shown below.',
@@ -227,7 +220,8 @@ function mapRow(row) {
       row.DOC_CD_CONCAT,
       row.DEPT_NM,
       row.BUYR_NM,
-      row.BUYR_EMAIL_AD
+      row.BUYR_EMAIL_AD,
+      ...tradeClassification.matchedKeywords
     ].filter(Boolean).map(x => String(x).toLowerCase())
   };
 }
