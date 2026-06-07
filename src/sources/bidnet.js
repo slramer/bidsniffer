@@ -16,7 +16,61 @@ const DEFAULT_LOCATION_ID = '49'; // Colorado
 const DEFAULT_CATEGORY_ID = '320204'; // Construction
 const DEFAULT_MAX_PAGES = Number(process.env.BIDNET_MAX_PAGES || 6);
 const DEFAULT_PAGE_DELAY_MS = Number(process.env.BIDNET_PAGE_DELAY_MS || 750);
-const START_URL = process.env.BIDNET_START_URL || `${BASE_URL}/public/solicitations/open?keywords=&searchContentGroupId=&publishDate=&solSearchStatus=openSolicitationsTab&sortBy=&sortDirection=&pageNumberSelect=1&category=${DEFAULT_CATEGORY_ID}&location=${DEFAULT_LOCATION_ID}`;
+function bidnetSearchUrl({ keywords = '', category = '', page = 1 } = {}) {
+  const params = new URLSearchParams({
+    keywords,
+    searchContentGroupId: '',
+    publishDate: '',
+    solSearchStatus: 'openSolicitationsTab',
+    sortBy: '',
+    sortDirection: '',
+    pageNumberSelect: String(page),
+    location: DEFAULT_LOCATION_ID
+  });
+  if (category) params.set('category', category);
+  return `${BASE_URL}/public/solicitations/open?${params.toString()}`;
+}
+
+const CONTRACTOR_KEYWORD_SEARCHES = [
+  '',
+  'hvac',
+  'plumbing',
+  'electrical',
+  'generator',
+  'fire alarm',
+  'security camera',
+  'access control',
+  'landscaping',
+  'irrigation',
+  'fencing',
+  'painting',
+  'flooring',
+  'snow removal',
+  'janitorial',
+  'maintenance',
+  'repair',
+  'replacement'
+];
+
+function defaultStartUrls() {
+  if (process.env.BIDNET_START_URLS) {
+    return process.env.BIDNET_START_URLS
+      .split(/\s*[,\n]\s*/)
+      .map(value => value.trim())
+      .filter(Boolean);
+  }
+
+  if (process.env.BIDNET_START_URL) return [process.env.BIDNET_START_URL];
+
+  const urls = [bidnetSearchUrl({ category: DEFAULT_CATEGORY_ID })];
+  for (const keyword of CONTRACTOR_KEYWORD_SEARCHES.filter(Boolean)) {
+    urls.push(bidnetSearchUrl({ keywords: keyword }));
+  }
+  return urls;
+}
+
+const START_URLS = defaultStartUrls();
+const START_URL = START_URLS[0];
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -340,26 +394,25 @@ async function fetchPage(url, pageLabel) {
   return response;
 }
 
-async function fetchOpportunities() {
-  const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 6;
+async function harvestStartUrl(startUrl, maxPages) {
   const records = [];
   const visited = new Set();
-  let nextUrl = START_URL;
+  let nextUrl = startUrl;
   let expectedCount = 0;
 
   for (let page = 1; page <= maxPages && nextUrl && !visited.has(nextUrl); page += 1) {
     visited.add(nextUrl);
     if (page > 1) await sleep(DEFAULT_PAGE_DELAY_MS);
 
-    const response = await fetchPage(nextUrl, `page-${page}`);
+    const response = await fetchPage(nextUrl, `page-${page}-${Math.abs(hashString(startUrl))}`);
     const rows = extractListingRows(response.body, response.finalUrl);
 
     if (page === 1) expectedCount = extractResultCount(response.body);
 
     if (!rows.length) {
       const message = page === 1
-        ? 'BidNet first page loaded but no solicitation rows were parsed; skipping BidNet for this run and preserving existing records.'
-        : `BidNet page ${page} loaded but no solicitation rows were parsed; stopping BidNet pagination.`;
+        ? `BidNet first page loaded but no solicitation rows were parsed for ${startUrl}; skipping this BidNet search.`
+        : `BidNet page ${page} loaded but no solicitation rows were parsed; stopping BidNet pagination for ${startUrl}.`;
       console.warn(message);
       break;
     }
@@ -369,10 +422,40 @@ async function fetchOpportunities() {
   }
 
   if (expectedCount && records.length && records.length < Math.min(expectedCount, maxPages * 20)) {
-    console.warn(`BidNet harvested ${records.length} of ${expectedCount} listed results. Pagination may have stopped early.`);
+    console.warn(`BidNet harvested ${records.length} of ${expectedCount} listed results for ${startUrl}. Pagination may have stopped early.`);
   }
 
   return records;
+}
+
+function hashString(value) {
+  let hash = 0;
+  for (const char of String(value || '')) {
+    hash = ((hash << 5) - hash) + char.charCodeAt(0);
+    hash |= 0;
+  }
+  return hash;
+}
+
+async function fetchOpportunities() {
+  const maxPages = Number.isFinite(DEFAULT_MAX_PAGES) && DEFAULT_MAX_PAGES > 0 ? DEFAULT_MAX_PAGES : 6;
+  const allRecords = [];
+  const seenIds = new Set();
+
+  for (const startUrl of START_URLS) {
+    if (allRecords.length) await sleep(DEFAULT_PAGE_DELAY_MS);
+    const records = await harvestStartUrl(startUrl, maxPages);
+    console.log(`bidnet search: ${records.length} raw records from ${startUrl}`);
+
+    for (const record of records) {
+      const key = record.sourceId || record.sourceUrl || record.canonicalKey || record.title;
+      if (!key || seenIds.has(key)) continue;
+      seenIds.add(key);
+      allRecords.push(record);
+    }
+  }
+
+  return allRecords;
 }
 
 module.exports = {

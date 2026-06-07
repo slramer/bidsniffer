@@ -499,3 +499,7 @@ Cross-source dedupe also normalizes common solicitation prefixes such as "Reques
 ## CivicEngage special district expansion
 
 The CivicEngage platform connector now includes additional Colorado contractor-heavy bid pages, including Pueblo West Metropolitan District, Fort Morgan, and Montrose County. These were added because they currently expose contractor-relevant water, wastewater, airport, and public works opportunities through public `Bids.aspx` pages. Some bid documents may still route through BidNet/RMEPS, but the public CivicEngage pages provide useful direct metadata and are de-duplicated against existing sources during harvest.
+
+
+## BidNet Contractor Expansion
+BidNet can now harvest multiple Colorado contractor-friendly keyword searches in addition to the base construction category. Use BIDNET_START_URLS to override the default search set when bot protection or CI behavior requires narrower runs.
