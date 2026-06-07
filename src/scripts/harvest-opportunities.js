@@ -6,8 +6,9 @@ const connectors = [
   require('../sources/colorado-vss'),
   require('../sources/cdot'),
   require('../sources/denver'),
-  //require('../sources/bidnet'),
+  require('../sources/bidnet'),
   require('../sources/colorado-bid-network'),
+  require('../sources/opengov'),
   require('../sources/school-districts'),
   require('../sources/rtd.js')
 ];
@@ -191,7 +192,17 @@ function canonicalKey(item) {
   return [title, agency, dueDate].join('|');
 }
 
-function dedupeKey(item) {
+function normalizeDedupeText(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\b(?:rfp|rfq|ifb|bid|solicitation|project|construction)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function primaryDedupeKey(item) {
   return item.id || item.canonicalKey || [
     item.sourceUrl || '',
     String(item.title || '').toLowerCase().trim(),
@@ -199,38 +210,116 @@ function dedupeKey(item) {
   ].join('|');
 }
 
+function contentDedupeKey(item) {
+  const title = normalizeDedupeText(item.title);
+  const dueDate = String(item.dueDate || '').slice(0, 10);
+
+  // Avoid merging vague records like "Roof Replacement" or "Concrete Services"
+  // across unrelated agencies. This secondary key is meant to catch the common
+  // cross-source duplicate case where BidNet, VSS, Denver, etc. publish the
+  // same named opportunity with the same due date.
+  if (!title || title.length < 18 || !dueDate) return '';
+  return `content:${title}|${dueDate}`;
+}
+
+function mergeArrays(...groups) {
+  return Array.from(new Set(groups.flat().filter(Boolean)));
+}
+
+function sourceQualityScore(item = {}) {
+  let score = 0;
+  if (item.buyerEmail) score += 8;
+  if (item.buyer) score += 4;
+  if (item.solicitationNumber) score += 3;
+  if (item.sourceLookupInstructions) score += 2;
+  if (Array.isArray(item.sourceLookupSteps) && item.sourceLookupSteps.length) score += 2;
+  if (Array.isArray(item.requirements) && item.requirements.length) score += 2;
+  if (String(item.sourceName || '').toLowerCase().includes('bidnet')) score -= 3;
+  return score;
+}
+
+function mergeOpportunityRecords(a, b) {
+  const preferred = sourceQualityScore(b) >= sourceQualityScore(a) ? b : a;
+  const fallback = preferred === b ? a : b;
+
+  return {
+    ...fallback,
+    ...preferred,
+    requirements: mergeArrays(fallback.requirements || [], preferred.requirements || []),
+    sourceLookupSteps: mergeArrays(fallback.sourceLookupSteps || [], preferred.sourceLookupSteps || []),
+    matchedTradeKeywords: mergeKeywords(fallback.matchedTradeKeywords || [], preferred.matchedTradeKeywords || []),
+    matchKeywords: mergeKeywords(fallback.matchKeywords || [], preferred.matchKeywords || []),
+    buyer: preferred.buyer || fallback.buyer || '',
+    buyerEmail: preferred.buyerEmail || fallback.buyerEmail || '',
+    sourceId: preferred.sourceId || fallback.sourceId || '',
+    sourceUrl: preferred.sourceUrl || fallback.sourceUrl || '',
+    solicitationRef: preferred.solicitationRef || fallback.solicitationRef || '',
+    solicitationNumber: preferred.solicitationNumber || fallback.solicitationNumber || '',
+    lastSeenAt: [fallback.lastSeenAt, preferred.lastSeenAt].filter(Boolean).sort().pop() || new Date().toISOString()
+  };
+}
+
 function mergeOpportunities(existing, incoming, replaceSourceNames = []) {
   const replaceSet = new Set(replaceSourceNames.filter(Boolean));
-  const byKey = new Map();
+  const records = [];
+  const byPrimaryKey = new Map();
+  const byContentKey = new Map();
+
+  function indexRecord(index, item) {
+    byPrimaryKey.set(primaryDedupeKey(item), index);
+    const secondaryKey = contentDedupeKey(item);
+    if (secondaryKey) byContentKey.set(secondaryKey, index);
+  }
+
+  function findDuplicateIndex(item) {
+    const primaryKey = primaryDedupeKey(item);
+    const secondaryKey = contentDedupeKey(item);
+    if (byPrimaryKey.has(primaryKey)) return byPrimaryKey.get(primaryKey);
+    if (secondaryKey && byContentKey.has(secondaryKey)) return byContentKey.get(secondaryKey);
+    return -1;
+  }
 
   for (const item of existing) {
     if (replaceSet.has(item.sourceName)) continue;
-    byKey.set(dedupeKey(item), item);
+
+    const duplicateIndex = findDuplicateIndex(item);
+    if (duplicateIndex >= 0) {
+      records[duplicateIndex] = mergeOpportunityRecords(records[duplicateIndex], item);
+      indexRecord(duplicateIndex, records[duplicateIndex]);
+    } else {
+      const index = records.length;
+      records.push(item);
+      indexRecord(index, item);
+    }
   }
 
+  const existingAfterCleanup = records.length;
   let added = 0;
   let updated = 0;
 
   for (const item of incoming) {
-    const key = dedupeKey(item);
-    if (byKey.has(key)) {
-      byKey.set(key, { ...byKey.get(key), ...item });
+    const duplicateIndex = findDuplicateIndex(item);
+    if (duplicateIndex >= 0) {
+      records[duplicateIndex] = mergeOpportunityRecords(records[duplicateIndex], item);
+      indexRecord(duplicateIndex, records[duplicateIndex]);
       updated += 1;
     } else {
-      byKey.set(key, item);
+      const index = records.length;
+      records.push(item);
+      indexRecord(index, item);
       added += 1;
     }
   }
 
-  const mergedBeforeCleanup = Array.from(byKey.values());
+  const mergedBeforeCleanup = records;
   const expiredRemoved = mergedBeforeCleanup.filter(isExpiredOpportunity).length;
 
   const merged = mergedBeforeCleanup
-    .filter(item => !isExpiredOpportunity(item)) // current behavior; future roadmap can retain expired items and mark status=expired using lastSeenAt
+    .filter(item => !isExpiredOpportunity(item))
     .map(item => ({ ...item, ...urgencyFromDueDate(item.dueDate) }))
     .sort((a, b) => String(b.postedDate || '').localeCompare(String(a.postedDate || '')) || String(a.title).localeCompare(String(b.title)));
 
-  return { merged, added, updated, expiredRemoved };
+  return { merged, added, updated, expiredRemoved, existingDeduped: existing.length - existingAfterCleanup };
 }
 
 async function main() {
@@ -257,11 +346,11 @@ async function main() {
     }
   }
 
-  const { merged, added, updated, expiredRemoved } = mergeOpportunities(existing, incoming, replaceSourceNames);
+  const { merged, added, updated, expiredRemoved, existingDeduped } = mergeOpportunities(existing, incoming, replaceSourceNames);
   writeJson(SRC_DATA_PATH, merged);
   writeJson(PUBLIC_DATA_PATH, merged);
 
-  console.log(`Harvest complete. Added: ${added}. Updated: ${updated}. Expired removed: ${expiredRemoved}. Total: ${merged.length}.`);
+  console.log(`Harvest complete. Added: ${added}. Updated: ${updated}. Existing duplicates collapsed: ${existingDeduped}. Expired removed: ${expiredRemoved}. Total: ${merged.length}.`);
 }
 
 main().catch(err => {

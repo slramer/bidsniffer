@@ -74,6 +74,7 @@ type Opportunity = {
   postedDate: string;
   dueDate: string;
   lastUpdated: string;
+  lastSeenAt: string;
 
   // Financials
   value: string;
@@ -198,6 +199,26 @@ Planned
 * Direct
 
 ---
+
+
+## OpenGov Colorado Procurement
+
+### Status
+
+Live / newly added
+
+### Type
+
+* Platform connector
+
+### Initial Target
+
+* Pueblo OpenGov Procurement portal
+
+### Notes
+
+* Uses the public embedded OpenGov project-list page rather than the normal portal page, because normal portal routes can return HTTP 403 in scraper-like environments.
+* Designed to expand by adding more Colorado OpenGov portal slugs after each agency is verified for non-BidNet/RMES inventory.
 
 ## School Districts
 
@@ -418,21 +439,24 @@ Match scores appear only in contractor profile views.
 * AI project sizing
 * Historical award intelligence
 
-
 ---
 
 # Opportunity Lifecycle
 
-Additional metadata:
-
-```ts
-lastSeenAt: string;
-```
-
-Harvesters should update `lastSeenAt` every time an opportunity is observed.
+Harvesters update `lastSeenAt` every time an opportunity is observed.
 
 Future enhancement:
 
 * Mark opportunities as expired instead of deleting them.
-* Expire when dueDate has passed or the opportunity has not been seen for a configurable period.
-* Preserve historical opportunities for SEO and analytics.
+* Expire when `dueDate` has passed or when an opportunity has not been seen for a configurable period.
+* Preserve historical opportunities for SEO and analytics while keeping active search results clean.
+
+## Dedupe Strategy
+
+Harvesting now uses two duplicate checks:
+
+1. A primary key from the source record id/canonical key/source URL.
+2. A secondary content key based on normalized title + due date.
+
+The secondary key catches cross-source duplicates where the same opportunity appears in BidNet, Colorado VSS, Denver, OpenGov, or another direct agency source with different source-specific IDs or agency labels. Very short/vague titles are excluded from the secondary key to avoid merging unrelated opportunities like generic roof or concrete projects.
+
