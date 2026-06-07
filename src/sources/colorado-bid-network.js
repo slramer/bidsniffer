@@ -124,6 +124,57 @@ function parseDateToIso(value = '') {
   return Number.isNaN(parsed) ? '' : new Date(parsed).toISOString().slice(0, 10);
 }
 
+function todayIso() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function isPastDue(dueDate) {
+  return Boolean(dueDate) && dueDate < todayIso();
+}
+
+function isBrandingTitle(title = '') {
+  return /^colorado\s+bid\s+network$/i.test(String(title).trim());
+}
+
+function recordText(record = {}) {
+  return [
+    record.title,
+    record.summary,
+    record.description,
+    record.scope,
+    record.agency,
+    record.buyer,
+    Array.isArray(record.requirements) ? record.requirements.join(' ') : ''
+  ].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+}
+
+function isInformationalOnly(record = {}) {
+  const text = recordText(record).toLowerCase();
+  return /\b(?:courtesy\s+post|for\s+information(?:al)?\s+only|information\s+sharing|notice\s+of\s+intent|award\s+notice|intent\s+to\s+award|sole\s+source|not\s+a\s+bid|no\s+bid\s+required|public\s+notice)\b/i.test(text);
+}
+
+function isLikelyNonConstruction(record = {}) {
+  const text = recordText(record).toLowerCase();
+
+  if (/\b(?:audit(?:ing|or)?|accounting|legal\s+services?|insurance|banking|financial\s+services?|software|saas|subscription|janitorial|custodial|food\s+service|catering|medical|pharmacy|staffing|temporary\s+labor|marketing|advertising|website|training|consult(?:ant|ing)|professional\s+services?|grant\s+writing)\b/i.test(text)) {
+    return true;
+  }
+
+  // Road striping/marking/painting often shows up near pavement words, but it is
+  // not the concrete/asphalt construction work BidSniffer is targeting right now.
+  if (/\b(?:pavement\s+markings?|road(?:way)?\s+striping|lane\s+markings?|traffic\s+paint|paint(?:ing)?\s+(?:paved\s+)?(?:roads?|streets?|pavement))\b/i.test(text)) {
+    return true;
+  }
+
+  return false;
+}
+
+function isConstructionRecord(record = {}) {
+  if (!record.dueDate || isPastDue(record.dueDate)) return false;
+  if (isInformationalOnly(record) || isLikelyNonConstruction(record)) return false;
+  return record.trade && record.trade !== 'general' && record.tradeConfidence !== 'low';
+}
+
 function absoluteUrl(href, baseUrl) {
   try {
     return new URL(decodeEntities(href || ''), baseUrl || BASE_URL).toString();
@@ -263,7 +314,10 @@ function outsideLinkFromHtml(html, pageUrl) {
 function parseDetailPage(html, pageUrl, listingRecord = {}) {
   const text = compactText(html.split(/Bids in Colorado \| Colorado Bid Network provides/i)[0] || html);
   const h1 = compactText((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || '');
-  const title = fieldFromText(text, 'Solicitation Title').replace(/^\*UPDATED\*\s*/i, '').trim() || h1 || listingRecord.title;
+  const detailTitle = fieldFromText(text, 'Solicitation Title').replace(/^\*UPDATED\*\s*/i, '').trim();
+  const title = detailTitle && !isBrandingTitle(detailTitle)
+    ? detailTitle
+    : (!isBrandingTitle(listingRecord.title) ? listingRecord.title : 'Untitled Opportunity');
   const dueDate = parseDateToIso(fieldFromText(text, 'Bid Date & Time')) || listingRecord.dueDate || '';
   const county = fieldFromText(text, 'County') || listingRecord.county || '';
   const location = fieldFromText(text, 'Location') || listingRecord.city || 'Colorado';
@@ -344,20 +398,22 @@ async function fetchOpportunities() {
     }
 
     const listingRecords = parseListingRows(response.body, response.finalUrl || startUrl)
+      .filter(record => record.dueDate && !isPastDue(record.dueDate))
       .slice(0, MAX_RECORDS_PER_PAGE);
 
     if (!FETCH_DETAILS) {
-      records.push(...listingRecords);
+      records.push(...listingRecords.filter(isConstructionRecord));
       continue;
     }
 
     for (const record of listingRecords) {
       try {
         if (records.length) await sleep(DETAIL_DELAY_MS);
-        records.push(await fetchDetail(record));
+        const detailedRecord = await fetchDetail(record);
+        if (isConstructionRecord(detailedRecord)) records.push(detailedRecord);
       } catch (err) {
         console.warn(`${SOURCE_NAME}: using listing-only record for ${record.title}: ${err.message}`);
-        records.push(record);
+        if (isConstructionRecord(record)) records.push(record);
       }
     }
   }
@@ -371,5 +427,6 @@ module.exports = {
   sourceUrl: BASE_URL,
   fetchOpportunities,
   parseListingRows,
-  parseDetailPage
+  parseDetailPage,
+  isConstructionRecord
 };

@@ -68,6 +68,15 @@ function textFromRecord(record = {}) {
     .trim();
 }
 
+
+function isRoadMarkingOnly(text) {
+  const hasRoadMarking = /\b(?:pavement\s+markings?|road(?:way)?\s+striping|lane\s+markings?|traffic\s+paint|paint(?:ing)?\s+(?:paved\s+)?(?:roads?|streets?|pavement))\b/i.test(text);
+  if (!hasRoadMarking) return false;
+
+  // Keep real construction work if the text also has strong civil/concrete verbs.
+  return !/\b(?:concrete|asphalt|mill\s+and\s+overlay|overlay|reconstruct(?:ion)?|repair|replacement|sidewalk|curb\s+(?:and|&)\s+gutter|ada\s+ramp|trail\s+(?:construction|improvement|repair))\b/i.test(text);
+}
+
 function scoreTrades(text) {
   const scores = Object.fromEntries(Array.from(VALID_TRADES).map(trade => [trade, 0]));
   const matchesByTrade = Object.fromEntries(Array.from(VALID_TRADES).map(trade => [trade, []]));
@@ -101,6 +110,14 @@ function classifyTradeDetails(record = {}, options = {}) {
       trade: fallbackTrade || 'general',
       confidence: fallbackTrade ? 'source' : 'low',
       matchedKeywords: []
+    };
+  }
+
+  if (isRoadMarkingOnly(text)) {
+    return {
+      trade: fallbackTrade || 'general',
+      confidence: fallbackTrade && fallbackTrade !== 'general' ? 'source' : 'low',
+      matchedKeywords: ['road marking / striping excluded']
     };
   }
 
