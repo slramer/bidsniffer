@@ -31,25 +31,15 @@ function bidnetSearchUrl({ keywords = '', category = '', page = 1 } = {}) {
   return `${BASE_URL}/public/solicitations/open?${params.toString()}`;
 }
 
-const CONTRACTOR_KEYWORD_SEARCHES = [
-  '',
-  'hvac',
-  'plumbing',
-  'electrical',
-  'generator',
-  'fire alarm',
-  'security camera',
-  'access control',
-  'landscaping',
-  'irrigation',
-  'fencing',
-  'painting',
-  'flooring',
-  'snow removal',
-  'janitorial',
-  'maintenance',
-  'repair',
-  'replacement'
+const BIDNET_CATEGORY_SEARCHES = [
+  {
+    name: 'construction',
+    category: '320204'
+  },
+  {
+    name: 'utilities',
+    category: '320179'
+  }
 ];
 
 function defaultStartUrls() {
@@ -60,13 +50,15 @@ function defaultStartUrls() {
       .filter(Boolean);
   }
 
-  if (process.env.BIDNET_START_URL) return [process.env.BIDNET_START_URL];
-
-  const urls = [bidnetSearchUrl({ category: DEFAULT_CATEGORY_ID })];
-  for (const keyword of CONTRACTOR_KEYWORD_SEARCHES.filter(Boolean)) {
-    urls.push(bidnetSearchUrl({ keywords: keyword }));
+  if (process.env.BIDNET_START_URL) {
+    return [process.env.BIDNET_START_URL];
   }
-  return urls;
+
+  return BIDNET_CATEGORY_SEARCHES.map(search =>
+    bidnetSearchUrl({
+      category: search.category
+    })
+  );
 }
 
 const START_URLS = defaultStartUrls();
