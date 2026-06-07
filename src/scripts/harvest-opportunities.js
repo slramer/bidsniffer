@@ -9,6 +9,7 @@ const connectors = [
   require('../sources/bidnet'),
   require('../sources/colorado-bid-network'),
   require('../sources/opengov'),
+  require('../sources/civicengage'),
   require('../sources/school-districts')
 ];
 
@@ -195,8 +196,9 @@ function normalizeDedupeText(value) {
   return String(value || '')
     .toLowerCase()
     .replace(/&/g, ' and ')
+    .replace(/\b(?:request\s+for\s+(?:proposals?|bids?|quotes?|qualifications?|information)|invitation\s+for\s+bids?|documented\s+quote)\b:?/g, ' ')
     .replace(/[^a-z0-9]+/g, ' ')
-    .replace(/\b(?:rfp|rfq|ifb|bid|solicitation|project|construction)\b/g, ' ')
+    .replace(/\b(?:rfp|rfq|ifb|bid|bids|quote|solicitation|project|construction)\b/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -217,7 +219,11 @@ function contentDedupeKey(item) {
   // across unrelated agencies. This secondary key is meant to catch the common
   // cross-source duplicate case where BidNet, VSS, Denver, etc. publish the
   // same named opportunity with the same due date.
-  if (!title || title.length < 18 || !dueDate) return '';
+  if (!title || !dueDate) return '';
+
+  const words = title.split(/\s+/).filter(Boolean);
+  if (title.length < 10 || words.length < 2) return '';
+
   return `content:${title}|${dueDate}`;
 }
 

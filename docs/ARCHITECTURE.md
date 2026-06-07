@@ -472,3 +472,25 @@ The OpenGov source is a platform connector, not a city-specific connector. Curre
 - Regional Transportation District (`rtd-denver`)
 
 RTD is intentionally handled by `src/sources/opengov.js` instead of the older one-off RTD connector so OpenGov portal parsing stays centralized.
+
+---
+
+# Source: CivicEngage / CivicPlus Bid Postings
+
+`src/sources/civicengage.js` is a platform connector for Colorado agencies using the common CivicEngage/CivicPlus `Bids.aspx` pattern.
+
+Current configured agencies include Clear Creek County, Gunnison County, Steamboat Springs, Montrose, Lake County, San Miguel County, Fruita, Grand County, Park County, Cortez, and Parker Water & Sanitation District.
+
+Design notes:
+
+* Agencies are configuration entries, not one-off source files.
+* The connector starts from each agency `Bids.aspx` page, discovers `bidID` detail links, and normalizes detail pages.
+* This source is intended to capture independent city, county, water, sanitation, and special-district bids that do not fully rely on BidNet/RMES.
+* Dedupe should continue to collapse overlap using the harvest pipeline's secondary title/due-date key.
+
+
+## CivicEngage cleanup
+
+The CivicEngage connector intentionally excludes demo/stale bid pages, old records, and obvious non-contractor professional services for now. BidSniffer may later broaden into contractor-adjacent municipal services, but the current dataset should stay focused on construction and field-service contractor opportunities.
+
+Cross-source dedupe also normalizes common solicitation prefixes such as "Request for Proposals" so CivicEngage records can merge correctly with matching BidNet/RMEPS records.
