@@ -398,6 +398,11 @@ async function harvestStartUrl(startUrl, maxPages) {
 
     const response = await fetchPage(nextUrl, `page-${page}-${Math.abs(hashString(startUrl))}`);
     const rows = extractListingRows(response.body, response.finalUrl);
+    console.log('URL:', response.finalUrl);
+    console.log('HTML length:', response.body.length);
+    console.log('Has solicitationsList:', response.body.includes('solicitationsList'));
+    console.log('Has rowTitle:', response.body.includes('rowTitle'));
+    console.log('Parsed rows:', rows.length);
 
     if (page === 1) expectedCount = extractResultCount(response.body);
 
