@@ -9,8 +9,7 @@ const connectors = [
   require('../sources/bidnet'),
   require('../sources/colorado-bid-network'),
   require('../sources/opengov'),
-  require('../sources/school-districts'),
-  require('../sources/rtd.js')
+  require('../sources/school-districts')
 ];
 
 const SRC_DATA_PATH = path.join(__dirname, '../data/opportunities.json');

@@ -460,3 +460,15 @@ Harvesting now uses two duplicate checks:
 
 The secondary key catches cross-source duplicates where the same opportunity appears in BidNet, Colorado VSS, Denver, OpenGov, or another direct agency source with different source-specific IDs or agency labels. Very short/vague titles are excluded from the secondary key to avoid merging unrelated opportunities like generic roof or concrete projects.
 
+
+
+### OpenGov expansion
+
+The OpenGov source is a platform connector, not a city-specific connector. Current configured Colorado portals:
+
+- City of Pueblo (`pueblo`)
+- City of Wheat Ridge (`wheatridgeco`)
+- Ouray County (`ouraycountyco`)
+- Regional Transportation District (`rtd-denver`)
+
+RTD is intentionally handled by `src/sources/opengov.js` instead of the older one-off RTD connector so OpenGov portal parsing stays centralized.

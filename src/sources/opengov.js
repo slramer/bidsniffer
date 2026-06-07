@@ -17,11 +17,39 @@ const PORTALS = [
     cityFallback: 'Pueblo',
     countyFallback: 'Pueblo',
     stateFallback: 'colorado'
+  },
+  {
+    // City site / public listings point vendors to OpenGov rather than BidNet.
+    slug: 'wheatridgeco',
+    agencyFallback: 'City of Wheat Ridge',
+    cityFallback: 'Wheat Ridge',
+    countyFallback: 'Jefferson',
+    stateFallback: 'colorado'
+  },
+  {
+    // Current public RFBs direct bidders to this OpenGov portal.
+    slug: 'ouraycountyco',
+    agencyFallback: 'Ouray County',
+    cityFallback: 'Ouray',
+    countyFallback: 'Ouray',
+    stateFallback: 'colorado'
+  },
+  {
+    // RTD moved public solicitations to OpenGov; keep it here instead of a one-off connector.
+    slug: 'rtd-denver',
+    agencyFallback: 'Regional Transportation District',
+    cityFallback: 'Denver',
+    countyFallback: 'Denver',
+    stateFallback: 'colorado'
   }
 ];
 
 function projectListUrl(slug) {
   return `${BASE_URL}/portal/embed/${encodeURIComponent(slug)}/project-list?departmentId=all&status=open&page=1&limit=100&sortField=proposalDeadline&sortDirection=ASC`;
+}
+
+function alternateProjectListUrl(slug) {
+  return `${BASE_URL}/portal/${encodeURIComponent(slug)}?departmentId=all&status=open&page=1&limit=100&sortField=proposalDeadline&sortDirection=ASC`;
 }
 
 function publicPortalUrl(slug) {
@@ -329,22 +357,27 @@ function mapRow(row, portal) {
 }
 
 async function fetchPortal(portal) {
-  const url = projectListUrl(portal.slug);
-  const response = await request(url);
+  const urls = [projectListUrl(portal.slug), alternateProjectListUrl(portal.slug)];
+  let lastStatus = 0;
 
-  if (response.statusCode === 403 || response.statusCode === 404) {
-    console.warn(`opengov: ${portal.slug} returned HTTP ${response.statusCode}; skipping.`);
-    return [];
+  for (const url of urls) {
+    const response = await request(url);
+    lastStatus = response.statusCode;
+
+    if (response.statusCode >= 200 && response.statusCode < 300) {
+      const rows = extractOpenGovRows(response.body);
+      return rows
+        .filter(row => row && row.title && !row.isPrivate && String(row.status || 'open').toLowerCase() === 'open')
+        .map(row => mapRow(row, portal));
+    }
+
+    if (![403, 404].includes(response.statusCode)) {
+      throw new Error(`${portal.slug} OpenGov returned HTTP ${response.statusCode}`);
+    }
   }
 
-  if (response.statusCode < 200 || response.statusCode >= 300) {
-    throw new Error(`${portal.slug} OpenGov returned HTTP ${response.statusCode}`);
-  }
-
-  const rows = extractOpenGovRows(response.body);
-  return rows
-    .filter(row => row && row.title && !row.isPrivate && String(row.status || 'open').toLowerCase() === 'open')
-    .map(row => mapRow(row, portal));
+  console.warn(`opengov: ${portal.slug} returned HTTP ${lastStatus}; skipping.`);
+  return [];
 }
 
 async function fetchOpportunities() {
@@ -353,6 +386,7 @@ async function fetchOpportunities() {
   for (const portal of PORTALS) {
     try {
       const rows = await fetchPortal(portal);
+      console.log(`opengov:${portal.slug}: ${rows.length} raw records.`);
       all.push(...rows);
     } catch (err) {
       console.warn(`opengov: ${portal.slug} failed: ${err.message}`);
@@ -373,6 +407,7 @@ module.exports = {
     extractOpenGovRows,
     mapRow,
     inferTrade,
-    projectListUrl
+    projectListUrl,
+    alternateProjectListUrl
   }
 };
