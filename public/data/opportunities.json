@@ -1,5 +1,581 @@
 [
   {
+    "id": "colorado-bid-network-14662797",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2026-03-10",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Community Corrections. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14662797",
+      "Location: Colorado",
+      "Outside link: https://www.publicpurchase.com/gems/syndication/bidView?syndicatedBidId=7770901"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14662797-community-corrections.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.publicpurchase.com/gems/syndication/bidView?syndicatedBidId=7770901",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14662797",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2026-03-10",
+    "sourceId": "14662797",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14662819",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Middle Bijou Creek",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2026-02-27",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Final Settlement: Contract for CR 38 Scour Repairs at Middle Bijou Creek Project. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14662819",
+      "Location: Middle Bijou Creek",
+      "Outside link: https://www.publicpurchase.com/gems/syndication/bidView?syndicatedBidId=7770898"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14662819-final-settlement-contract-for-cr-38-scour-repairs-at-middle-bijou-creek-project.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.publicpurchase.com/gems/syndication/bidView?syndicatedBidId=7770898",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14662819",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2026-02-27",
+    "sourceId": "14662819",
+    "matchKeywords": [
+      "colorado bid network",
+      "middle bijou creek",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14579049",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2026-02-04",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Enterprise Service Management System (ESMS). Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14579049",
+      "Location: Colorado",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/8111179111?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14579049-enterprise-service-management-system-esms.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/8111179111?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14579049",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2026-02-04",
+    "sourceId": "14579049",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14264435",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "East of Gun Club Road just south of Quincy Avenue",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-07-31",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Harvest Trail Improvements. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14264435",
+      "Location: East of Gun Club Road just south of Quincy Avenue",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/7225654620?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14264435-harvest-trail-improvements.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/7225654620?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14264435",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-07-31",
+    "sourceId": "14264435",
+    "matchKeywords": [
+      "colorado bid network",
+      "east of gun club road just south of quincy avenue",
+      "general",
+      "paving/asphalt"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14184071",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Buckley Road",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-06-17",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "Arapahoe County Project C20-07, Buckley Road Median Project. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14184071",
+      "Location: Buckley Road",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6969723867?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14184071-arapahoe-county-project-c20-07-buckley-road-median-project.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6969723867?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14184071",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-06-17",
+    "sourceId": "14184071",
+    "matchKeywords": [
+      "colorado bid network",
+      "buckley road",
+      "concrete",
+      "paving/asphalt"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14176522",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-06-09",
+    "estimatedValue": "Not listed",
+    "projectType": "design-services",
+    "projectTypeLabel": "Design Services",
+    "contractorFit": "low",
+    "filterTags": [
+      "design",
+      "consulting",
+      "general"
+    ],
+    "summary": "Regional Opioid Council Facilitation Services (REQUEST FOR QUALIFICATIONS). Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14176522",
+      "Location: Colorado",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6971482557?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14176522-regional-opioid-council-facilitation-services-request-for-qualifications.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6971482557?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14176522",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-06-09",
+    "sourceId": "14176522",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14154830",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-06-05",
+    "estimatedValue": "Not listed",
+    "projectType": "design-services",
+    "projectTypeLabel": "Design Services",
+    "contractorFit": "low",
+    "filterTags": [
+      "design",
+      "consulting",
+      "general"
+    ],
+    "summary": "Construction Services for Public Works Lobby Modifications (Request for Qualifications). Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14154830",
+      "Location: Colorado",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6311099207?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14154830-construction-services-for-public-works-lobby-modifications-request-for-qualifications.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6311099207?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14154830",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-06-05",
+    "sourceId": "14154830",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14116142",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Administration Building",
+    "county": "",
+    "trade": "roofing",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-04-30",
+    "estimatedValue": "Not listed",
+    "projectType": "roofing-work",
+    "projectTypeLabel": "Roofing Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "roofing"
+    ],
+    "summary": "Administration Building Roof Repairs. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14116142",
+      "Location: Administration Building",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6171079906?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14116142-administration-building-roof-repairs.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/6171079906?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14116142",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "roof"
+    ],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-04-30",
+    "sourceId": "14116142",
+    "matchKeywords": [
+      "colorado bid network",
+      "administration building",
+      "roofing",
+      "roof"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14054414",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-04-29",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Vision Insurance (RFP). Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14054414",
+      "Location: Colorado",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5227118167?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14054414-vision-insurance-rfp.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5227118167?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14054414",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-04-29",
+    "sourceId": "14054414",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14070651",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Northwest of the Town of Deer Trail, just off I-70, east of Denver",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-04-24",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete"
+    ],
+    "summary": "Arapahoe County Richmil Ranch Open Space Parking Lot Expansion. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14070651",
+      "Location: Northwest of the Town of Deer Trail, just off I-70, east of Denver",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5276468865?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14070651-arapahoe-county-richmil-ranch-open-space-parking-lot-expansion.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5276468865?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14070651",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-04-24",
+    "sourceId": "14070651",
+    "matchKeywords": [
+      "colorado bid network",
+      "northwest of the town of deer trail, just off i-70, east of denver",
+      "concrete",
+      "paving/asphalt"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-14006782",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Littleton",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-03-12",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Opioid Withdrawal Market Sounding Event - We Want To Listen To You!. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 14006782",
+      "Location: Littleton",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5129084920?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/14006782-opioid-withdrawal-market-sounding-event---we-want-to-listen-to-you.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5129084920?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "14006782",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-03-12",
+    "sourceId": "14006782",
+    "matchKeywords": [
+      "colorado bid network",
+      "littleton",
+      "general"
+    ]
+  },
+  {
+    "id": "colorado-bid-network-13955076",
+    "title": "Colorado Bid Network",
+    "slug": "colorado-bid-network",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "general",
+    "agency": "Colorado Bid Network",
+    "postedDate": "2026-06-07",
+    "dueDate": "2025-02-14",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-work",
+    "projectTypeLabel": "Construction Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "general"
+    ],
+    "summary": "Courtesy post for Colorado Information Sharing Consortium (CISC) for Auditing. Colorado Bid Network listing from Colorado Bid Network.",
+    "requirements": [
+      "Colorado Bid Network report: 13955076",
+      "Location: Colorado",
+      "Outside link: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5023383852?target=view"
+    ],
+    "sourceName": "Colorado Bid Network",
+    "sourceUrl": "https://www.coloradobids.net/government-agencies/arapahoe/arapahoe-county-816221/13955076-courtesy-post-for-colorado-information-sharing-consortium-cisc-for-auditing.html",
+    "sourceLookupInstructions": "Open the Colorado Bid Network listing, then use its Outside Link for the official bid package: https://www.bidnetdirect.com/private/supplier/interception/open-solicitation/5023383852?target=view",
+    "sourceLookupSteps": [
+      "Open the Colorado Bid Network source record.",
+      "Click the Outside Link shown on the record.",
+      "Confirm current status, addenda, bid documents, and deadlines on the official owner/BidNet page before bidding."
+    ],
+    "solicitationRef": "13955076",
+    "solicitationNumber": "",
+    "buyer": "Colorado Bid Network",
+    "buyerEmail": "",
+    "tradeConfidence": "low",
+    "matchedTradeKeywords": [],
+    "canonicalKey": "colorado bid network|colorado bid network|2025-02-14",
+    "sourceId": "13955076",
+    "matchKeywords": [
+      "colorado bid network",
+      "colorado",
+      "general"
+    ]
+  },
+  {
     "id": "bidnet-9128235452",
     "title": "2026 Comprehensive Plan Update RFQ",
     "slug": "2026-comprehensive-plan-update-rfq-0000426873",
@@ -25,7 +601,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-05",
       "Closing: 2026-06-26",
-      "Time remaining: 20 day(s) left",
+      "Time remaining: 19 day(s) left",
       "BidNet reference: 0000426873"
     ],
     "sourceName": "BidNet Direct",
@@ -78,7 +654,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-05",
       "Closing: 2026-07-06",
-      "Time remaining: 30 day(s) left",
+      "Time remaining: 29 day(s) left",
       "BidNet reference: 2697346442"
     ],
     "sourceName": "BidNet Direct",
@@ -134,7 +710,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-05",
       "Closing: 2026-07-10",
-      "Time remaining: 34 day(s) left",
+      "Time remaining: 33 day(s) left",
       "BidNet reference: 0000426850"
     ],
     "sourceName": "BidNet Direct",
@@ -188,7 +764,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-05",
       "Closing: 2026-07-10",
-      "Time remaining: 34 day(s) left",
+      "Time remaining: 33 day(s) left",
       "BidNet reference: 2697411722"
     ],
     "sourceName": "BidNet Direct",
@@ -245,7 +821,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-05",
       "Closing: 2026-07-07",
-      "Time remaining: 31 day(s) left",
+      "Time remaining: 30 day(s) left",
       "BidNet reference: 0000426320"
     ],
     "sourceName": "BidNet Direct",
@@ -298,7 +874,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-05",
       "Closing: 2026-07-09",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 2697501482"
     ],
     "sourceName": "BidNet Direct",
@@ -354,7 +930,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-06",
-      "Time remaining: 30 day(s) left",
+      "Time remaining: 29 day(s) left",
       "BidNet reference: 0000426700"
     ],
     "sourceName": "BidNet Direct",
@@ -407,7 +983,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-01",
-      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left",
       "BidNet reference: 444047367424"
     ],
     "sourceName": "BidNet Direct",
@@ -463,7 +1039,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-04",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 0000426613"
     ],
     "sourceName": "BidNet Direct",
@@ -516,7 +1092,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-22",
-      "Time remaining: 46 day(s) left",
+      "Time remaining: 45 day(s) left",
       "BidNet reference: 2697007802"
     ],
     "sourceName": "BidNet Direct",
@@ -626,7 +1202,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-07",
-      "Time remaining: 31 day(s) left",
+      "Time remaining: 30 day(s) left",
       "BidNet reference: 0000426769"
     ],
     "sourceName": "BidNet Direct",
@@ -682,7 +1258,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-04",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000426746"
     ],
     "sourceName": "BidNet Direct",
@@ -735,7 +1311,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-23",
-      "Time remaining: 47 day(s) left",
+      "Time remaining: 46 day(s) left",
       "BidNet reference: 0000426672"
     ],
     "sourceName": "BidNet Direct",
@@ -790,7 +1366,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-04",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 2696890757"
     ],
     "sourceName": "BidNet Direct",
@@ -846,7 +1422,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000426519"
     ],
     "sourceName": "BidNet Direct",
@@ -899,7 +1475,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-07-02",
-      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left",
       "BidNet reference: 0000426593"
     ],
     "sourceName": "BidNet Direct",
@@ -954,7 +1530,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000426530"
     ],
     "sourceName": "BidNet Direct",
@@ -1010,7 +1586,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-15",
-      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left",
       "BidNet reference: 444048042385"
     ],
     "sourceName": "BidNet Direct",
@@ -1063,7 +1639,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-07-15",
-      "Time remaining: 39 day(s) left",
+      "Time remaining: 38 day(s) left",
       "BidNet reference: 0000426488"
     ],
     "sourceName": "BidNet Direct",
@@ -1119,7 +1695,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-03",
       "Closing: 2026-07-06",
-      "Time remaining: 30 day(s) left",
+      "Time remaining: 29 day(s) left",
       "BidNet reference: 2696712257"
     ],
     "sourceName": "BidNet Direct",
@@ -1176,7 +1752,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-07-01",
-      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left",
       "BidNet reference: 0000426590"
     ],
     "sourceName": "BidNet Direct",
@@ -1229,7 +1805,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 0000426605"
     ],
     "sourceName": "BidNet Direct",
@@ -1286,7 +1862,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-29",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 0000426573"
     ],
     "sourceName": "BidNet Direct",
@@ -1342,7 +1918,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-03",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000426598"
     ],
     "sourceName": "BidNet Direct",
@@ -1395,7 +1971,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-02",
       "Closing: 2026-06-29",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 0000426326"
     ],
     "sourceName": "BidNet Direct",
@@ -1451,7 +2027,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-02",
       "Closing: 2026-07-03",
-      "Time remaining: 27 day(s) left",
+      "Time remaining: 26 day(s) left",
       "BidNet reference: 0000426369"
     ],
     "sourceName": "BidNet Direct",
@@ -1504,7 +2080,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-02",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 444046639661"
     ],
     "sourceName": "BidNet Direct",
@@ -1557,7 +2133,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-02",
       "Closing: 2026-07-01",
-      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left",
       "BidNet reference: 0000426370"
     ],
     "sourceName": "BidNet Direct",
@@ -1610,7 +2186,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-02",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 444046484304"
     ],
     "sourceName": "BidNet Direct",
@@ -1664,7 +2240,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-02",
       "Closing: 2026-07-08",
-      "Time remaining: 32 day(s) left",
+      "Time remaining: 31 day(s) left",
       "BidNet reference: 444047169200"
     ],
     "sourceName": "BidNet Direct",
@@ -1721,7 +2297,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-02",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 444047225903"
     ],
     "sourceName": "BidNet Direct",
@@ -1774,7 +2350,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-02",
       "Closing: 2026-07-09",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 0000426445"
     ],
     "sourceName": "BidNet Direct",
@@ -1827,7 +2403,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-07-01",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 0000425795"
     ],
     "sourceName": "BidNet Direct",
@@ -1882,7 +2458,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-01",
       "Closing: 2026-06-26",
-      "Time remaining: 20 day(s) left",
+      "Time remaining: 19 day(s) left",
       "BidNet reference: 444044915426"
     ],
     "sourceName": "BidNet Direct",
@@ -1935,7 +2511,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-07-09",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 0000426169"
     ],
     "sourceName": "BidNet Direct",
@@ -1991,7 +2567,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-01",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 2695739942"
     ],
     "sourceName": "BidNet Direct",
@@ -2047,7 +2623,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-01",
       "Closing: 2026-07-13",
-      "Time remaining: 37 day(s) left",
+      "Time remaining: 36 day(s) left",
       "BidNet reference: 2695701692"
     ],
     "sourceName": "BidNet Direct",
@@ -2163,7 +2739,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-07-02",
-      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left",
       "BidNet reference: 0000426260"
     ],
     "sourceName": "BidNet Direct",
@@ -2216,7 +2792,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-06-26",
-      "Time remaining: 20 day(s) left",
+      "Time remaining: 19 day(s) left",
       "BidNet reference: 0000426112"
     ],
     "sourceName": "BidNet Direct",
@@ -2269,7 +2845,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-06-01",
       "Closing: 2026-06-15",
-      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left",
       "BidNet reference: 2695835822"
     ],
     "sourceName": "BidNet Direct",
@@ -2322,7 +2898,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000426296"
     ],
     "sourceName": "BidNet Direct",
@@ -2375,7 +2951,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 444041369809"
     ],
     "sourceName": "BidNet Direct",
@@ -2429,7 +3005,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 444042228981"
     ],
     "sourceName": "BidNet Direct",
@@ -2485,7 +3061,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-07-08",
-      "Time remaining: 32 day(s) left",
+      "Time remaining: 31 day(s) left",
       "BidNet reference: 444042168502"
     ],
     "sourceName": "BidNet Direct",
@@ -2538,7 +3114,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000426110"
     ],
     "sourceName": "BidNet Direct",
@@ -2595,7 +3171,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 2695497437"
     ],
     "sourceName": "BidNet Direct",
@@ -2652,7 +3228,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 2695339847"
     ],
     "sourceName": "BidNet Direct",
@@ -2708,7 +3284,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 444042482933"
     ],
     "sourceName": "BidNet Direct",
@@ -2761,7 +3337,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 444041369812"
     ],
     "sourceName": "BidNet Direct",
@@ -2814,7 +3390,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-29",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 444041369818"
     ],
     "sourceName": "BidNet Direct",
@@ -3378,7 +3954,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000425948"
     ],
     "sourceName": "BidNet Direct",
@@ -3431,7 +4007,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-25",
-      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left",
       "BidNet reference: 0000425912"
     ],
     "sourceName": "BidNet Direct",
@@ -3484,7 +4060,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-12",
-      "Time remaining: 6 day(s) left",
+      "Time remaining: 5 day(s) left",
       "BidNet reference: 0000425854"
     ],
     "sourceName": "BidNet Direct",
@@ -3595,7 +4171,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000425882"
     ],
     "sourceName": "BidNet Direct",
@@ -3648,7 +4224,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 0000425816"
     ],
     "sourceName": "BidNet Direct",
@@ -3702,7 +4278,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-28",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000425922"
     ],
     "sourceName": "BidNet Direct",
@@ -3812,7 +4388,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000425766"
     ],
     "sourceName": "BidNet Direct",
@@ -3868,7 +4444,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000425803"
     ],
     "sourceName": "BidNet Direct",
@@ -3921,7 +4497,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-29",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 2694685007"
     ],
     "sourceName": "BidNet Direct",
@@ -3974,7 +4550,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 0000425747"
     ],
     "sourceName": "BidNet Direct",
@@ -4140,7 +4716,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 0000425415"
     ],
     "sourceName": "BidNet Direct",
@@ -4193,7 +4769,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000425670"
     ],
     "sourceName": "BidNet Direct",
@@ -4246,7 +4822,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-27",
       "Closing: 2026-07-02",
-      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left",
       "BidNet reference: 2694411647"
     ],
     "sourceName": "BidNet Direct",
@@ -4299,7 +4875,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-27",
       "Closing: 2026-06-12",
-      "Time remaining: 6 day(s) left",
+      "Time remaining: 5 day(s) left",
       "BidNet reference: 2694362942"
     ],
     "sourceName": "BidNet Direct",
@@ -4352,7 +4928,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000425661"
     ],
     "sourceName": "BidNet Direct",
@@ -4405,7 +4981,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-24",
-      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left",
       "BidNet reference: 0000425596"
     ],
     "sourceName": "BidNet Direct",
@@ -4461,7 +5037,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-24",
-      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left",
       "BidNet reference: 0000425590"
     ],
     "sourceName": "BidNet Direct",
@@ -4517,7 +5093,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000425604"
     ],
     "sourceName": "BidNet Direct",
@@ -4571,7 +5147,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-24",
-      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left",
       "BidNet reference: 0000425654"
     ],
     "sourceName": "BidNet Direct",
@@ -4627,7 +5203,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000424902"
     ],
     "sourceName": "BidNet Direct",
@@ -4735,7 +5311,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-26",
       "Closing: 2026-06-25",
-      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left",
       "BidNet reference: 0000425600"
     ],
     "sourceName": "BidNet Direct",
@@ -4791,7 +5367,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-22",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000425290"
     ],
     "sourceName": "BidNet Direct",
@@ -4845,7 +5421,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-22",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000425408"
     ],
     "sourceName": "BidNet Direct",
@@ -4898,7 +5474,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-22",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000425504"
     ],
     "sourceName": "BidNet Direct",
@@ -4955,7 +5531,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-22",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000425432"
     ],
     "sourceName": "BidNet Direct",
@@ -5008,7 +5584,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-30",
-      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left",
       "BidNet reference: 0000423456"
     ],
     "sourceName": "BidNet Direct",
@@ -5062,7 +5638,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000423978"
     ],
     "sourceName": "BidNet Direct",
@@ -5118,7 +5694,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-24",
-      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left",
       "BidNet reference: 0000425339"
     ],
     "sourceName": "BidNet Direct",
@@ -5171,7 +5747,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 0000425105"
     ],
     "sourceName": "BidNet Direct",
@@ -5225,7 +5801,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000425328"
     ],
     "sourceName": "BidNet Direct",
@@ -5280,7 +5856,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-07-09",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 0000423119"
     ],
     "sourceName": "BidNet Direct",
@@ -5336,7 +5912,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 0000425341"
     ],
     "sourceName": "BidNet Direct",
@@ -5392,7 +5968,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-21",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000425370"
     ],
     "sourceName": "BidNet Direct",
@@ -5445,7 +6021,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-20",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000424814"
     ],
     "sourceName": "BidNet Direct",
@@ -5498,7 +6074,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-20",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 0000425161"
     ],
     "sourceName": "BidNet Direct",
@@ -5670,7 +6246,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-19",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000422670"
     ],
     "sourceName": "BidNet Direct",
@@ -5791,7 +6367,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-19",
       "Closing: 2026-06-15",
-      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left",
       "BidNet reference: 0000424962"
     ],
     "sourceName": "BidNet Direct",
@@ -5846,7 +6422,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-19",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000424943"
     ],
     "sourceName": "BidNet Direct",
@@ -5902,7 +6478,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-19",
       "Closing: 2026-06-08",
-      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left",
       "BidNet reference: 0000424815"
     ],
     "sourceName": "BidNet Direct",
@@ -5958,7 +6534,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-18",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000424785"
     ],
     "sourceName": "BidNet Direct",
@@ -6011,7 +6587,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-18",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000424813"
     ],
     "sourceName": "BidNet Direct",
@@ -6069,7 +6645,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-18",
       "Closing: 2026-06-15",
-      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left",
       "BidNet reference: 0000424592"
     ],
     "sourceName": "BidNet Direct",
@@ -6125,7 +6701,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 0000424513"
     ],
     "sourceName": "BidNet Direct",
@@ -6178,7 +6754,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-22",
-      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left",
       "BidNet reference: 0000424485"
     ],
     "sourceName": "BidNet Direct",
@@ -6231,7 +6807,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-12",
-      "Time remaining: 6 day(s) left",
+      "Time remaining: 5 day(s) left",
       "BidNet reference: 2691433502"
     ],
     "sourceName": "BidNet Direct",
@@ -6285,7 +6861,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000424586"
     ],
     "sourceName": "BidNet Direct",
@@ -6338,7 +6914,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000424575"
     ],
     "sourceName": "BidNet Direct",
@@ -6391,7 +6967,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-15",
       "Closing: 2026-06-25",
-      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left",
       "BidNet reference: 444021179691"
     ],
     "sourceName": "BidNet Direct",
@@ -6447,7 +7023,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-14",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000424313"
     ],
     "sourceName": "BidNet Direct",
@@ -6501,7 +7077,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-14",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000423896"
     ],
     "sourceName": "BidNet Direct",
@@ -6557,7 +7133,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-14",
       "Closing: 2026-07-09",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 2690889077"
     ],
     "sourceName": "BidNet Direct",
@@ -6675,7 +7251,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-13",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000421130"
     ],
     "sourceName": "BidNet Direct",
@@ -6728,7 +7304,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-13",
       "Closing: 2026-06-17",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 0000423818"
     ],
     "sourceName": "BidNet Direct",
@@ -6781,7 +7357,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-13",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000424037"
     ],
     "sourceName": "BidNet Direct",
@@ -6834,7 +7410,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-13",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000424092"
     ],
     "sourceName": "BidNet Direct",
@@ -6890,7 +7466,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-12",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000423930"
     ],
     "sourceName": "BidNet Direct",
@@ -6943,7 +7519,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-12",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000423925"
     ],
     "sourceName": "BidNet Direct",
@@ -6998,7 +7574,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-05-12",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 444012716808"
     ],
     "sourceName": "BidNet Direct",
@@ -7107,7 +7683,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-12",
       "Closing: 2026-06-12",
-      "Time remaining: 6 day(s) left",
+      "Time remaining: 5 day(s) left",
       "BidNet reference: 0000424008"
     ],
     "sourceName": "BidNet Direct",
@@ -7163,7 +7739,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-12",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000423971"
     ],
     "sourceName": "BidNet Direct",
@@ -7217,7 +7793,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-11",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000422675"
     ],
     "sourceName": "BidNet Direct",
@@ -7273,7 +7849,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-11",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000423903"
     ],
     "sourceName": "BidNet Direct",
@@ -7326,7 +7902,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-08",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 0000419235"
     ],
     "sourceName": "BidNet Direct",
@@ -7379,7 +7955,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-08",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000422152"
     ],
     "sourceName": "BidNet Direct",
@@ -7435,7 +8011,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-07",
       "Closing: 2026-06-29",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 2688715202"
     ],
     "sourceName": "BidNet Direct",
@@ -7488,7 +8064,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-07",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000423481"
     ],
     "sourceName": "BidNet Direct",
@@ -7541,7 +8117,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-07",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 2688902882"
     ],
     "sourceName": "BidNet Direct",
@@ -7594,7 +8170,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-06",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000423026"
     ],
     "sourceName": "BidNet Direct",
@@ -7647,7 +8223,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-05",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 0000423144"
     ],
     "sourceName": "BidNet Direct",
@@ -7700,7 +8276,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-05",
       "Closing: 2026-06-08",
-      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left",
       "BidNet reference: 0000410459"
     ],
     "sourceName": "BidNet Direct",
@@ -7753,7 +8329,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-05",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 0000422028"
     ],
     "sourceName": "BidNet Direct",
@@ -7870,7 +8446,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-04",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 0000422883"
     ],
     "sourceName": "BidNet Direct",
@@ -7926,7 +8502,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-04",
       "Closing: 2026-06-08",
-      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left",
       "BidNet reference: 0000423040"
     ],
     "sourceName": "BidNet Direct",
@@ -7984,7 +8560,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-01",
       "Closing: 2026-06-10",
-      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left",
       "BidNet reference: 0000422836"
     ],
     "sourceName": "BidNet Direct",
@@ -8037,7 +8613,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-05-01",
       "Closing: 2026-06-19",
-      "Time remaining: 13 day(s) left",
+      "Time remaining: 12 day(s) left",
       "BidNet reference: 0000422754"
     ],
     "sourceName": "BidNet Direct",
@@ -8090,7 +8666,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-05-01",
       "Closing: 2026-06-23",
-      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left",
       "BidNet reference: 2686723397"
     ],
     "sourceName": "BidNet Direct",
@@ -8143,7 +8719,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-04-29",
       "Closing: 2026-07-10",
-      "Time remaining: 34 day(s) left",
+      "Time remaining: 33 day(s) left",
       "BidNet reference: 0000422507"
     ],
     "sourceName": "BidNet Direct",
@@ -8196,7 +8772,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-04-28",
       "Closing: 2026-06-16",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 443989749738"
     ],
     "sourceName": "BidNet Direct",
@@ -8249,7 +8825,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-04-27",
       "Closing: 2026-06-29",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 2684955482"
     ],
     "sourceName": "BidNet Direct",
@@ -8303,7 +8879,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-04-23",
       "Closing: 2026-06-18",
-      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left",
       "BidNet reference: 0000421807"
     ],
     "sourceName": "BidNet Direct",
@@ -8359,7 +8935,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-04-23",
       "Closing: 2026-06-08",
-      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left",
       "BidNet reference: 2684297327"
     ],
     "sourceName": "BidNet Direct",
@@ -8412,7 +8988,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-04-20",
       "Closing: 2026-07-01",
-      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left",
       "BidNet reference: 0000420965"
     ],
     "sourceName": "BidNet Direct",
@@ -8465,7 +9041,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-04-09",
       "Closing: 2026-06-09",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 443961573585"
     ],
     "sourceName": "BidNet Direct",
@@ -8519,7 +9095,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-04-07",
       "Closing: 2026-08-01",
-      "Time remaining: 56 day(s) left",
+      "Time remaining: 55 day(s) left",
       "BidNet reference: 0000419615"
     ],
     "sourceName": "BidNet Direct",
@@ -8572,7 +9148,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-03-30",
       "Closing: 2026-10-15",
-      "Time remaining: 131 day(s) left",
+      "Time remaining: 130 day(s) left",
       "BidNet reference: 0000417727"
     ],
     "sourceName": "BidNet Direct",
@@ -8625,7 +9201,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-03-02",
       "Closing: 2026-07-03",
-      "Time remaining: 27 day(s) left",
+      "Time remaining: 26 day(s) left",
       "BidNet reference: 443901897990"
     ],
     "sourceName": "BidNet Direct",
@@ -8680,7 +9256,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-03-02",
       "Closing: 2026-07-03",
-      "Time remaining: 27 day(s) left",
+      "Time remaining: 26 day(s) left",
       "BidNet reference: 443901897993"
     ],
     "sourceName": "BidNet Direct",
@@ -8733,7 +9309,7 @@
       "BidNet category: Federal Bids",
       "Published: 2026-02-10",
       "Closing: 2026-06-11",
-      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left",
       "BidNet reference: 2665091492"
     ],
     "sourceName": "BidNet Direct",
