@@ -494,3 +494,8 @@ Design notes:
 The CivicEngage connector intentionally excludes demo/stale bid pages, old records, and obvious non-contractor professional services for now. BidSniffer may later broaden into contractor-adjacent municipal services, but the current dataset should stay focused on construction and field-service contractor opportunities.
 
 Cross-source dedupe also normalizes common solicitation prefixes such as "Request for Proposals" so CivicEngage records can merge correctly with matching BidNet/RMEPS records.
+
+
+## CivicEngage special district expansion
+
+The CivicEngage platform connector now includes additional Colorado contractor-heavy bid pages, including Pueblo West Metropolitan District, Fort Morgan, and Montrose County. These were added because they currently expose contractor-relevant water, wastewater, airport, and public works opportunities through public `Bids.aspx` pages. Some bid documents may still route through BidNet/RMEPS, but the public CivicEngage pages provide useful direct metadata and are de-duplicated against existing sources during harvest.

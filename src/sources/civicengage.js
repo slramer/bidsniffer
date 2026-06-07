@@ -77,7 +77,28 @@ const AGENCIES = [
     city: 'Cortez',
     county: 'Montezuma',
     url: 'https://www.cortezco.gov/Bids.aspx'
-  }
+  },
+  {
+    id: 'pueblo-west-metro',
+    agency: 'Pueblo West Metropolitan District',
+    city: 'Pueblo West',
+    county: 'Pueblo',
+    url: 'https://www.pueblowestmetro.us/Bids.aspx'
+  },
+  {
+    id: 'fort-morgan',
+    agency: 'City of Fort Morgan',
+    city: 'Fort Morgan',
+    county: 'Morgan',
+    url: 'https://www.cityoffortmorgan.com/Bids.aspx'
+  },
+  {
+    id: 'montrose-county',
+    agency: 'Montrose County',
+    city: 'Montrose',
+    county: 'Montrose',
+    url: 'https://www.montrosecounty.net/Bids.aspx'
+  },
 ];
 
 function request(url, redirectsRemaining = 5) {
