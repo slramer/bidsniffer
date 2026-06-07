@@ -417,3 +417,22 @@ Match scores appear only in contractor profile views.
 * Document analysis
 * AI project sizing
 * Historical award intelligence
+
+
+---
+
+# Opportunity Lifecycle
+
+Additional metadata:
+
+```ts
+lastSeenAt: string;
+```
+
+Harvesters should update `lastSeenAt` every time an opportunity is observed.
+
+Future enhancement:
+
+* Mark opportunities as expired instead of deleting them.
+* Expire when dueDate has passed or the opportunity has not been seen for a configurable period.
+* Preserve historical opportunities for SEO and analytics.

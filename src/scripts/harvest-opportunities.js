@@ -6,7 +6,7 @@ const connectors = [
   require('../sources/colorado-vss'),
   require('../sources/cdot'),
   require('../sources/denver'),
-  require('../sources/bidnet'),
+  //require('../sources/bidnet'),
   require('../sources/colorado-bid-network'),
   require('../sources/school-districts'),
   require('../sources/rtd.js')
@@ -177,6 +177,7 @@ function normalizeOpportunity(raw, connector) {
       : classification.matchedKeywords,
     canonicalKey: raw.canonicalKey || canonicalKey({title, agency: raw.agency || raw.buyer || connector.sourceName || connector.name, dueDate: raw.dueDate || raw.closeDate || raw.closingDate || ''}),
     sourceId: raw.sourceId || '',
+    lastSeenAt: new Date().toISOString(),
     matchKeywords: Array.isArray(raw.matchKeywords)
       ? mergeKeywords(raw.matchKeywords, classification.matchedKeywords)
       : mergeKeywords([trade, raw.city, raw.county, raw.agency], classification.matchedKeywords)
@@ -225,7 +226,7 @@ function mergeOpportunities(existing, incoming, replaceSourceNames = []) {
   const expiredRemoved = mergedBeforeCleanup.filter(isExpiredOpportunity).length;
 
   const merged = mergedBeforeCleanup
-    .filter(item => !isExpiredOpportunity(item))
+    .filter(item => !isExpiredOpportunity(item)) // current behavior; future roadmap can retain expired items and mark status=expired using lastSeenAt
     .map(item => ({ ...item, ...urgencyFromDueDate(item.dueDate) }))
     .sort((a, b) => String(b.postedDate || '').localeCompare(String(a.postedDate || '')) || String(a.title).localeCompare(String(b.title)));
 
