@@ -70,7 +70,7 @@ function textFromRecord(record = {}) {
 
 
 function isRoadMarkingOnly(text) {
-  const hasRoadMarking = /\b(?:pavement\s+markings?|road(?:way)?\s+striping|lane\s+markings?|traffic\s+paint|paint(?:ing)?\s+(?:paved\s+)?(?:roads?|streets?|pavement))\b/i.test(text);
+  const hasRoadMarking = /\b(?:road\s+painting|roadway\s+painting|street\s+painting|site[-\s]?wide\s+road\s+painting|pavement\s+markings?|road(?:way)?\s+striping|lane\s+markings?|traffic\s+paint|traffic\s+markings?|paint(?:ing)?\s+(?:paved\s+)?(?:roads?|streets?|pavement)|marking\s+paint)\b/i.test(text);
   if (!hasRoadMarking) return false;
 
   // Keep real construction work if the text also has strong civil/concrete verbs.
@@ -115,9 +115,9 @@ function classifyTradeDetails(record = {}, options = {}) {
 
   if (isRoadMarkingOnly(text)) {
     return {
-      trade: fallbackTrade || 'general',
-      confidence: fallbackTrade && fallbackTrade !== 'general' ? 'source' : 'low',
-      matchedKeywords: ['road marking / striping excluded']
+      trade: 'general',
+      confidence: 'excluded-from-concrete',
+      matchedKeywords: ['road painting / striping excluded from concrete']
     };
   }
 

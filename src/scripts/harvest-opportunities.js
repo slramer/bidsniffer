@@ -42,6 +42,37 @@ function todayIso() {
   return new Date().toISOString().slice(0, 10);
 }
 
+function parseIsoDate(value) {
+  if (!value) return null;
+  const text = String(value).slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+  const date = new Date(`${text}T12:00:00`);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function daysUntil(dateValue) {
+  const date = parseIsoDate(dateValue);
+  if (!date) return null;
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
+  return Math.round((date - today) / 86400000);
+}
+
+function urgencyFromDueDate(dueDate) {
+  const days = daysUntil(dueDate);
+  if (days === null) return { daysUntilDue: null, expiresSoon: false, dueStatus: '' };
+  if (days < 0) return { daysUntilDue: days, expiresSoon: false, dueStatus: 'expired' };
+  if (days === 0) return { daysUntilDue: days, expiresSoon: true, dueStatus: 'Due Today' };
+  if (days === 1) return { daysUntilDue: days, expiresSoon: true, dueStatus: 'Due Tomorrow' };
+  if (days < 7) return { daysUntilDue: days, expiresSoon: true, dueStatus: `Due in ${days} days` };
+  return { daysUntilDue: days, expiresSoon: false, dueStatus: '' };
+}
+
+function isExpiredOpportunity(item) {
+  const days = daysUntil(item.dueDate);
+  return days !== null && days < 0;
+}
+
 function mergeKeywords(...groups) {
   return Array.from(new Set(
     groups
@@ -106,7 +137,11 @@ function normalizeOpportunity(raw, connector) {
   const sourceUrl = raw.sourceUrl || raw.url || raw.link || connector.sourceUrl || '';
   const postedDate = raw.postedDate || raw.postDate || raw.publishedDate || todayIso();
   const classification = classifyTradeDetails(raw, { fallbackTrade: raw.trade });
-  const trade = raw.trade || classification.trade || 'general';
+  // Trust the classifier's final decision. It already uses raw.trade as a fallback
+  // when the keyword evidence is weak, but it can also intentionally override
+  // source/category guesses such as BidNet's construction bucket treating road
+  // painting / striping as concrete.
+  const trade = classification.trade || raw.trade || 'general';
   const projectFilters = inferProjectFilters(raw, trade);
 
   return {
@@ -120,6 +155,7 @@ function normalizeOpportunity(raw, connector) {
     agency: raw.agency || raw.buyer || connector.sourceName || connector.name,
     postedDate,
     dueDate: raw.dueDate || raw.closeDate || raw.closingDate || '',
+    ...urgencyFromDueDate(raw.dueDate || raw.closeDate || raw.closingDate || ''),
     estimatedValue: raw.estimatedValue || raw.value || 'Not listed',
     projectType: projectFilters.projectType,
     projectTypeLabel: projectFilters.projectTypeLabel,
@@ -185,10 +221,15 @@ function mergeOpportunities(existing, incoming, replaceSourceNames = []) {
     }
   }
 
-  const merged = Array.from(byKey.values())
+  const mergedBeforeCleanup = Array.from(byKey.values());
+  const expiredRemoved = mergedBeforeCleanup.filter(isExpiredOpportunity).length;
+
+  const merged = mergedBeforeCleanup
+    .filter(item => !isExpiredOpportunity(item))
+    .map(item => ({ ...item, ...urgencyFromDueDate(item.dueDate) }))
     .sort((a, b) => String(b.postedDate || '').localeCompare(String(a.postedDate || '')) || String(a.title).localeCompare(String(b.title)));
 
-  return { merged, added, updated };
+  return { merged, added, updated, expiredRemoved };
 }
 
 async function main() {
@@ -215,11 +256,11 @@ async function main() {
     }
   }
 
-  const { merged, added, updated } = mergeOpportunities(existing, incoming, replaceSourceNames);
+  const { merged, added, updated, expiredRemoved } = mergeOpportunities(existing, incoming, replaceSourceNames);
   writeJson(SRC_DATA_PATH, merged);
   writeJson(PUBLIC_DATA_PATH, merged);
 
-  console.log(`Harvest complete. Added: ${added}. Updated: ${updated}. Total: ${merged.length}.`);
+  console.log(`Harvest complete. Added: ${added}. Updated: ${updated}. Expired removed: ${expiredRemoved}. Total: ${merged.length}.`);
 }
 
 main().catch(err => {

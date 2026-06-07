@@ -425,6 +425,7 @@ module.exports = {
   name: 'colorado-bid-network',
   sourceName: SOURCE_NAME,
   sourceUrl: BASE_URL,
+  replaceExisting: true,
   fetchOpportunities,
   parseListingRows,
   parseDetailPage,

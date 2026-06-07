@@ -33,6 +33,7 @@ p { color: var(--muted); line-height: 1.6; }
 .pill { background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 5px 9px; font-size: 12px; font-weight: 700; }
 .pill.good { background: #dcfce7; color: var(--good); }
 .pill.warn { background: #fef3c7; color: #92400e; }
+.pill.urgent { background: #fee2e2; color: #991b1b; }
 .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 18px 0 26px; }
 input, select { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 12px; font: inherit; background: white; }
 .footer { margin-top: 54px; padding: 28px 24px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }
