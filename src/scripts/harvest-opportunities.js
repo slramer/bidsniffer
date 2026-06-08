@@ -6,6 +6,7 @@ const connectors = [
   require('../sources/colorado-vss'),
   require('../sources/cdot'),
   require('../sources/denver'),
+  require('../sources/boulder-county'),
   require('../sources/bidnet'),
   require('../sources/colorado-bid-network'),
   require('../sources/opengov'),
