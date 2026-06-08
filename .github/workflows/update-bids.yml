@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-bids-main
+  cancel-in-progress: true
+
 jobs:
   update-bids:
     runs-on: ubuntu-latest
@@ -15,6 +19,18 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase true
+
+      - name: Sync latest main
+        run: git pull --rebase origin main
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -33,11 +49,9 @@ jobs:
       - name: Commit updated bid data and pages
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add src/data/opportunities.json public/data/opportunities.json public/app.js public/styles.css public/index.html public/contractors public/bids public/sitemap.xml
             git commit -m "Update harvested bid opportunities"
-            git push
+            git push || (git pull --rebase origin main && git push)
           else
             echo "No BidSniffer changes to commit."
           fi
