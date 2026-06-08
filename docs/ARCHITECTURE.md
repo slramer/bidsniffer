@@ -503,3 +503,51 @@ The CivicEngage platform connector now includes additional Colorado contractor-h
 
 ## BidNet Contractor Expansion
 BidNet can now harvest multiple Colorado contractor-friendly keyword searches in addition to the base construction category. Use BIDNET_START_URLS to override the default search set when bot protection or CI behavior requires narrower runs.
+
+## Procurement Platform Research
+
+### PlanetBids
+
+Status: Investigated
+
+Findings:
+
+* PlanetBids does not appear to expose a simple public statewide opportunity directory.
+* Vendor-facing discovery appears to be routed through VendorLine / VendorOnline.
+* VendorLine is a commercial bid aggregation platform and is not currently a source target.
+* PlanetBids maintains a formal partnership program for GovTech and procurement-adjacent software providers.
+* Future integration may be preferable to scraping if API or partner access becomes available.
+
+Current Decision:
+
+* Do not spend significant development time attempting to reverse engineer PlanetBids.
+* Continue source expansion through publicly accessible agency portals and alternative procurement platforms.
+* Revisit when BidSniffer reaches meaningful contractor adoption or opportunity volume.
+
+Revisit Trigger:
+
+* 500+ contractor users
+* 1,000+ active opportunities
+* Demonstrated market traction
+
+## Industry Contacts
+
+### PlanetBids
+
+Contact:
+
+Ley Curl
+
+Title:
+
+Manager of Partnerships & Business Development
+
+Purpose:
+
+Potential future platform integration or partnership discussion.
+
+Notes:
+
+* PlanetBids publicly advertises partnerships with GovTech innovators, ERP providers, compliance platforms, and public-sector SaaS companies.
+* Contact should not be pursued during early-stage development.
+* Re-evaluate after meaningful user growth and contractor adoption.
