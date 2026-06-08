@@ -99,6 +99,63 @@ const AGENCIES = [
     county: 'Montrose',
     url: 'https://www.montrosecounty.net/Bids.aspx'
   },
+
+  {
+    // Public CivicEngage page exists even though official docs may point to BidNet.
+    id: 'durango',
+    agency: 'City of Durango',
+    city: 'Durango',
+    county: 'La Plata',
+    url: 'https://www.durangoco.gov/Bids.aspx'
+  },
+  {
+    // Public CivicEngage bid page; worth harvesting as a lightweight portal add.
+    id: 'castle-rock',
+    agency: 'Town of Castle Rock',
+    city: 'Castle Rock',
+    county: 'Douglas',
+    url: 'https://www.crgov.com/Bids.aspx'
+  },
+  {
+    // Public CivicEngage page verified; currently often empty, but essentially free to poll.
+    id: 'broomfield',
+    agency: 'City and County of Broomfield',
+    city: 'Broomfield',
+    county: 'Broomfield',
+    url: 'https://www.broomfield.org/Bids.aspx'
+  },
+  {
+    // Public CivicEngage page verified; currently often empty, but essentially free to poll.
+    id: 'lafayette',
+    agency: 'City of Lafayette',
+    city: 'Lafayette',
+    county: 'Boulder',
+    url: 'https://www.lafayetteco.gov/Bids.aspx'
+  },
+  {
+    // Bonus CivicEngage find while checking the target list.
+    id: 'johnstown',
+    agency: 'Town of Johnstown',
+    city: 'Johnstown',
+    county: 'Weld',
+    url: 'https://johnstownco.gov/Bids.aspx'
+  },
+  {
+    // Bonus CivicEngage find while checking the target list.
+    id: 'frederick',
+    agency: 'Town of Frederick',
+    city: 'Frederick',
+    county: 'Weld',
+    url: 'https://www.frederickco.gov/Bids.aspx'
+  },
+  {
+    // Verified public CivicEngage bid page; open 2026 Sewer Rehabilitation Project as of 2026-06-07.
+    id: 'southgate-water-sanitation',
+    agency: 'Southgate Water and Sanitation Districts',
+    city: 'Centennial',
+    county: 'Arapahoe',
+    url: 'https://southgatedistricts.org/Bids.aspx'
+  },
 ];
 
 function request(url, redirectsRemaining = 5) {

@@ -12,7 +12,8 @@ const connectors = [
   require('../sources/colorado-bid-network'),
   require('../sources/opengov'),
   require('../sources/civicengage'),
-  require('../sources/school-districts')
+  require('../sources/school-districts'),
+  require('../sources/public-agency-pages')
 ];
 
 const SRC_DATA_PATH = path.join(__dirname, '../data/opportunities.json');
