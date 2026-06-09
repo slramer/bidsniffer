@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BidSniffer | Government bid alerts for Colorado contractors</title>
+  <meta name="description" content="BidSniffer filters government bid sites for Colorado contractors and sends only the opportunities worth reviewing." />
+  <link rel="stylesheet" href="/styles.css?v=3d358dc064" />
+  <link rel="stylesheet" href="/bidsniffer-opportunities-theme.css?v=3c353dc012" />
+  <style>
+    :root {
+      --green: #4ade80;
+      --green-dark: #22c55e;
+      --line: rgba(255,255,255,.12);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 22px;
+    }
+
+    .brand-text {
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      font-size: 24px;
+      color: var(--muted);
+    }
+
+    .brand-text span {
+      color: var(--brand);
+    }
+
+    .logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--green), #bbf7d0);
+      color: #06220f;
+      display: inline-flex; align-items: center;
+      place-items: center;
+      font-weight: 900;
+      box-shadow: 0 12px 32px rgba(74,222,128,.25);
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      align-items: center;
+    }
+
+    body.landing .nav-cta {
+      color: #ffffff;
+      background: var(--green);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    body.landing .hero {
+      display: grid;
+      grid-template-columns: 1.03fr .97fr;
+      gap: 48px;
+      align-items: center;
+      padding: 72px 0 38px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      color: var(--good);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(46px, 6vw, 76px);
+      line-height: .93;
+      letter-spacing: -0.075em;
+      margin: 0 0 22px;
+    }
+
+    .subhead {
+      font-size: 20px;
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 0 30px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn {
+      border: 0;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 21px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 15px;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: var(--green);
+      color: #06140c;
+      box-shadow: 0 14px 34px rgba(74,222,128,.22);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    /* After successful submit the button is disabled and should look like plain text */
+    .btn:disabled,
+    .btn[disabled] {
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      color: var(--good) !important;
+      cursor: default !important;
+      pointer-events: none !important;
+      min-width: 0;
+      display: inline;
+      height: auto;
+      align-items: baseline;
+      justify-content: flex-start;
+      font-weight: 700;
+    }
+
+    .btn:disabled:hover,
+    .btn[disabled]:hover { transform: none; }
+    
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 16px;
+    }
+
+    .mockup {
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      transform: rotate(1.2deg);
+    }
+
+    .window {
+      background: #f7fff9;
+      color: #0b1b11;
+      border-radius: 22px;
+      overflow: hidden;
+    }
+
+    .window-top {
+      background: #e8f8ed;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #d5eadb;
+    }
+
+    .dots span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #a7cdb4;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .report { padding: 18px; }
+    .report h3 { margin: 0 0 4px; font-size: 18px; }
+    .report small { color: #486655; font-weight: 700; }
+
+    body.landing .bid-card {
+      margin-top: 14px;
+      border: 1px solid #d8ebde;
+      border-radius: 18px;
+      padding: 14px;
+      background: white;
+    }
+
+    body.landing .tag {
+      display: inline-flex;
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    body.landing .tag.good { background: #dcfce7; color: #166534; }
+    body.landing .tag.warn { background: #fef9c3; color: #854d0e; }
+    body.landing .tag.bad { background: #ffe4e6; color: #9f1239; }
+
+    body.landing .bid-card strong { display: block; font-size: 15px; margin-bottom: 8px; }
+    body.landing .bid-card p { margin: 0; color: #476353; font-size: 13px; line-height: 1.45; }
+
+    .stats-strip {
+      margin: 8px 0 22px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,.055);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: clamp(26px, 4vw, 40px);
+      letter-spacing: -0.06em;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .section { padding: 58px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 52px);
+      letter-spacing: -0.06em;
+      line-height: 1;
+      margin: 0 0 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(255,255,255,.055);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .step-list { display: grid; gap: 12px; }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: rgba(255,255,255,.055);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .num {
+      flex: 0 0 auto;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: #06140c;
+      font-weight: 900;
+    }
+
+    .step strong { display: block; margin-bottom: 5px; }
+    .step span { color: var(--muted); line-height: 1.5; }
+
+    .signup {
+      background: linear-gradient(180deg, rgba(74,222,128,.18), rgba(255,255,255,.055));
+      border: 1px solid rgba(74,222,128,.28);
+      border-radius: 32px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .beta-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(2,10,5,.45);
+      border: 1px solid rgba(74,222,128,.35);
+      color: var(--good);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-top: 18px;
+      margin-bottom: 2px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: rgba(2,10,5,.55);
+      color: var(--text);
+      padding: 14px 14px;
+      border-radius: 14px;
+      font: inherit;
+      outline: none;
+    }
+
+    input::placeholder, textarea::placeholder { color: #7ca28d; }
+
+    .fineprint {
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .price-card {
+      position: relative;
+      background: rgba(255,255,255,.055);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 24px;
+    }
+
+    .price-card.featured {
+      border-color: rgba(74,222,128,.65);
+      background: linear-gradient(180deg, rgba(74,222,128,.15), rgba(255,255,255,.055));
+    }
+
+    .price {
+      font-size: 42px;
+      font-weight: 950;
+      letter-spacing: -0.06em;
+      margin: 16px 0 6px;
+    }
+
+    .price span {
+      font-size: 15px;
+      color: var(--muted);
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 42px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 880px) {
+      nav { display: none; }
+      .hero, .steps { grid-template-columns: 1fr; }
+      .grid-3, .pricing, .stats-strip { grid-template-columns: 1fr; }
+      .hero { padding-top: 34px; }
+      .mockup { transform: none; }
+    }
+  </style>
+</head>
+<body class="landing">
+  <div class="wrap">
+    <header>
+      <a href="#" class="brand" aria-label="BidSniffer home">
+        <!--<span class="logo"><font color="white">B</font>|<font color="orange">S</font></span>-->
+        <span class="brand-text">Bid<span>Sniffer</span></span>
+      </a>
+      <nav>
+        <a href="#why">Why it exists</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#beta" class="nav-cta">Join beta</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <a href="/opportunities/"><div class="eyebrow">🐕 Now sniffing Colorado contractor bids</div></a>
+          <h1>Government bids without the paperwork migraine.</h1>
+          <p class="subhead">BidSniffer scans public bid sites and sends Colorado contractors a short weekly list of public jobs actually worth reviewing, with plain-English summaries, deadlines, requirements, and red flags.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#beta">Get the free beta report →</a>
+            <a class="btn btn-secondary" href="#how">See how it works</a>
+          </div>
+          <p class="note">No spam. No giant bid portal. No “synergy procurement solutions” nonsense.</p>
+        </div>
+
+        <div class="mockup" aria-label="Sample BidSniffer report preview">
+          <div class="window">
+            <div class="window-top">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <strong>Weekly BidSniff</strong>
+            </div>
+            <div class="report">
+              <h3>Colorado Contractor Opportunities</h3>
+              <small>Filtered for small contractors • Friday report</small>
+
+              <div class="bid-card">
+                <span class="tag good">GOOD FIT</span>
+                <strong>Small facility repair, municipal campus</strong>
+                <p>Scope looks realistic for a smaller local contractor. Check site visit requirements, bonding language, and trade fit before spending estimator time.</p>
+              </div>
+
+              <div class="bid-card">
+                <span class="tag warn">MAYBE</span>
+                <strong>Parking lot and site repair package</strong>
+                <p>Could fit concrete, paving, striping, or site-work contractors depending on scope. Worth reviewing if you already have subs or partners.</p>
+              </div>
+
+              <div class="bid-card">
+                <span class="tag bad">SKIP</span>
+                <strong>Large federal campus modernization</strong>
+                <p>Too broad, multi-trade, and likely prime-contractor territory. This is where small-contractor time goes to die.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="BidSniffer urgency stats">
+        <div class="stat">
+          <strong>Weekly</strong>
+          <span>Public bid sites update constantly. BidSniffer turns the noise into one short contractor-friendly report.</span>
+        </div>
+        <div class="stat">
+          <strong>3 labels</strong>
+          <span>Good Fit, Maybe, or Skip. Because contractors need decisions, not 19 browser tabs and a headache.</span>
+        </div>
+        <div class="stat">
+          <strong>10 spots</strong>
+          <span>Founding beta is limited so the reports can stay useful while the system is being tested.</span>
+        </div>
+      </section>
+
+      <section class="section" id="why">
+        <div class="section-head">
+          <h2>Most small contractors do not lose government work because they cannot do the job.</h2>
+          <p>They lose it because they never see the right opportunity, or they waste time reading bids that were never a fit in the first place.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Search fatigue is real</h3>
+            <p>Federal, state, county, city, school district, and purchasing co-op sites all speak their own special dialect of procurement goblin.</p>
+          </div>
+          <div class="card">
+            <h3>Bad-fit bids waste hours</h3>
+            <p>A bid can look promising until the requirements reveal bonding limits, set-aside rules, mandatory walk-throughs, or weird multi-trade scope.</p>
+          </div>
+          <div class="card">
+            <h3>The first pass should be easy</h3>
+            <p>BidSniffer does the triage first so contractors can spend their time estimating real opportunities instead of spelunking PDFs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Most bid sites give you more work. BidSniffer gives you fewer bad decisions.</h2>
+          <p>Small contractors do not need 400 search results. They need to know what is worth reading, what is due soon, and what smells like a bureaucratic trap.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Filtered opportunities</h3>
+            <p>We look for relevant public bids across Colorado trades and cut out the obvious junk before it hits your inbox.</p>
+          </div>
+          <div class="card">
+            <h3>Plain-English summaries</h3>
+            <p>Scope, location, due dates, required documents, site visits, bonding notes, and other details translated from government-speak.</p>
+          </div>
+          <div class="card">
+            <h3>Red flags upfront</h3>
+            <p>Set-asides, awkward requirements, broad multi-trade scopes, tight deadlines, or paperwork swamp warnings before you waste an afternoon.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <div class="steps">
+          <div class="section-head">
+            <h2>How the beta works</h2>
+            <p>Simple weekly reports first. Fancy dashboards later, assuming the market does not laugh us out of the room.</p>
+          </div>
+          <div class="step-list">
+            <div class="step">
+              <div class="num">1</div>
+              <div><strong>Join the beta</strong><span>Tell us your trade, service area, and email. The beta is focused on small Colorado contractors and trade businesses.</span></div>
+            </div>
+            <div class="step">
+              <div class="num">2</div>
+              <div><strong>Get the weekly BidSniff</strong><span>Every Friday morning, beta members receive a short list of public bids worth reviewing.</span></div>
+            </div>
+            <div class="step">
+              <div class="num">3</div>
+              <div><strong>Sniff deeper when needed</strong><span>Want a full breakdown of one opportunity? Request a deeper summary with docs, deadlines, forms, and red flags.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="section-head">
+          <h2>Beta pricing</h2>
+          <p>Start free. If it saves time, keep it. If not, no hard feelings. The internet has enough little subscription vampires.</p>
+        </div>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Beta</h3>
+            <div class="price">Free</div>
+            <p class="fineprint">Limited founding test group.</p>
+            <ul>
+              <li>Weekly Colorado contractor report</li>
+              <li>Good Fit / Maybe / Skip ranking</li>
+              <li>Plain-English notes</li>
+            </ul>
+          </div>
+          <div class="price-card featured">
+            <h3>Scout</h3>
+            <div class="price">$29<span>/mo</span></div>
+            <p class="fineprint">Planned starter subscription.</p>
+            <ul>
+              <li>Weekly filtered opportunities</li>
+              <li>Deadline and site-visit alerts</li>
+              <li>One monthly Deep Sniff credit</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <h3>Scout Plus</h3>
+            <div class="price">$79<span>/mo</span></div>
+            <p class="fineprint">Possible upgrade tier.</p>
+            <ul>
+              <li>Everything in Scout</li>
+              <li>Up to 3 Deep Sniffs/month</li>
+              <li>Signup/profile reminder support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="beta">
+        <div class="signup">
+          <div class="section-head" style="margin-bottom:0">
+            <h2>Join the Colorado Contractor beta</h2>
+            <p>Get the first sample report free. If it saves time, great. If it misses the mark, tell us what you actually wanted so we can fix it like the grown-ups we are.</p>
+            <div class="beta-counter">Founding beta: 0 / 10 spots claimed</div>
+          </div>
+
+          <form name="bidsniffer-beta" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="bidsniffer-beta" />
+            <p style="display:none"><label>Do not fill this out: <input name="bot-field" /></label></p>
+            <input name="name" type="text" placeholder="Your name" required />
+            <input name="title" type="text" placeholder="Company name" />
+            <input name="email" type="email" placeholder="Email address" required />
+            <select name="trade" required>
+              <option value="">Primary trade</option>
+              <option>General contractor</option>
+              <option>Concrete</option>
+              <option>Paving / asphalt</option>
+              <option>HVAC</option>
+              <option>Landscaping</option>
+              <option>Fencing</option>
+              <option>Roofing</option>
+              <option>Janitorial / facilities</option>
+              <option>Other trade</option>
+            </select>
+            <textarea name="notes" rows="4" placeholder="Trade, service area, max job size, bonding limits, preferred agencies, or anything you want us to filter out"></textarea>
+            <button class="btn btn-primary" type="submit">Send me the free beta report</button>
+            <p class="fineprint">By joining, you agree to receive BidSniffer beta emails. Unsubscribe anytime. We are not SAM.gov, not a government agency, and not your procurement lawyer. Obviously.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 BidSniffer</span>
+      <span>Government bid triage for small contractors.</span>
+    </footer>
+  </div>
+  <script>
+    const form = document.querySelector('form[name="bidsniffer-beta"]:not([hidden])');
+    const button = form.querySelector('button[type="submit"]');
+
+    const message = document.createElement('p');
+    message.className = 'fineprint';
+    message.style.display = 'none';
+    message.style.color = '#86efac';
+    form.appendChild(message);
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      button.disabled = true;
+      button.textContent = 'Sending...';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
+
+        if (response.ok) {
+          form.reset();
+          //message.textContent = "You're on the beta list. First BidSniff lands Friday.";
+          //message.style.display = 'block';
+          button.textContent = 'You\'re on the beta list. First BidSniff lands Friday.';
+          button.disabled = true;
+        } else {
+          throw new Error(`Form submission failed: ${response.status}`);
+        }
+      } catch (error) {
+        message.textContent = 'Something broke. Try again or email us directly.';
+        message.style.display = 'block';
+        button.disabled = false;
+        button.textContent = 'Send me the free beta report';
+      }
+    });
+  </script>
+</body>
+</html>

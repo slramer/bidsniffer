@@ -3,6 +3,12 @@
   publish = "public"
 
 [[redirects]]
+  from = "/"
+  to = "/main/"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/bids/colorado"
   to = "/bids/colorado/"
   status = 301

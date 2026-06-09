@@ -5,7 +5,7 @@
   "description": "AI-powered construction opportunity intelligence platform that aggregates, classifies, summarizes, and matches public procurement opportunities to contractor profiles.",
   "scripts": {
     "build": "node src/scripts/generate-pages.js && node src/scripts/generate-sitemap.js",
-    "start": "npx serve public",
+    "start": "netlify dev --dir=public",
     "harvest": "node src/scripts/harvest-opportunities.js",
     "generate": "node src/scripts/generate-pages.js && node src/scripts/generate-sitemap.js"
   },

@@ -1,0 +1,6 @@
+.DS_Store
+.github/.DS_Store
+docs/.DS_Store
+# Local Netlify folder
+.netlify
+deno.lock
