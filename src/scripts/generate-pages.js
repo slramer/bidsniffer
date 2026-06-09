@@ -121,7 +121,7 @@ function layout({ title, description, body }) {
   <meta name="description" content="${escapeAttr(description)}" />
   <link rel="stylesheet" href="/styles.css?v=${assetVersions.css}" />
 </head>
-<body>
+<body class="landing">
   <header class="header"><nav class="nav"><a class="logo" href="/">Bid<span>Sniffer</span></a><div class="navlinks"><a href="/bids/colorado/">Colorado Bids</a><a href="/contractors/profile.html">Contractor Profile</a></div></nav></header>
   ${body}
   <footer class="footer">BidSniffer tracks public construction opportunities and turns bid chaos into something slightly less cursed.</footer>
