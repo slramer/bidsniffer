@@ -6,6 +6,7 @@ const opportunities = require('../data/opportunities.json');
 const root = path.join(__dirname, '../../public');
 const assetsRoot = path.join(__dirname, '../assets');
 const trades = ['roofing', 'hvac', 'electrical', 'concrete', 'general'];
+const siteBase = 'https://bidsniffer.com';
 
 // Remove previously generated pages so deleted/stale opportunities do not linger.
 fs.rmSync(path.join(root, 'bids'), { recursive: true, force: true });
@@ -100,7 +101,7 @@ function sourceLookupBlock(o) {
     <ol>${steps.map(step => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
     ${o.solicitationNumber ? `<p><strong>Solicitation number:</strong> ${escapeHtml(o.solicitationNumber)}</p>` : ''}
     ${o.solicitationRef ? `<p><strong>Full source reference:</strong> ${escapeHtml(o.solicitationRef)}</p>` : ''}
-    <p><a class="button" href="${escapeAttr(o.sourceUrl)}">Open ${escapeHtml(o.sourceName || 'Original Source')}</a></p>
+    ${o.sourceUrl ? `<p><a class="button" href="${escapeAttr(o.sourceUrl)}" target="_blank" rel="noopener">Open ${escapeHtml(o.sourceName || 'Original Source')}</a></p>` : `<p class="muted">No direct source URL available; follow the steps above on ${escapeHtml(o.sourceName || 'the source site')}.</p>`}
   </section>`;
 }
 
@@ -111,7 +112,7 @@ function requirementsList(requirements = []) {
     : '<p>No source-specific requirements were captured yet.</p>';
 }
 
-function layout({ title, description, body }) {
+function layout({ title, description, body, canonicalUrl, metaExtra }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -119,6 +120,8 @@ function layout({ title, description, body }) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeAttr(description)}" />
+  ${canonicalUrl ? `<link rel="canonical" href="${escapeAttr(canonicalUrl)}" />` : ''}
+  ${metaExtra || ''}
   <link rel="stylesheet" href="/styles.css?v=${assetVersions.css}" />
 </head>
 <body class="landing">
@@ -156,9 +159,26 @@ for (const trade of trades) {
 }
 
 for (const o of opportunities) {
+  const relPath = `/bids/${o.state}/${o.trade}/${o.postedDate}/${o.slug}/`;
+  const canonicalUrl = `${siteBase}${relPath}`;
+  const title = `${o.title} — ${tradeLabel(o.trade)} Bids in ${o.city || 'Colorado'} | BidSniffer`;
+  const description = `${o.summary}${o.city ? ' ' + o.city + ', CO.' : ''}${o.dueDate ? ' Due ' + o.dueDate + '.' : ''}`;
+  const robotsContent = (o.projectType === 'construction-work') ? 'index,follow' : 'noindex,follow';
+  const metaExtra = `
+    <meta name="robots" content="${robotsContent}" />
+    <meta property="og:title" content="${escapeAttr(title)}" />
+    <meta property="og:description" content="${escapeAttr(description)}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="BidSniffer" />
+    <meta property="og:url" content="${escapeAttr(canonicalUrl)}" />
+    <meta name="twitter:card" content="summary" />
+  `;
+
   write(path.join(root, `bids/${o.state}/${o.trade}/${o.postedDate}/${o.slug}/index.html`), layout({
-    title: `${o.title} | BidSniffer`,
-    description: `${o.summary}`,
+    title: title,
+    description: description,
+    canonicalUrl: canonicalUrl,
+    metaExtra: metaExtra,
     body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span><span class="pill warn">Due ${escapeHtml(o.dueDate)}</span>${urgencyPill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Due</strong><p>${escapeHtml(o.dueDate)}</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
   }));
 }

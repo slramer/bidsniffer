@@ -18,12 +18,22 @@ function fileToUrl(file) {
   return `${base}${rel}`;
 }
 
+const opportunities = require('../data/opportunities.json');
+const lastSeenMap = {};
+for (const o of opportunities) {
+  const rel = `/bids/${o.state}/${o.trade}/${o.postedDate}/${o.slug}/`;
+  if (o.lastSeenAt) lastSeenMap[`${base}${rel}`] = new Date(o.lastSeenAt).toISOString().slice(0,10);
+}
+
 const urls = walk(root)
   .filter(f => f.endsWith('.html'))
   .map(fileToUrl)
   .sort();
 
-const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>`;
+const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => {
+    const lastmod = lastSeenMap[u];
+    return lastmod ? `  <url><loc>${u}</loc><lastmod>${lastmod}</lastmod></url>` : `  <url><loc>${u}</loc></url>`;
+  }).join('\n')}\n</urlset>`;
 
 fs.writeFileSync(path.join(root, 'sitemap.xml'), xml);
 fs.writeFileSync(path.join(root, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
