@@ -53,22 +53,15 @@ function tradeLabel(trade) {
   return tradeLabels[trade] || String(trade || 'General').replace(/\b\w/g, c => c.toUpperCase());
 }
 
-
-function daysFromToday(dateValue) {
-  if (!dateValue) return null;
-  const parsed = new Date(`${String(dateValue).slice(0, 10)}T12:00:00`);
-  if (Number.isNaN(parsed.getTime())) return null;
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
-  return Math.round((parsed - today) / 86400000);
+function dueDatePill(o) {
+  const dueDate = String(o.dueDate ?? '').trim();
+  return dueDate ? `<span class="pill warn">Due ${escapeHtml(dueDate)}</span>` : '';
 }
 
 function urgencyPill(o) {
-  const days = Number.isFinite(o.daysUntilDue) ? o.daysUntilDue : daysFromToday(o.dueDate);
-  if (days === null || Number.isNaN(days) || days < 0 || days >= 7) return '';
-  if (days === 0) return '<span class="pill urgent">Due Today</span>';
-  if (days === 1) return '<span class="pill urgent">Due Tomorrow</span>';
-  return `<span class="pill urgent">Due in ${days} days</span>`;
+  const dueStatus = String(o.dueStatus ?? '').trim();
+  if (!/^(?:Due Today|Due Tomorrow|Due in (?:[2-9]|\d{2,}) days)$/.test(dueStatus)) return '';
+  return `<span class="pill urgent">${escapeHtml(dueStatus)}</span>`;
 }
 
 function displayValue(value) {
@@ -179,7 +172,7 @@ for (const o of opportunities) {
     description: description,
     canonicalUrl: canonicalUrl,
     metaExtra: metaExtra,
-    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span><span class="pill warn">Due ${escapeHtml(o.dueDate)}</span>${urgencyPill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Due</strong><p>${escapeHtml(o.dueDate)}</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
+    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${dueDatePill(o)}${urgencyPill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div>${o.dueDate ? `<div><strong>Due</strong><p>${escapeHtml(o.dueDate)}</p></div>` : ''}${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
   }));
 }
 

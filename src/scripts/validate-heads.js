@@ -68,9 +68,35 @@ function printSitemapSample() {
   console.log('  lastmod: ', urlMatch[2] || '(none)');
 }
 
+function findHtmlFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
+    const file = path.join(dir, entry.name);
+    return entry.isDirectory() ? findHtmlFiles(file) : entry.name.endsWith('.html') ? [file] : [];
+  });
+}
+
+function validateNoNakedDueBadges() {
+  const publicRoot = path.join(root, 'public');
+  const nakedDueBadge = /<span\b[^>]*class=["'][^"']*\bpill\b[^"']*["'][^>]*>\s*Due\s*<\/span>/i;
+  const failures = findHtmlFiles(publicRoot).filter(file => nakedDueBadge.test(readFileSafe(file)));
+
+  console.log('\nValidation: no naked Due badges');
+  if (!failures.length) {
+    console.log('  ✓ No generated HTML pill contains only "Due".');
+    return true;
+  }
+
+  for (const file of failures) {
+    console.error('  ✗', path.relative(root, file));
+  }
+  return false;
+}
+
 function main() {
   printSampleHeads();
   printSitemapSample();
+  if (!validateNoNakedDueBadges()) process.exitCode = 1;
 }
 
 main();

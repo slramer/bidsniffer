@@ -203,14 +203,15 @@ function shouldShowForProfile(item, profile) {
 }
 
 
+function dueDateBadge(item) {
+  const dueDate = String(item.dueDate ?? '').trim();
+  return dueDate ? `<span class="pill warn">Due ${escapeHtml(dueDate)}</span>` : '';
+}
+
 function urgencyBadge(item) {
-  const days = Number.isFinite(item.daysUntilDue) ? item.daysUntilDue : daysFromToday(item.dueDate);
-  if (days === null || Number.isNaN(days) || days >= 7 || days < 0) return '';
-  let label = '';
-  if (days === 0) label = 'Due Today';
-  else if (days === 1) label = 'Due Tomorrow';
-  else label = `Due in ${days} days`;
-  return `<span class="pill urgent">${escapeHtml(label)}</span>`;
+  const dueStatus = String(item.dueStatus ?? '').trim();
+  if (!/^(?:Due Today|Due Tomorrow|Due in (?:[2-9]|\d{2,}) days)$/.test(dueStatus)) return '';
+  return `<span class="pill urgent">${escapeHtml(dueStatus)}</span>`;
 }
 
 function displayValue(value) {
@@ -234,7 +235,7 @@ function card(item, match) {
     : '';
 
   return `<article class="card opportunity" data-trade="${escapeHtml(item.trade)}" data-city="${escapeHtml(item.city)}">
-    <div class="meta"><span class="pill">${tradeLabel(item.trade)}</span><span class="pill warn">Due ${escapeHtml(item.dueDate)}</span>${urgencyBadge(item)}${matchPill}</div>
+    <div class="meta"><span class="pill">${tradeLabel(item.trade)}</span>${dueDateBadge(item)}${urgencyBadge(item)}${matchPill}</div>
     <h3><a href="${url}">${escapeHtml(item.title)}</a></h3>
     <p>${escapeHtml(item.summary)}</p>
     ${matchMarkup(match)}
