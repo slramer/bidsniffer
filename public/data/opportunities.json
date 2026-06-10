@@ -42,7 +42,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "37th street streetlight design|city of evans|",
     "sourceId": "city-of-evans:37th-street-streetlight-design",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -92,7 +92,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "37th street widening phase iii design|city of evans|",
     "sourceId": "city-of-evans:37th-street-widening-phase-iii-design",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -142,7 +142,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "42nd street non potable water line replacement|city of evans|",
     "sourceId": "city-of-evans:42nd-street-non-potable-water-line-replacement",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -192,7 +192,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "automated vehicle identification system|city of evans|",
     "sourceId": "city-of-evans:automated-vehicle-identification-system",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -239,12 +239,72 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "commercial window coverings supply install replacement and repair|boulder county|2026-06-26",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:04.634Z",
+    "lastSeenAt": "2026-06-10T13:51:38.774Z",
     "matchKeywords": [
       "commercial window coverings: supply, install, replacement, and repair",
       "public works",
       "soq-293-26",
       "boulder county"
+    ]
+  },
+  {
+    "id": "bidnet-9142776066",
+    "title": "Deer Creek Road and Woodmoor Drive Improvements",
+    "slug": "deer-creek-road-and-woodmoor-drive-improvements-0000427199",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Member Agency Bids",
+    "postedDate": "2026-06-10",
+    "dueDate": "2026-07-01",
+    "daysUntilDue": 21,
+    "expiresSoon": false,
+    "dueStatus": "",
+    "estimatedValue": "Not listed",
+    "projectType": "concrete-work",
+    "projectTypeLabel": "Concrete Work",
+    "contractorFit": "high",
+    "filterTags": [
+      "construction",
+      "concrete",
+      "member agency bids"
+    ],
+    "summary": "Deer Creek Road and Woodmoor Drive Improvements. Member Agency Bids listed on BidNet Direct for Colorado construction opportunities.",
+    "requirements": [
+      "BidNet category: Member Agency Bids",
+      "Published: 2026-06-10",
+      "Closing: 2026-07-01",
+      "Time remaining: 21 day(s) left",
+      "BidNet reference: 0000427199"
+    ],
+    "sourceName": "BidNet Direct",
+    "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Deer-Creek-Road-and-Woodmoor-Drive-Improvements/0000427199?origin=0",
+    "sourceLookupInstructions": "Open BidNet Direct and use the direct source link, or search BidNet for reference 0000427199.",
+    "sourceLookupSteps": [
+      "Open BidNet Direct open solicitations.",
+      "Filter to Colorado and Construction if needed.",
+      "Search or locate reference 0000427199.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "0000427199",
+    "solicitationNumber": "0000427199",
+    "buyer": "",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "deer creek road and woodmoor drive improvements|member agency bids|2026-07-01",
+    "sourceId": "9142776066",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
+    "matchKeywords": [
+      "concrete",
+      "bidnet",
+      "colorado",
+      "member agency bids",
+      "0000427199",
+      "paving/asphalt"
     ]
   },
   {
@@ -289,7 +349,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "field house program plan|fort lewis college|",
     "sourceId": "fort-lewis-college:field-house-program-plan",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.768Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -339,7 +399,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "gateway sign and beautification at evans junction|city of evans|",
     "sourceId": "city-of-evans:gateway-sign-and-beautification-at-evans-junction",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -399,7 +459,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "grand county historical preservation board|grand county|",
     "sourceId": "grand-county:166",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "general",
       "civicengage",
@@ -454,7 +514,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "landscape repairs|fort lewis college|",
     "sourceId": "fort-lewis-college:landscape-repairs",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -503,7 +563,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nclex training software|fort lewis college|",
     "sourceId": "fort-lewis-college:nclex-training-software",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.768Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -554,7 +614,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "on call general engineering services|city of evans|",
     "sourceId": "city-of-evans:on-call-general-engineering-services",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -603,7 +663,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "palmer solicitation page|colorado springs school district 11|",
     "sourceId": "colorado-springs-d11:palmer-solicitation-page",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.768Z",
     "matchKeywords": [
       "colorado springs school district 11",
       "colorado springs",
@@ -654,7 +714,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "parks system master plan|city of evans|",
     "sourceId": "city-of-evans:parks-system-master-plan",
-    "lastSeenAt": "2026-06-10T07:08:53.523Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -704,7 +764,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "peakview construction plans sanitary sewer|city of evans|",
     "sourceId": "city-of-evans:peakview-construction-plans-sanitary-sewer",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -751,7 +811,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pest control services for bcha repost|boulder county|2026-06-23",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:04.634Z",
+    "lastSeenAt": "2026-06-10T13:51:38.774Z",
     "matchKeywords": [
       "pest control services for bcha (repost)",
       "housing",
@@ -801,7 +861,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for proposal|colorado springs school district 11|",
     "sourceId": "colorado-springs-d11:request-for-proposal",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.768Z",
     "matchKeywords": [
       "colorado springs school district 11",
       "colorado springs",
@@ -852,7 +912,7 @@
     ],
     "canonicalKey": "sidewalk replacement|fort lewis college|",
     "sourceId": "fort-lewis-college:sidewalk-replacement",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.768Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -903,7 +963,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "state street sanitary sewer design|city of evans|",
     "sourceId": "city-of-evans:state-street-sanitary-sewer-design",
-    "lastSeenAt": "2026-06-10T07:08:53.522Z",
+    "lastSeenAt": "2026-06-10T13:52:28.769Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -958,7 +1018,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "ballard house renovation and barn shed addition|member agency bids|2026-07-29",
     "sourceId": "9143035613",
-    "lastSeenAt": "2026-06-10T07:07:15.493Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1016,7 +1076,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "commissioning service for longmont urban campus|front range community college|2026-07-02",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.247Z",
+    "lastSeenAt": "2026-06-10T13:51:35.100Z",
     "matchKeywords": [
       "general",
       "2026000044",
@@ -1075,7 +1135,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "evaluation of metro s northern treatment plant direct potable reuse connection|member agency bids|2026-07-09",
     "sourceId": "9138217156",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1132,7 +1192,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "h139 elevator inspection services idiq 60mo pop 8 1 2026 7 31 2031|federal bids|2026-06-25",
     "sourceId": "2698316462",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1196,7 +1256,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "i t equipment extended warranty|clear creek county|2026-06-19",
     "sourceId": "clear-creek-county:378",
-    "lastSeenAt": "2026-06-10T07:08:49.228Z",
+    "lastSeenAt": "2026-06-10T13:52:24.572Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -1316,7 +1376,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "lon hagler swa nut hut and office remodel s26wne 11625|state & local bids|2026-06-26",
     "sourceId": "444054729325",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1373,7 +1433,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nfs ifb 2026 cp 2025 civic center trail|member agency bids|2026-06-26",
     "sourceId": "9141700502",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1430,7 +1490,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nist boulder building 2 1330 fume hood replacement|federal bids|2026-07-01",
     "sourceId": "2698399082",
-    "lastSeenAt": "2026-06-10T07:07:15.493Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1488,7 +1548,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "renovate building a and site work for department of energy legacy management doe lm grand junction field service center fsc|federal bids|2026-06-29",
     "sourceId": "2698412597",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1562,7 +1622,7 @@
     ],
     "canonicalKey": "tower road sanitary interceptor phase 1|city and county of denver department of transportation & infrastructure|2026-07-14",
     "sourceId": "9001684713",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -1632,7 +1692,7 @@
     ],
     "canonicalKey": "city of sterling 2026 curb ramp and concrete on call project 26 003|member agency bids|2026-06-25",
     "sourceId": "9138217151",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -1691,7 +1751,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "east colfax avenue bus rapid transit brt custodial and snow removal services|member agency bids|2026-07-09",
     "sourceId": "9131246169",
-    "lastSeenAt": "2026-06-10T07:07:15.494Z",
+    "lastSeenAt": "2026-06-10T13:51:51.699Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1753,7 +1813,7 @@
     ],
     "canonicalKey": "rfp colfax bus rapid transit brt custodial snow removal services|city and county of denver department of transportation & infrastructure|2026-07-09",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:04.253Z",
+    "lastSeenAt": "2026-06-10T13:51:38.340Z",
     "matchKeywords": [
       "concrete",
       "denver",
@@ -1825,7 +1885,7 @@
     "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "civicengage-southgate-water-sanitation-17",
@@ -1881,7 +1941,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 sewer rehabilitation project|southgate water and sanitation districts|2026-06-30",
     "sourceId": "southgate-water-sanitation:17",
-    "lastSeenAt": "2026-06-10T07:08:49.231Z",
+    "lastSeenAt": "2026-06-10T13:52:24.574Z",
     "matchKeywords": [
       "concrete",
       "civicengage",
@@ -1953,7 +2013,7 @@
     "daysUntilDue": 30,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-2697411722",
@@ -2020,7 +2080,7 @@
     "daysUntilDue": 30,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9085267817",
@@ -2080,7 +2140,7 @@
     "daysUntilDue": 27,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-2697346442",
@@ -2143,7 +2203,7 @@
     "daysUntilDue": 26,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.699Z"
   },
   {
     "id": "bidnet-2697501482",
@@ -2206,7 +2266,7 @@
     "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9116115903",
@@ -2266,7 +2326,7 @@
     "daysUntilDue": 26,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.496Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9109466402",
@@ -2326,7 +2386,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.496Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "opengov-rtd-denver-271229",
@@ -2380,7 +2440,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "automated external defibrillator aed program management and concierge services|regional transportation district|2026-06-26",
     "sourceId": "rtd-denver:271229",
-    "lastSeenAt": "2026-06-10T07:07:16.921Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -2451,7 +2511,7 @@
     "daysUntilDue": 42,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "colorado-vss-rfq1-gjea-2026000042-1",
@@ -2502,7 +2562,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "frcc facilities master plan|front range community college|2026-07-10",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.247Z",
+    "lastSeenAt": "2026-06-10T13:51:35.100Z",
     "matchKeywords": [
       "general",
       "2026000042",
@@ -2574,7 +2634,7 @@
     "daysUntilDue": 27,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9116122058",
@@ -2634,7 +2694,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.495Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9112727812",
@@ -2696,7 +2756,7 @@
     "daysUntilDue": 43,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.496Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "opengov-wheatridgeco-266523",
@@ -2751,7 +2811,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "public art management plan update|city of wheat ridge|2026-06-30",
     "sourceId": "wheatridgeco:266523",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -2816,7 +2876,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "trash and recycling collection service 2026|regional transportation district|2026-07-02",
     "sourceId": "rtd-denver:263716",
-    "lastSeenAt": "2026-06-10T07:07:16.921Z",
+    "lastSeenAt": "2026-06-10T13:51:52.818Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -2889,7 +2949,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9105995051",
@@ -2949,7 +3009,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9107505103",
@@ -3010,7 +3070,7 @@
     "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9106489452",
@@ -3074,7 +3134,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-444048042385",
@@ -3134,7 +3194,7 @@
     "daysUntilDue": 5,
     "expiresSoon": true,
     "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "opengov-ouraycountyco-270978",
@@ -3189,7 +3249,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "log cabin disassembly and removal|county of ouray, co|2026-07-08",
     "sourceId": "ouraycountyco:270978",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "paving",
       "opengov",
@@ -3262,7 +3322,7 @@
     "daysUntilDue": 35,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9105931015",
@@ -3322,7 +3382,7 @@
     "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9107505104",
@@ -3386,7 +3446,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.700Z"
   },
   {
     "id": "bidnet-9108138252",
@@ -3449,7 +3509,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9106373207",
@@ -3509,7 +3569,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-2696712257",
@@ -3573,7 +3633,7 @@
     "daysUntilDue": 26,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.497Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9094714303",
@@ -3636,7 +3696,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9099085602",
@@ -3690,7 +3750,7 @@
     ],
     "canonicalKey": "engineering services for the shop creek secondary backup generator|member agency bids|2026-06-23",
     "sourceId": "9099085602",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -3758,7 +3818,7 @@
     "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-444046639661",
@@ -3818,7 +3878,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "bidnet-9095054760",
@@ -3878,7 +3938,7 @@
     "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "civicengage-steamboat-springs-529",
@@ -3945,7 +4005,7 @@
     ],
     "canonicalKey": "meadow lane culvert replacement|city of steamboat springs|2026-07-09",
     "sourceId": "steamboat-springs:529",
-    "lastSeenAt": "2026-06-10T07:08:49.229Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -4023,7 +4083,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-9099086957",
@@ -4083,7 +4143,7 @@
     "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.701Z"
   },
   {
     "id": "civicengage-gunnison-county-107",
@@ -4150,7 +4210,7 @@
     ],
     "canonicalKey": "request for proposals 2026 paving services|gunnison county|2026-07-01",
     "sourceId": "gunnison-county:107",
-    "lastSeenAt": "2026-06-10T07:08:49.229Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -4227,7 +4287,7 @@
     "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-9084598754",
@@ -4279,7 +4339,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "cwcb grant for john griffin reservoir feasibility study|member agency bids|2026-06-30",
     "sourceId": "9084598754",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4346,7 +4406,7 @@
     "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-2695739942",
@@ -4409,7 +4469,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-2695701692",
@@ -4469,7 +4529,7 @@
     "daysUntilDue": 33,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "denver-202684561",
@@ -4525,7 +4585,7 @@
     ],
     "canonicalKey": "rfq boettcher concert hall renovation|city and county of denver department of transportation & infrastructure|2026-07-21",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:04.253Z",
+    "lastSeenAt": "2026-06-10T13:51:38.339Z",
     "matchKeywords": [
       "general",
       "denver",
@@ -4596,7 +4656,7 @@
     "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-9075119207",
@@ -4656,7 +4716,7 @@
     "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-2695835822",
@@ -4716,7 +4776,7 @@
     "daysUntilDue": 5,
     "expiresSoon": true,
     "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-9085267811",
@@ -4776,7 +4836,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-444041369809",
@@ -4836,68 +4896,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
-  },
-  {
-    "id": "bidnet-444042228981",
-    "title": "2026 Passenger Boarding Bridge and Fixed Walkway Connectors",
-    "slug": "2026-passenger-boarding-bridge-and-fixed-walkway-connectors-444042228981",
-    "state": "colorado",
-    "city": "Colorado",
-    "county": "",
-    "trade": "concrete",
-    "agency": "State & Local Bids",
-    "postedDate": "2026-05-29",
-    "dueDate": "2026-06-22",
-    "daysUntilDue": 12,
-    "expiresSoon": false,
-    "dueStatus": "",
-    "estimatedValue": "Not listed",
-    "projectType": "general-construction",
-    "projectTypeLabel": "General Construction",
-    "contractorFit": "medium",
-    "filterTags": [
-      "construction",
-      "general",
-      "concrete",
-      "state & local bids"
-    ],
-    "summary": "2026 Passenger Boarding Bridge and Fixed Walkway Connectors. State & Local Bids listed on BidNet Direct for Colorado construction opportunities.",
-    "requirements": [
-      "BidNet category: State & Local Bids",
-      "Published: 2026-05-29",
-      "Closing: 2026-06-22",
-      "Time remaining: 12 day(s) left",
-      "BidNet reference: 444042228981"
-    ],
-    "sourceName": "BidNet Direct",
-    "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/2026-Passenger-Boarding-Bridge-and-Fixed-Walkway-Connectors/444042228981?origin=0&target=view",
-    "sourceLookupInstructions": "Open BidNet Direct and use the direct source link, or search BidNet for reference 444042228981.",
-    "sourceLookupSteps": [
-      "Open BidNet Direct open solicitations.",
-      "Filter to Colorado and Construction if needed.",
-      "Search or locate reference 444042228981.",
-      "Open the matching solicitation record."
-    ],
-    "solicitationRef": "444042228981",
-    "solicitationNumber": "444042228981",
-    "buyer": "",
-    "buyerEmail": "",
-    "tradeConfidence": "low",
-    "matchedTradeKeywords": [
-      "bridge/civil"
-    ],
-    "canonicalKey": "2026 passenger boarding bridge and fixed walkway connectors|state & local bids|2026-06-22",
-    "sourceId": "444042228981",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z",
-    "matchKeywords": [
-      "concrete",
-      "bidnet",
-      "colorado",
-      "state & local bids",
-      "444042228981",
-      "bridge/civil"
-    ]
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-444042168502",
@@ -4957,7 +4956,7 @@
     "daysUntilDue": 28,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9078281352",
@@ -5020,7 +5019,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-2695497437",
@@ -5084,7 +5083,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-2695339847",
@@ -5116,7 +5115,8 @@
       "BidNet reference: 2695339847",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 13 hour(s) left"
+      "Time remaining: 13 hour(s) left",
+      "Time remaining: 7 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/J045-Boiler-Economizer-Inspection-635-26-3-5406-0712/2695339847?origin=0&target=view",
@@ -5148,7 +5148,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "opengov-rtd-denver-270000",
@@ -5202,7 +5202,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "public opinion polling consulting|regional transportation district|2026-07-06",
     "sourceId": "rtd-denver:270000",
-    "lastSeenAt": "2026-06-10T07:07:16.921Z",
+    "lastSeenAt": "2026-06-10T13:51:52.818Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -5272,7 +5272,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.702Z"
   },
   {
     "id": "bidnet-444041369812",
@@ -5332,7 +5332,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-444041369818",
@@ -5392,7 +5392,89 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
+  },
+  {
+    "id": "civicengage-montrose-county-299",
+    "title": "2026 Passenger Boarding Bridge and Fixed Walkway Connectors",
+    "slug": "2026-passenger-boarding-bridge-and-fixed-walkway-connectors-299",
+    "state": "colorado",
+    "city": "Montrose",
+    "county": "Montrose",
+    "trade": "concrete",
+    "agency": "Montrose County",
+    "postedDate": "2026-05-28",
+    "dueDate": "2026-06-22",
+    "daysUntilDue": 12,
+    "expiresSoon": false,
+    "dueStatus": "",
+    "estimatedValue": "Not listed",
+    "projectType": "construction-procurement",
+    "projectTypeLabel": "Construction Procurement",
+    "contractorFit": "high",
+    "filterTags": [
+      "civicengage",
+      "civicplus",
+      "montrose-county",
+      "montrose",
+      "concrete",
+      "construction & maintenance",
+      "contractor-relevant"
+    ],
+    "summary": "Passenger Boarding Bridge and Fixed Walkway Connectors Major items of work include: Removal of existing concrete pedestals, additional structural reinforcement, removal and replacement of existing aircraft apron pavement around new structure, build out of the existing gate 4 & 5 canopies to be enclosed and refinished. Fixed walkway and Passenger boarding bridge to be provided and installed by separate vendors.",
+    "requirements": [
+      "BidNet category: State & Local Bids",
+      "Published: 2026-05-29",
+      "Closing: 2026-06-22",
+      "Time remaining: 12 day(s) left",
+      "BidNet reference: 444042228981",
+      "Category: Construction & Maintenance",
+      "Status: Open",
+      "Bid number: 299",
+      "Published: 2026-05-28",
+      "Closing: 6/22/2026 1:00 PM",
+      "Normalized due date: 2026-06-22"
+    ],
+    "sourceName": "Colorado CivicEngage Bid Postings",
+    "sourceUrl": "https://www.montrosecounty.net/bids.aspx?bidID=299",
+    "sourceLookupInstructions": "Open the Montrose County bid posting page and search for 299.",
+    "sourceLookupSteps": [
+      "Open BidNet Direct open solicitations.",
+      "Filter to Colorado and Construction if needed.",
+      "Search or locate reference 444042228981.",
+      "Open the matching solicitation record.",
+      "Open Montrose County bid postings.",
+      "Filter to open bids if needed.",
+      "Search or locate bid number 299.",
+      "Open the matching bid detail record."
+    ],
+    "solicitationRef": "299",
+    "solicitationNumber": "299",
+    "buyer": "",
+    "buyerEmail": "",
+    "tradeConfidence": "source",
+    "matchedTradeKeywords": [
+      "bridge/civil"
+    ],
+    "canonicalKey": "2026 passenger boarding bridge and fixed walkway connectors|montrose county|2026-06-22",
+    "sourceId": "montrose-county:299",
+    "lastSeenAt": "2026-06-10T13:52:24.574Z",
+    "matchKeywords": [
+      "concrete",
+      "bidnet",
+      "colorado",
+      "state & local bids",
+      "444042228981",
+      "bridge/civil",
+      "civicengage",
+      "civicplus",
+      "montrose-county",
+      "montrose county",
+      "montrose",
+      "construction & maintenance",
+      "299",
+      "paving/asphalt"
+    ]
   },
   {
     "id": "cdot-apr-104-2026",
@@ -5443,7 +5525,7 @@
     ],
     "canonicalKey": "apr 104-2026|colorado department of transportation|2026-06-12",
     "sourceId": "APR 104-2026",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.472Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5502,7 +5584,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "mtce r100-444 (27389)|colorado department of transportation|2026-06-11",
     "sourceId": "MTCE R100-444 (27389)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.472Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5560,7 +5642,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "mtce r200-315 (27276)|colorado department of transportation|2026-06-18",
     "sourceId": "MTCE R200-315 (27276)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.473Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5620,7 +5702,7 @@
     ],
     "canonicalKey": "mtce r300-297 (27473)|colorado department of transportation|2026-06-18",
     "sourceId": "MTCE R300-297 (27473)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.474Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5679,7 +5761,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "mtce r300-298 (27486)|colorado department of transportation|2026-06-18",
     "sourceId": "MTCE R300-298 (27486)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.473Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5739,7 +5821,7 @@
     ],
     "canonicalKey": "nhpp 1211-111 (26942combo)|colorado department of transportation|2026-06-11",
     "sourceId": "NHPP 1211-111 (26942Combo)",
-    "lastSeenAt": "2026-06-10T07:07:02.455Z",
+    "lastSeenAt": "2026-06-10T13:51:35.471Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5802,7 +5884,7 @@
     ],
     "canonicalKey": "she 095a-024 (25543)|colorado department of transportation|2026-06-18",
     "sourceId": "SHE 095A-024 (25543)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.472Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5865,7 +5947,7 @@
     ],
     "canonicalKey": "stm 0243-098 (26947)|colorado department of transportation|2026-06-18",
     "sourceId": "STM 0243-098 (26947)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.472Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5928,7 +6010,7 @@
     ],
     "canonicalKey": "str 348a-001 (25237combo)|colorado department of transportation|2026-06-18",
     "sourceId": "STR 348A-001 (25237Combo)",
-    "lastSeenAt": "2026-06-10T07:07:02.456Z",
+    "lastSeenAt": "2026-06-10T13:51:35.472Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -5994,7 +6076,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "city of cortez airport leach field replacement project|city of cortez|2026-06-15",
     "sourceId": "cortez:242",
-    "lastSeenAt": "2026-06-10T07:08:49.231Z",
+    "lastSeenAt": "2026-06-10T13:52:24.574Z",
     "matchKeywords": [
       "concrete",
       "civicengage",
@@ -6065,7 +6147,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9053294165",
@@ -6125,7 +6207,7 @@
     "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9053345355",
@@ -6185,7 +6267,7 @@
     "daysUntilDue": 2,
     "expiresSoon": true,
     "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000193-1",
@@ -6245,7 +6327,7 @@
     ],
     "canonicalKey": "oaaa 2010 082519 fort collins emergency generator|dmva - department of military and veterans affairs|2026-07-08",
     "sourceId": "444047169200",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z",
+    "lastSeenAt": "2026-06-10T13:51:51.701Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -6320,7 +6402,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9053345351",
@@ -6380,7 +6462,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9054177661",
@@ -6443,7 +6525,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.499Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "civicengage-clear-creek-county-375",
@@ -6499,7 +6581,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for bids for pistol shooting benches project|clear creek county|2026-06-10",
     "sourceId": "clear-creek-county:375",
-    "lastSeenAt": "2026-06-10T07:08:49.229Z",
+    "lastSeenAt": "2026-06-10T13:52:24.572Z",
     "matchKeywords": [
       "concrete",
       "civicengage",
@@ -6560,7 +6642,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "tower replacement monarch pass|cdps - division of homeland security & emergency management|2026-06-16",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.245Z",
+    "lastSeenAt": "2026-06-10T13:51:35.099Z",
     "matchKeywords": [
       "general",
       "2026000181",
@@ -6632,7 +6714,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9049723456",
@@ -6663,7 +6745,8 @@
       "BidNet reference: 0000425803",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Final-Settlement-Construction-Contract-for-Inverness-Bike-Path-Project/0000425803?origin=0",
@@ -6692,7 +6775,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-2694685007",
@@ -6752,7 +6835,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9040835217",
@@ -6812,7 +6895,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000192-2",
@@ -6864,7 +6947,7 @@
     ],
     "canonicalKey": "oaaa 2010 082516 watkins fire alarm replacement|dmva - department of military and veterans affairs|2026-06-25",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.247Z",
+    "lastSeenAt": "2026-06-10T13:51:35.100Z",
     "matchKeywords": [
       "electrical",
       "2026000192",
@@ -6932,7 +7015,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pkaa walsen project|dnr - division of reclamation mining & safety|2026-06-23",
     "sourceId": "444047225903",
-    "lastSeenAt": "2026-06-10T07:07:15.498Z",
+    "lastSeenAt": "2026-06-10T13:51:51.701Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7005,7 +7088,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "opengov-rtd-denver-264137",
@@ -7060,7 +7143,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "ticket vending machine tvm replacements 5 sbe goal|regional transportation district|2026-06-29",
     "sourceId": "rtd-denver:264137",
-    "lastSeenAt": "2026-06-10T07:07:16.921Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -7130,7 +7213,7 @@
     "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-2694362942",
@@ -7190,7 +7273,7 @@
     "daysUntilDue": 2,
     "expiresSoon": true,
     "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9040838709",
@@ -7250,7 +7333,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9037142856",
@@ -7313,7 +7396,7 @@
     "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9037071006",
@@ -7376,7 +7459,7 @@
     "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9037534759",
@@ -7436,7 +7519,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9037267812",
@@ -7500,7 +7583,7 @@
     "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-8997754307",
@@ -7560,7 +7643,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "colorado-vss-dq1-pkaa-2026000470-2",
@@ -7610,7 +7693,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pkaa madonna project|dnr - division of reclamation mining & safety|2026-06-24",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.246Z",
+    "lastSeenAt": "2026-06-10T13:51:35.100Z",
     "matchKeywords": [
       "general",
       "2026000470",
@@ -7675,7 +7758,7 @@
     ],
     "canonicalKey": "stormwater improvements pikes peak park|city of pueblo|2026-06-17",
     "sourceId": "pueblo:255707",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "utilities",
       "opengov",
@@ -7748,7 +7831,7 @@
     "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.703Z"
   },
   {
     "id": "bidnet-9009533324",
@@ -7809,7 +7892,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9018581916",
@@ -7869,7 +7952,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9028027158",
@@ -7900,7 +7983,8 @@
       "BidNet reference: 0000425504",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 9 hour(s) left"
+      "Time remaining: 9 hour(s) left",
+      "Time remaining: 3 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Street-Mill-and-Overlays-HMA-patching-Infrared-Patching-and-Concrete-Flatwork/0000425504?origin=0",
@@ -7933,7 +8017,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9023280608",
@@ -7993,7 +8077,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.500Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-8895116721",
@@ -8054,7 +8138,7 @@
     "daysUntilDue": 20,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-8931526702",
@@ -8117,7 +8201,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9020758451",
@@ -8177,7 +8261,7 @@
     "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9006670314",
@@ -8237,7 +8321,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9017145512",
@@ -8300,7 +8384,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "civicengage-steamboat-springs-527",
@@ -8357,7 +8441,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "emerald park irrigation system replacement project|city of steamboat springs|2026-06-18",
     "sourceId": "steamboat-springs:527",
-    "lastSeenAt": "2026-06-10T07:08:49.229Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "utilities",
       "civicengage",
@@ -8432,7 +8516,7 @@
     "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9017145515",
@@ -8485,7 +8569,7 @@
     ],
     "canonicalKey": "maroon creek hydro gravity concrete dam structural stability and stress analyses|member agency bids|2026-06-12",
     "sourceId": "9017145515",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -8555,7 +8639,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "civicengage-steamboat-springs-528",
@@ -8619,7 +8703,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "yampa river botanic park expansion project|city of steamboat springs|2026-06-18",
     "sourceId": "steamboat-springs:528",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8698,7 +8782,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "bidnet-9006670315",
@@ -8761,7 +8845,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000189-1",
@@ -8813,7 +8897,7 @@
     ],
     "canonicalKey": "oaaa roof repair bsfb hangar building 801|dmva - department of military and veterans affairs|2026-06-23",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.246Z",
+    "lastSeenAt": "2026-06-10T13:51:35.099Z",
     "matchKeywords": [
       "roofing",
       "2026000189",
@@ -8875,7 +8959,7 @@
     ],
     "canonicalKey": "oaaa roof repair bsfb wing hq building 706|dmva - department of military and veterans affairs|2026-06-23",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.246Z",
+    "lastSeenAt": "2026-06-10T13:51:35.099Z",
     "matchKeywords": [
       "roofing",
       "2026000191",
@@ -8953,7 +9037,7 @@
     ],
     "canonicalKey": "2026 emergency wastewater repairs|city and county of denver department of transportation & infrastructure|2026-06-18",
     "sourceId": "8845276862",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z",
+    "lastSeenAt": "2026-06-10T13:51:51.705Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9033,7 +9117,7 @@
     "daysUntilDue": 5,
     "expiresSoon": true,
     "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8999299803",
@@ -9096,7 +9180,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.501Z"
+    "lastSeenAt": "2026-06-10T13:51:51.704Z"
   },
   {
     "id": "civicengage-fort-morgan-975",
@@ -9153,7 +9237,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "city of fort morgan wastewater treatment facility expansion project|city of fort morgan|2026-06-25",
     "sourceId": "fort-morgan:975",
-    "lastSeenAt": "2026-06-10T07:08:49.231Z",
+    "lastSeenAt": "2026-06-10T13:52:24.574Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -9220,7 +9304,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "lake county public library roof replacement|lake county|2026-06-15",
     "sourceId": "lake-county:69",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "roofing",
       "civicengage",
@@ -9283,7 +9367,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "operations maintenance manual update water treatment facilities|member agency bids|2026-06-22",
     "sourceId": "8970467505",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9350,7 +9434,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8995374252",
@@ -9415,7 +9499,7 @@
     "daysUntilDue": 12,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "civicengage-steamboat-springs-526",
@@ -9471,7 +9555,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "howelsen ice arena second sheet|city of steamboat springs|2026-06-15",
     "sourceId": "steamboat-springs:526",
-    "lastSeenAt": "2026-06-10T07:08:49.229Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "general",
       "civicengage",
@@ -9545,7 +9629,7 @@
     "daysUntilDue": 5,
     "expiresSoon": true,
     "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8956490966",
@@ -9606,7 +9690,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-2691433502",
@@ -9667,7 +9751,7 @@
     "daysUntilDue": 2,
     "expiresSoon": true,
     "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8970028358",
@@ -9727,7 +9811,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8981797602",
@@ -9758,7 +9842,8 @@
       "BidNet reference: 0000424575",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/PRV-3-5-Replacement/0000424575?origin=0",
@@ -9787,7 +9872,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-444021179691",
@@ -9850,7 +9935,7 @@
     "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8970028357",
@@ -9902,7 +9987,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "rfp 2026 ww 001 wastewater treatment facility expansion design services|member agency bids|2026-06-16",
     "sourceId": "8970028357",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9970,7 +10055,7 @@
     "daysUntilDue": 5,
     "expiresSoon": true,
     "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8923705658",
@@ -10033,7 +10118,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8949840854",
@@ -10084,7 +10169,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "rebuilding bailey co|member agency bids|2026-06-12",
     "sourceId": "8949840854",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -10155,7 +10240,7 @@
     "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "denver-202684399",
@@ -10211,7 +10296,7 @@
     ],
     "canonicalKey": "rfq denver public library branch renovations shade structure|city and county of denver department of transportation & infrastructure|2026-06-18",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:04.253Z",
+    "lastSeenAt": "2026-06-10T13:51:38.340Z",
     "matchKeywords": [
       "general",
       "denver",
@@ -10281,7 +10366,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8885198501",
@@ -10333,7 +10418,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "comprehensive assessment of the variable costs of water delivery|member agency bids|2026-06-24",
     "sourceId": "8885198501",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -10400,7 +10485,7 @@
     "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8929697962",
@@ -10431,7 +10516,8 @@
       "BidNet reference: 0000424037",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 11 hour(s) left"
+      "Time remaining: 11 hour(s) left",
+      "Time remaining: 5 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Exterior-Painting-Estes-Valley-Community-Center/0000424037?origin=0",
@@ -10460,7 +10546,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "opengov-rtd-denver-262360",
@@ -10515,7 +10601,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "light rail systems asset management gap assessment and implementation plan|regional transportation district|2026-06-17",
     "sourceId": "rtd-denver:262360",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -10576,7 +10662,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "lrmwtf expansion improvements raw water booster pump station upgrades|member agency bids|2026-06-17",
     "sourceId": "8938036956",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -10646,7 +10732,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.502Z"
+    "lastSeenAt": "2026-06-10T13:51:51.705Z"
   },
   {
     "id": "bidnet-8928319802",
@@ -10677,7 +10763,8 @@
       "BidNet reference: 0000423930",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Bristol-Hall-Geothermal/0000423930?origin=0",
@@ -10706,7 +10793,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8928319801",
@@ -10737,7 +10824,8 @@
       "BidNet reference: 0000423925",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Concrete-Replacement-Project/0000423925?origin=0",
@@ -10768,7 +10856,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "colorado-vss-dq1-pkaa-2026000476-1",
@@ -10818,7 +10906,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pkaa wandering prospector project|dnr - division of reclamation mining & safety|2026-06-23",
     "sourceId": "",
-    "lastSeenAt": "2026-06-10T07:07:02.246Z",
+    "lastSeenAt": "2026-06-10T13:51:35.100Z",
     "matchKeywords": [
       "general",
       "2026000476",
@@ -10860,7 +10948,8 @@
       "Closing: 2026-06-10",
       "Time remaining: 1 day(s) left",
       "BidNet reference: 0000423907",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/SCADA-Master-Plan/0000423907?origin=0",
@@ -10879,7 +10968,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "scada master plan|member agency bids|2026-06-10",
     "sourceId": "8925231052",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -10950,7 +11039,7 @@
     "daysUntilDue": 2,
     "expiresSoon": true,
     "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-10T07:07:15.503Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8931526701",
@@ -11010,7 +11099,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8849791501",
@@ -11074,7 +11163,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8925531601",
@@ -11134,7 +11223,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "opengov-wheatridgeco-264195",
@@ -11193,7 +11282,7 @@
     ],
     "canonicalKey": "2026 residential concrete project|city of wheat ridge|2026-06-16",
     "sourceId": "wheatridgeco:264195",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "concrete",
       "opengov",
@@ -11236,7 +11325,8 @@
       "BidNet reference: 0000422152",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Castlewood-Library-Sanitary-Replacement-Project-Plumbing/0000422152?origin=0",
@@ -11268,7 +11358,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.504Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-444006641627",
@@ -11319,7 +11409,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "design consultants|state & local bids|2026-06-15",
     "sourceId": "444006641627",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -11386,7 +11476,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8895051872",
@@ -11420,7 +11510,8 @@
       "BidNet reference: 0000423481",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 14 hour(s) left"
+      "Time remaining: 14 hour(s) left",
+      "Time remaining: 8 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Office-Remodel-Morgan-County-Justice-Center/0000423481?origin=0",
@@ -11449,7 +11540,7 @@
       "member agency bids",
       "0000423481"
     ],
-    "lastSeenAt": "2026-06-10T07:07:15.504Z",
+    "lastSeenAt": "2026-06-10T13:51:51.706Z",
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today"
@@ -11507,7 +11598,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "rtd large printing contract|regional transportation district|2026-06-15",
     "sourceId": "rtd-denver:258528",
-    "lastSeenAt": "2026-06-10T07:07:16.920Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -11577,7 +11668,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8807796422",
@@ -11637,7 +11728,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8866622614",
@@ -11699,7 +11790,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8867717553",
@@ -11730,7 +11821,8 @@
       "BidNet reference: 0000422836",
       "Time remaining: 2 day(s) left",
       "Time remaining: 1 day(s) left",
-      "Time remaining: 12 hour(s) left"
+      "Time remaining: 12 hour(s) left",
+      "Time remaining: 6 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Perimeter-Fence-Project/0000422836?origin=0",
@@ -11759,7 +11851,7 @@
     "daysUntilDue": 0,
     "expiresSoon": true,
     "dueStatus": "Due Today",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8846133418",
@@ -11819,7 +11911,7 @@
     "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8645648460",
@@ -11851,7 +11943,8 @@
       "Closing: 2026-06-10",
       "Time remaining: 1 day(s) left",
       "BidNet reference: 0000419004",
-      "Time remaining: 8 hour(s) left"
+      "Time remaining: 8 hour(s) left",
+      "Time remaining: 2 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Design-Fabrication-and-Delivery-of-Engineered-Tubular-Steel-Structures/0000419004?origin=0",
@@ -11870,7 +11963,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "on call design fabrication and delivery of engineered tubular steel structures|member agency bids|2026-06-10",
     "sourceId": "8645648460",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z",
+    "lastSeenAt": "2026-06-10T13:51:51.707Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -11937,7 +12030,7 @@
     "daysUntilDue": 13,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8835216470",
@@ -11997,7 +12090,7 @@
     "daysUntilDue": 30,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-443989749738",
@@ -12057,7 +12150,7 @@
     "daysUntilDue": 6,
     "expiresSoon": true,
     "dueStatus": "Due in 6 days",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-2684955482",
@@ -12117,7 +12210,7 @@
     "daysUntilDue": 19,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8803871153",
@@ -12181,7 +12274,7 @@
     "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "opengov-pueblo-247496",
@@ -12238,7 +12331,7 @@
     ],
     "canonicalKey": "remodel wastewater treatment plant pretreatment building|city of pueblo|2026-06-10",
     "sourceId": "pueblo:247496",
-    "lastSeenAt": "2026-06-10T07:07:16.919Z",
+    "lastSeenAt": "2026-06-10T13:51:52.817Z",
     "matchKeywords": [
       "utilities",
       "opengov",
@@ -12308,7 +12401,7 @@
     "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8679606263",
@@ -12368,7 +12461,7 @@
     "daysUntilDue": 52,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-8586496110",
@@ -12428,7 +12521,7 @@
     "daysUntilDue": 127,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.706Z"
   },
   {
     "id": "bidnet-443901897990",
@@ -12490,7 +12583,7 @@
     "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z"
+    "lastSeenAt": "2026-06-10T13:51:51.707Z"
   },
   {
     "id": "bidnet-443901897993",
@@ -12550,7 +12643,7 @@
     "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-10T07:07:15.505Z"
+    "lastSeenAt": "2026-06-10T13:51:51.707Z"
   },
   {
     "id": "bidnet-2665091492",
@@ -12610,7 +12703,7 @@
     "daysUntilDue": 1,
     "expiresSoon": true,
     "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-10T07:07:15.506Z"
+    "lastSeenAt": "2026-06-10T13:51:51.707Z"
   },
   {
     "id": "civicengage-lake-county-63",
@@ -12666,7 +12759,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "leadville lake county airport hangar development|lake county|2026-06-18",
     "sourceId": "lake-county:63",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "general",
       "civicengage",
@@ -12733,7 +12826,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for quote material hauling|san miguel county|",
     "sourceId": "san-miguel-county:159",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.573Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -12801,7 +12894,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "harvest grass hay on county owned property|park county|",
     "sourceId": "park-county:120",
-    "lastSeenAt": "2026-06-10T07:08:49.230Z",
+    "lastSeenAt": "2026-06-10T13:52:24.574Z",
     "matchKeywords": [
       "general",
       "civicengage",
