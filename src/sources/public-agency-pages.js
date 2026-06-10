@@ -250,6 +250,20 @@ function extractSolicitationNumber(text) {
   return match ? match[1].replace(/\s+/g, ' ').toUpperCase() : '';
 }
 
+function evansFiscalYear(text) {
+  const match = String(text || '').match(/\bFY(\d{2})\b/i);
+  return match ? Number(match[1]) : null;
+}
+
+function normalizeEvansProjectTitle(value) {
+  let title = String(value || '');
+  title = title.replace(/^\s*FY\d{2}\s*[- ]?\s*\d{3}\s*/i, '');
+  title = title.replace(/^\s*(RFQ|RFP|ITB)\s+/i, '');
+  title = title.replace(/\s+FINAL\s*$/i, '');
+  title = compactText(title);
+  return normalizeTitle(title);
+}
+
 function bestEvansSourceLink(title, followingLines, links) {
   const titleTokens = new Set(normalizeTitle(title).toLowerCase().split(/[^a-z0-9]+/).filter(token => token.length > 2));
   const candidates = links.filter(link => {
@@ -341,23 +355,31 @@ function parseD11CurrentSolicitations(html, page) {
 }
 
 function parseFortLewisCollege(html, page) {
-  const text = stripHtml(html);
-  const marker = text.indexOf('View our current opportunities to bid');
-  const slice = marker >= 0 ? html.slice(Math.max(0, html.indexOf('View our current opportunities to bid') - 2000)) : html;
-  const links = linkRecords(slice, page.url).filter(link => /request|notice/i.test(link.title));
-  const seen = new Set();
-  return links.filter(link => {
-    const key = `${link.title}|${link.sourceUrl}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return !/rocky mountain/i.test(link.title);
-  }).map(link => baseRecord(page, {
-    title: link.title.replace(/^[-\s]+/, ''),
-    sourceUrl: link.sourceUrl,
-    postedDate: todayIso(),
-    summary: `${link.title}. Public opportunity listed on Fort Lewis College's current opportunities page.`,
-    requirements: ['Fort Lewis notes formal bids/specifications are also available through Rocky Mountain E-Purchasing.']
-  }));
+  const marker = html.indexOf('View our current opportunities to bid');
+  const endMarker = '</div><!-- End_Module_1720 -->';
+  const section = marker >= 0 ? html.slice(marker, Math.max(marker, html.indexOf(endMarker, marker) + endMarker.length)) : html;
+  const records = [];
+  const paragraphRe = /<p>\s*([^<]*?-)?\s*<a[^>]*href=["']([^"']+)["'][^>]*>([^<]+)<\/a>\s*<\/p>/gi;
+  let match;
+
+  while ((match = paragraphRe.exec(section))) {
+    const label = compactText(match[1] || '');
+    const title = normalizeTitle(match[3]);
+    if (!title) continue;
+    if (/bidnetdirect\.com|rocky mountain e-purchasing|formal bids and specifications are available|register with rocky mountain/i.test(label + ' ' + title)) continue;
+    if (/notice of final settlement/i.test(title)) continue;
+
+    const solicitationNumber = extractSolicitationNumber(`${label} ${title}`);
+    records.push(baseRecord(page, {
+      title,
+      solicitationNumber,
+      postedDate: todayIso(),
+      summary: `${title}. Public opportunity listed on Fort Lewis College's current opportunities page.`,
+      requirements: ['Bid details are published as PDF attachments from Fort Lewis College. Use the official opportunities page to locate current documents.']
+    }));
+  }
+
+  return records;
 }
 
 
@@ -367,18 +389,26 @@ function parseEvansBidsAndRfps(html, page) {
   if (marker === -1) return [];
 
   // Evans renders the current bid section as project headings followed by
-  // document links. The old parser kept every line after the heading, which
-  // pulled in document links, bid tabs, site navigation, footer links, and
-  // random CMS noise. Stop at the Bid Archives boundary and only keep the
-  // parent project headings.
+  // document links. Keep only the main project headings and prefer the latest
+  // fiscal year if older FY entries remain on the page.
   const currentSection = text.slice(marker).split(/\n\s*Bid Archives\s*\n/i)[0];
-  const lines = currentSection
+  const rawLines = currentSection
     .split('\n')
     .map(line => normalizeTitle(line))
     .filter(Boolean);
 
-  const links = linkRecords(html, page.url);
+  const fiscalYears = rawLines
+    .map(evansFiscalYear)
+    .filter(Number.isFinite);
+  const currentFiscalYear = fiscalYears.length ? Math.max(...fiscalYears) : null;
+
+  const lines = rawLines.filter(line => {
+    const year = evansFiscalYear(line);
+    return year === null || currentFiscalYear === null || year === currentFiscalYear;
+  });
+
   const records = [];
+  const seen = new Set();
 
   for (let i = 0; i < lines.length; i += 1) {
     const title = lines[i];
@@ -387,30 +417,28 @@ function parseEvansBidsAndRfps(html, page) {
     if (isEvansDocumentLine(title)) continue;
     if (!isEvansProjectHeading(title)) continue;
 
-    const following = lines.slice(i + 1, i + 9);
-    const matchingLink = bestEvansSourceLink(title, following, links) || page.url;
-    const solicitationNumber = extractSolicitationNumber(following.join(' '));
+    const normalizedTitle = normalizeEvansProjectTitle(title);
+    if (!normalizedTitle) continue;
+
+    const solicitationNumber = extractSolicitationNumber(title);
+    const key = `${normalizedTitle.toLowerCase()}|${solicitationNumber}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
 
     records.push(baseRecord(page, {
-      title,
+      title: normalizedTitle,
       solicitationNumber,
-      sourceUrl: matchingLink,
+      sourceUrl: page.url,
       postedDate: todayIso(),
-      summary: `${title}. Public bid/RFP project heading listed by the City of Evans.`,
+      summary: `${normalizedTitle}. Public bid/RFP project heading listed by the City of Evans.`,
       requirements: [
-        'Evans public page exposes current bid/RFP project headings and supporting documents.',
-        'Official documents/submission may route through Rocky Mountain E-Purchasing/BidNet.'
+        'Current project headings are listed on the City of Evans bids and RFPs page.',
+        solicitationNumber ? `Search the page for solicitation ${solicitationNumber}.` : 'Search the page for this title to find matching documents.'
       ]
     }));
   }
 
-  const seen = new Set();
-  return records.filter(record => {
-    const key = `${record.title.toLowerCase()}|${record.solicitationNumber || ''}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  return records;
 }
 
 async function fetchOpportunities() {
