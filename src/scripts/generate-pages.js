@@ -65,8 +65,7 @@ function deadlinePill(o) {
 function confidencePill(o) {
   const confidence = o.sourceConfidence;
   const className = confidence.score >= 70 ? 'good' : confidence.score >= 40 ? 'warn' : 'suspect';
-  const title = `Source confidence: ${confidence.label} (${confidence.score}/100)`;
-  return `<span class="pill ${className}" title="${escapeAttr(title)}">${escapeHtml(confidence.label)} ${confidence.score}</span>`;
+  return `<span class="pill ${className}">${escapeHtml(confidence.label)}</span>`;
 }
 
 function displayValue(value) {
@@ -179,7 +178,7 @@ for (const rawOpportunity of opportunities) {
     description: description,
     canonicalUrl: canonicalUrl,
     metaExtra: metaExtra,
-    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${deadlinePill(o)}${confidencePill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Deadline Status</strong><p>${escapeHtml(o.deadlineStatus)}</p></div><div><strong>Source Confidence</strong><p>${escapeHtml(o.sourceConfidence.label)} (${o.sourceConfidence.score}/100)</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
+    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${deadlinePill(o)}${confidencePill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Deadline Status</strong><p>${escapeHtml(o.deadlineStatus)}</p></div><div><strong>Opportunity Confidence</strong><p>${escapeHtml(o.sourceConfidence.label)}</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
   }));
 }
 

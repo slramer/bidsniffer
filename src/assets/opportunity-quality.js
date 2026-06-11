@@ -76,11 +76,19 @@
     ].filter(Boolean).join(' ');
   }
 
+  function sourceDocumentDate(item) {
+    const sourceUrl = String(item.sourceUrl ?? '');
+    const versionMatch = sourceUrl.match(/\/v(\d{10})(?:\/|$)/);
+    if (!versionMatch) return null;
+    const parsed = new Date(Number(versionMatch[1]) * 1000);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+
   function confidenceLabel(score) {
-    if (score >= 90) return 'Trusted';
-    if (score >= 70) return 'Likely Valid';
-    if (score >= 40) return 'Needs Verification';
-    return 'Suspect';
+    if (score >= 90) return 'Verified Opportunity';
+    if (score >= 70) return 'Likely Active';
+    if (score >= 40) return 'Verify Deadline';
+    return 'Historical Risk';
   }
 
   function sourceConfidence(item, referenceDate = new Date()) {
@@ -89,35 +97,52 @@
     const ageDays = postedDate
       ? Math.round((localToday(referenceDate) - postedDate) / DAY_MS)
       : null;
+    const documentDate = sourceDocumentDate(item);
+    const documentAgeDays = documentDate
+      ? Math.round((localToday(referenceDate) - documentDate) / DAY_MS)
+      : null;
+    const searchText = opportunitySearchText(item);
     const reasons = [];
     let score = 0;
 
-    if (deadline.daysUntilDue !== null && deadline.daysUntilDue > 0) {
+    if (/^https?:\/\//i.test(String(item.sourceUrl ?? ''))) {
       score += 30;
-      reasons.push('+30 future due date');
+      reasons.push('+30 official source link');
     }
-    if (deadline.daysUntilDue !== null) {
+    if (/\b(?:current|listed|published)\b/i.test(searchText)) {
       score += 20;
-      reasons.push('+20 due date present');
-    } else {
-      score -= 20;
-      reasons.push('-20 due date missing');
+      reasons.push('+20 current listing evidence');
     }
     if (TRUSTED_SOURCE.test(String(item.sourceName ?? ''))) {
       score += 20;
       reasons.push('+20 trusted procurement platform');
     }
+    if (deadline.daysUntilDue !== null && deadline.daysUntilDue > 0) {
+      score += 20;
+      reasons.push('+20 future due date');
+    }
+    if (deadline.daysUntilDue !== null) {
+      score += 15;
+      reasons.push('+15 due date present');
+    } else {
+      score -= 10;
+      reasons.push('-10 due date missing');
+    }
     if (String(item.solicitationNumber ?? '').trim()) {
       score += 15;
       reasons.push('+15 solicitation number present');
     }
-    if (ACTIVE_WORDING.test(opportunitySearchText(item))) {
+    if (ACTIVE_WORDING.test(searchText)) {
       score += 10;
       reasons.push('+10 open/active procurement wording');
     }
     if (ageDays !== null && ageDays > 365) {
-      score -= 30;
-      reasons.push('-30 document older than 1 year');
+      score -= 40;
+      reasons.push('-40 record older than 1 year');
+    }
+    if (documentAgeDays !== null && documentAgeDays > 365) {
+      score -= 60;
+      reasons.push('-60 historical source document');
     }
     if (deadline.deadlineKind === 'expired') {
       score -= 50;
@@ -156,6 +181,7 @@
     confidenceLabel,
     deadlineStatus,
     enrichOpportunity,
+    sourceDocumentDate,
     sourceConfidence
   };
 }));

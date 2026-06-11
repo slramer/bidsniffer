@@ -118,8 +118,11 @@ function validateOpportunityQuality() {
     if (!html.includes(quality.deadlineStatus)) {
       failures.push(`${opportunity.id}: missing deadline status "${quality.deadlineStatus}"`);
     }
-    if (!html.includes(`${quality.sourceConfidence.label} ${quality.sourceConfidence.score}`)) {
+    if (!html.includes(quality.sourceConfidence.label)) {
       failures.push(`${opportunity.id}: missing source confidence indicator`);
+    }
+    if (new RegExp(`${quality.sourceConfidence.label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s+\\d`).test(html)) {
+      failures.push(`${opportunity.id}: exposes numeric source confidence`);
     }
   }
 

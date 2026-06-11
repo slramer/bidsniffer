@@ -214,8 +214,7 @@ function deadlineBadge(item) {
 function confidenceBadge(item) {
   const confidence = item.sourceConfidence;
   const className = confidence.score >= 70 ? 'good' : confidence.score >= 40 ? 'warn' : 'suspect';
-  const title = `Source confidence: ${confidence.label} (${confidence.score}/100)`;
-  return `<span class="pill ${className}" title="${escapeHtml(title)}">${escapeHtml(confidence.label)} ${confidence.score}</span>`;
+  return `<span class="pill ${className}">${escapeHtml(confidence.label)}</span>`;
 }
 
 function displayValue(value) {
