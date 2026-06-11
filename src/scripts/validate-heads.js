@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const opportunities = require('../data/opportunities.json');
 const opportunityQuality = require('../assets/opportunity-quality');
+const opportunityLocation = require('../assets/opportunity-location');
 const root = path.join(__dirname, '..', '..');
 
 function readFileSafe(file) {
@@ -150,13 +151,38 @@ function validateComputedFieldsAreNotPersisted() {
   return false;
 }
 
+function validateLocations() {
+  const invalidRecords = opportunities.filter(opportunity =>
+    String(opportunity.city || '').trim().toLowerCase() === 'colorado'
+  );
+  const publicRoot = path.join(root, 'public');
+  const invalidPages = findHtmlFiles(publicRoot).filter(file =>
+    /(?:^|>)\s*Colorado,\s*CO\s*(?:<|$)/i.test(readFileSafe(file))
+  );
+  const missingLabels = opportunities.filter(opportunity => {
+    const location = opportunityLocation.normalizeLocation(opportunity);
+    return !location.locationLabel;
+  });
+
+  console.log('\nValidation: normalized opportunity locations');
+  if (!invalidRecords.length && !invalidPages.length && !missingLabels.length) {
+    console.log(`  ✓ Validated ${opportunities.length} records with no "Colorado, CO" locations.`);
+    return true;
+  }
+  for (const opportunity of invalidRecords) console.error('  ✗ invalid city:', opportunity.id);
+  for (const file of invalidPages) console.error('  ✗ invalid page:', path.relative(root, file));
+  for (const opportunity of missingLabels) console.error('  ✗ missing location label:', opportunity.id);
+  return false;
+}
+
 function main() {
   printSampleHeads();
   printSitemapSample();
   const valid = [
     validateNoNakedDueBadges(),
     validateOpportunityQuality(),
-    validateComputedFieldsAreNotPersisted()
+    validateComputedFieldsAreNotPersisted(),
+    validateLocations()
   ].every(Boolean);
   if (!valid) process.exitCode = 1;
 }

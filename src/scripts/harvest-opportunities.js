@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { classifyTradeDetails } = require('../lib/trade-classifier');
+const opportunityLocation = require('../assets/opportunity-location');
 
 const connectors = [
   require('../sources/colorado-vss'),
@@ -147,14 +148,22 @@ function normalizeOpportunity(raw, connector) {
   // painting / striping as concrete.
   const trade = classification.trade || raw.trade || 'general';
   const projectFilters = inferProjectFilters(raw, trade);
+  const normalizedLocation = opportunityLocation.normalizeLocation({
+    city: raw.city || raw.location || '',
+    county: raw.county || '',
+    locationScope: raw.locationScope || '',
+    locationLabel: raw.locationLabel || ''
+  });
 
   return {
     id: raw.id || slugify(`${connector.name}-${title}-${postedDate}`),
     title,
     slug: raw.slug || slugify(title),
     state: (raw.state || 'colorado').toLowerCase(),
-    city: raw.city || raw.location || 'Colorado',
+    city: normalizedLocation.city,
     county: raw.county || '',
+    locationScope: normalizedLocation.locationScope,
+    locationLabel: normalizedLocation.locationLabel,
     trade,
     agency: raw.agency || raw.buyer || connector.sourceName || connector.name,
     postedDate,
@@ -324,7 +333,10 @@ function mergeOpportunities(existing, incoming, replaceSourceNames = []) {
 
   const merged = mergedBeforeCleanup
     .filter(item => !isExpiredOpportunity(item))
-    .map(item => ({ ...item, ...urgencyFromDueDate(item.dueDate) }))
+    .map(item => opportunityLocation.enrichOpportunity({
+      ...item,
+      ...urgencyFromDueDate(item.dueDate)
+    }))
     .sort((a, b) => String(b.postedDate || '').localeCompare(String(a.postedDate || '')) || String(a.title).localeCompare(String(b.title)));
 
   return { merged, added, updated, expiredRemoved, existingDeduped: existing.length - existingAfterCleanup };

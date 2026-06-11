@@ -1,7 +1,9 @@
 async function loadOpportunities() {
   const res = await fetch('/data/opportunities.json');
   const items = await res.json();
-  return items.map(item => BidSnifferOpportunityQuality.enrichOpportunity(item));
+  return items.map(item => BidSnifferOpportunityQuality.enrichOpportunity(
+    BidSnifferOpportunityLocation.enrichOpportunity(item)
+  ));
 }
 
 function escapeHtml(value) {
@@ -242,7 +244,7 @@ function card(item, match) {
     <h3><a href="${url}">${escapeHtml(item.title)}</a></h3>
     <p>${escapeHtml(item.summary)}</p>
     ${matchMarkup(match)}
-    <div class="meta"><span>${escapeHtml(item.city)}, CO</span><span>${escapeHtml(item.agency)}</span><span>${escapeHtml(displayValue(item.estimatedValue))}</span></div>
+    <div class="meta"><span>${escapeHtml(item.locationLabel)}</span><span>${escapeHtml(item.agency)}</span><span>${escapeHtml(displayValue(item.estimatedValue))}</span></div>
   </article>`;
 }
 

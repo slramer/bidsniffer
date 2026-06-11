@@ -8,6 +8,7 @@
 
 const https = require('https');
 const { classifyTradeDetails } = require('../lib/trade-classifier');
+const { inferKnownCity } = require('../assets/opportunity-location');
 
 const BASE_URL = 'https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4';
 const CATEGORY_CONSTRUCTION = '22';
@@ -166,6 +167,7 @@ function buildSearchPayload(initial) {
 
 function mapRow(row) {
   const title = row.DOC_DSCR || 'Untitled Colorado VSS Solicitation';
+  const city = inferKnownCity(title);
   const docRef = row.DOC_REF || '';
   const docSlug = docRefSlug(docRef);
   const solicitationNumber = extractSolicitationNumber(docRef);
@@ -179,7 +181,9 @@ function mapRow(row) {
     title,
     slug: `${slugSafe(title)}-${docSlug}`.replace(/-+$/g, ''),
     state: 'colorado',
-    city: 'Colorado',
+    city,
+    locationScope: city ? 'city' : 'unknown',
+    locationLabel: city ? `${city}, CO` : 'Location Not Specified',
     trade,
     agency: row.DEPT_NM || 'Colorado Vendor Self Service',
     postedDate,

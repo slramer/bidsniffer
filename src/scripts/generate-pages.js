@@ -3,6 +3,7 @@ const path = require('path');
 const crypto = require('crypto');
 const opportunities = require('../data/opportunities.json');
 const opportunityQuality = require('../assets/opportunity-quality');
+const opportunityLocation = require('../assets/opportunity-location');
 
 const root = path.join(__dirname, '../../public');
 const assetsRoot = path.join(__dirname, '../assets');
@@ -34,6 +35,7 @@ function copyAsset(name) {
 ensureDir(root);
 const assetVersions = {
   css: copyAsset('styles.css'),
+  location: copyAsset('opportunity-location.js'),
   quality: copyAsset('opportunity-quality.js'),
   app: copyAsset('app.js')
 };
@@ -125,6 +127,7 @@ function layout({ title, description, body, canonicalUrl, metaExtra }) {
   <header class="header"><nav class="nav"><a class="logo" href="/">Bid<span>Sniffer</span></a><div class="navlinks"><a href="/bids/colorado/">Colorado Bids</a><a href="/contractors/profile.html">Contractor Profile</a></div></nav></header>
   ${body}
   <footer class="footer">BidSniffer tracks public construction opportunities and turns bid chaos into something slightly less cursed.</footer>
+  <script src="/opportunity-location.js?v=${assetVersions.location}"></script>
   <script src="/opportunity-quality.js?v=${assetVersions.quality}"></script>
   <script src="/app.js?v=${assetVersions.app}"></script>
 </body>
@@ -157,11 +160,11 @@ for (const trade of trades) {
 }
 
 for (const rawOpportunity of opportunities) {
-  const o = opportunityQuality.enrichOpportunity(rawOpportunity);
+  const o = opportunityQuality.enrichOpportunity(opportunityLocation.enrichOpportunity(rawOpportunity));
   const relPath = `/bids/${o.state}/${o.trade}/${o.postedDate}/${o.slug}/`;
   const canonicalUrl = `${siteBase}${relPath}`;
-  const title = `${o.title} — ${tradeLabel(o.trade)} Bids in ${o.city || 'Colorado'} | BidSniffer`;
-  const description = `${o.summary}${o.city ? ' ' + o.city + ', CO.' : ''}${o.dueDate ? ' Due ' + o.dueDate + '.' : ''}`;
+  const title = `${o.title} — ${tradeLabel(o.trade)} Bids in ${o.locationLabel} | BidSniffer`;
+  const description = `${o.summary} ${o.locationLabel}.${o.dueDate ? ' Due ' + o.dueDate + '.' : ''}`;
   const robotsContent = (o.projectType === 'construction-work') ? 'index,follow' : 'noindex,follow';
   const metaExtra = `
     <meta name="robots" content="${robotsContent}" />
@@ -178,7 +181,7 @@ for (const rawOpportunity of opportunities) {
     description: description,
     canonicalUrl: canonicalUrl,
     metaExtra: metaExtra,
-    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${deadlinePill(o)}${confidencePill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Deadline Status</strong><p>${escapeHtml(o.deadlineStatus)}</p></div><div><strong>Opportunity Confidence</strong><p>${escapeHtml(o.sourceConfidence.label)}</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
+    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${deadlinePill(o)}${confidencePill(o)}<span class="pill">${escapeHtml(o.locationLabel)}</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Location</strong><p>${escapeHtml(o.locationLabel)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Deadline Status</strong><p>${escapeHtml(o.deadlineStatus)}</p></div><div><strong>Opportunity Confidence</strong><p>${escapeHtml(o.sourceConfidence.label)}</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
   }));
 }
 

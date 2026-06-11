@@ -8,6 +8,7 @@ const path = require('path');
 const https = require('https');
 const { URL } = require('url');
 const { classifyTradeDetails } = require('../lib/trade-classifier');
+const { inferKnownCity, isRealCity } = require('../assets/opportunity-location');
 
 const SOURCE_NAME = 'BidNet Direct';
 const BASE_URL = 'https://www.bidnetdirect.com';
@@ -244,7 +245,7 @@ function extractListingRows(html, currentUrl = BASE_URL) {
       sourceId,
       sourceUrl,
       title,
-      location: location || 'Colorado',
+      location,
       postedDate: postedDate || todayIso(),
       dueDate,
       timeRemaining,
@@ -265,12 +266,7 @@ function extractResultCount(html) {
 
 function inferCity(row) {
   const text = `${row.title || ''} ${row.sourceUrl || ''}`;
-  const cityHints = [
-    'Denver', 'Boulder', 'Aurora', 'Greeley', 'Littleton', 'Lakewood', 'Longmont', 'Pueblo', 'Colorado Springs',
-    'Fort Collins', 'Grand Junction', 'Loveland', 'Arvada', 'Centennial', 'Thornton', 'Westminster', 'Durango',
-    'Englewood', 'Wheat Ridge', 'Golden', 'Commerce City', 'Castle Rock', 'Brighton', 'Pitkin', 'Gunnison'
-  ];
-  return cityHints.find(city => new RegExp(`\\b${city.replace(/\s+/g, '\\s+')}\\b`, 'i').test(text)) || row.location || 'Colorado';
+  return inferKnownCity(text) || (isRealCity(row.location) ? row.location : '');
 }
 
 function classifyBidNetTrade(row) {
@@ -313,6 +309,7 @@ function mapRowToOpportunity(row) {
   const agencyType = row.agencyType || 'BidNet public bid';
   const projectMeta = inferProjectType(row, classification);
   const city = inferCity(row);
+  const statewide = !city && /\/statewide\//i.test(row.sourceUrl || '');
   const solicitationNumber = row.solicitationNumber || row.sourceId;
 
   return {
@@ -322,6 +319,8 @@ function mapRowToOpportunity(row) {
     state: DEFAULT_STATE,
     city,
     county: '',
+    locationScope: city ? 'city' : statewide ? 'statewide' : 'unknown',
+    locationLabel: city ? `${city}, CO` : statewide ? 'Statewide Colorado' : 'Location Not Specified',
     trade,
     agency: agencyType,
     postedDate: row.postedDate,
