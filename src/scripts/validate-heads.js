@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const opportunities = require('../data/opportunities.json');
+const opportunityQuality = require('../assets/opportunity-quality');
 const root = path.join(__dirname, '..', '..');
 
 function readFileSafe(file) {
@@ -93,10 +94,68 @@ function validateNoNakedDueBadges() {
   return false;
 }
 
+function validateOpportunityQuality() {
+  const failures = [];
+
+  for (const opportunity of opportunities) {
+    const file = path.join(
+      root,
+      'public',
+      'bids',
+      opportunity.state,
+      opportunity.trade,
+      opportunity.postedDate,
+      opportunity.slug,
+      'index.html'
+    );
+    const html = readFileSafe(file);
+    const quality = opportunityQuality.enrichOpportunity(opportunity);
+
+    if (!html) {
+      failures.push(`${opportunity.id}: generated page missing`);
+      continue;
+    }
+    if (!html.includes(quality.deadlineStatus)) {
+      failures.push(`${opportunity.id}: missing deadline status "${quality.deadlineStatus}"`);
+    }
+    if (!html.includes(`${quality.sourceConfidence.label} ${quality.sourceConfidence.score}`)) {
+      failures.push(`${opportunity.id}: missing source confidence indicator`);
+    }
+  }
+
+  console.log('\nValidation: opportunity deadline and confidence indicators');
+  if (!failures.length) {
+    console.log(`  ✓ Validated ${opportunities.length} generated opportunity pages.`);
+    return true;
+  }
+  for (const failure of failures) console.error('  ✗', failure);
+  return false;
+}
+
+function validateComputedFieldsAreNotPersisted() {
+  const persisted = opportunities.filter(opportunity =>
+    Object.prototype.hasOwnProperty.call(opportunity, 'sourceConfidence')
+    || Object.prototype.hasOwnProperty.call(opportunity, 'deadlineStatus')
+  );
+
+  console.log('\nValidation: computed quality fields stay out of opportunities.json');
+  if (!persisted.length) {
+    console.log('  ✓ Confidence and deadline status are computed at render time.');
+    return true;
+  }
+  for (const opportunity of persisted) console.error('  ✗', opportunity.id);
+  return false;
+}
+
 function main() {
   printSampleHeads();
   printSitemapSample();
-  if (!validateNoNakedDueBadges()) process.exitCode = 1;
+  const valid = [
+    validateNoNakedDueBadges(),
+    validateOpportunityQuality(),
+    validateComputedFieldsAreNotPersisted()
+  ].every(Boolean);
+  if (!valid) process.exitCode = 1;
 }
 
 main();

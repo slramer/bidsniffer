@@ -34,6 +34,7 @@ p { color: var(--muted); line-height: 1.6; }
 .pill.good { background: #1f402a; color: var(--good); }
 .pill.warn { background: #fef3c7; color: #92400e; }
 .pill.urgent { background: #fee2e2; color: #991b1b; }
+.pill.suspect { background: #f3f4f6; color: #4b5563; }
 .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 18px 0 26px; }
 input, select { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 12px; font: inherit; background: white; }
 .footer { margin-top: 54px; padding: 28px 24px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }

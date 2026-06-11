@@ -7,12 +7,13 @@
   <meta name="description" content="Create a sample contractor profile and see matched Colorado construction opportunities." />
   
   
-  <link rel="stylesheet" href="/styles.css?v=316705d3bf" />
+  <link rel="stylesheet" href="/styles.css?v=ff4cb78319" />
 </head>
 <body class="landing">
   <header class="header"><nav class="nav"><a class="logo" href="/">Bid<span>Sniffer</span></a><div class="navlinks"><a href="/bids/colorado/">Colorado Bids</a><a href="/contractors/profile.html">Contractor Profile</a></div></nav></header>
   <section class="hero"><span class="badge">Opportunity Matching</span><h1>Match bids to a contractor profile.</h1><p>Create a contractor profile and see which projects fit your business. Saved profiles, bid alerts, match scoring, deadline tracking, and bid analysis are coming soon.</p></section><main class="main"><form id="contractor-profile" class="card"><h2>Contractor Profile</h2><p class="form-note">Fit scores consider trade, service area, must-have keywords, deadline window, listed value, source completeness, and classification confidence.</p><div class="filters"><label>Trade<select name="trade"><option value="">Any trade</option><option value="roofing">Roofing</option><option value="hvac">HVAC</option><option value="electrical">Electrical</option><option value="concrete">Concrete</option><option value="general">General Construction</option></select></label><label>City / service area<input name="city" placeholder="Denver, Aurora, Lakewood" /></label><label>Must-have keywords<input name="keywords" placeholder="school, municipal, controls" /></label><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" name="publicWork" checked style="width:auto" /> Public work preferred</label></div></form><h2 style="margin-top:28px">Matched Opportunities</h2><div id="match-results" class="grid"></div></main>
   <footer class="footer">BidSniffer tracks public construction opportunities and turns bid chaos into something slightly less cursed.</footer>
-  <script src="/app.js?v=49cec3fbd5"></script>
+  <script src="/opportunity-quality.js?v=4fa7e33f87"></script>
+  <script src="/app.js?v=bc2e3c73f8"></script>
 </body>
 </html>

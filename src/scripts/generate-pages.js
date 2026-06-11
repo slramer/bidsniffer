@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const opportunities = require('../data/opportunities.json');
+const opportunityQuality = require('../assets/opportunity-quality');
 
 const root = path.join(__dirname, '../../public');
 const assetsRoot = path.join(__dirname, '../assets');
@@ -33,6 +34,7 @@ function copyAsset(name) {
 ensureDir(root);
 const assetVersions = {
   css: copyAsset('styles.css'),
+  quality: copyAsset('opportunity-quality.js'),
   app: copyAsset('app.js')
 };
 
@@ -53,15 +55,18 @@ function tradeLabel(trade) {
   return tradeLabels[trade] || String(trade || 'General').replace(/\b\w/g, c => c.toUpperCase());
 }
 
-function dueDatePill(o) {
-  const dueDate = String(o.dueDate ?? '').trim();
-  return dueDate ? `<span class="pill warn">Due ${escapeHtml(dueDate)}</span>` : '';
+function deadlinePill(o) {
+  const className = ['today', 'tomorrow', 'soon', 'expired'].includes(o.deadlineKind)
+    ? 'urgent'
+    : 'warn';
+  return `<span class="pill ${className}">${escapeHtml(o.deadlineStatus)}</span>`;
 }
 
-function urgencyPill(o) {
-  const dueStatus = String(o.dueStatus ?? '').trim();
-  if (!/^(?:Due Today|Due Tomorrow|Due in (?:[2-9]|\d{2,}) days)$/.test(dueStatus)) return '';
-  return `<span class="pill urgent">${escapeHtml(dueStatus)}</span>`;
+function confidencePill(o) {
+  const confidence = o.sourceConfidence;
+  const className = confidence.score >= 70 ? 'good' : confidence.score >= 40 ? 'warn' : 'suspect';
+  const title = `Source confidence: ${confidence.label} (${confidence.score}/100)`;
+  return `<span class="pill ${className}" title="${escapeAttr(title)}">${escapeHtml(confidence.label)} ${confidence.score}</span>`;
 }
 
 function displayValue(value) {
@@ -121,6 +126,7 @@ function layout({ title, description, body, canonicalUrl, metaExtra }) {
   <header class="header"><nav class="nav"><a class="logo" href="/">Bid<span>Sniffer</span></a><div class="navlinks"><a href="/bids/colorado/">Colorado Bids</a><a href="/contractors/profile.html">Contractor Profile</a></div></nav></header>
   ${body}
   <footer class="footer">BidSniffer tracks public construction opportunities and turns bid chaos into something slightly less cursed.</footer>
+  <script src="/opportunity-quality.js?v=${assetVersions.quality}"></script>
   <script src="/app.js?v=${assetVersions.app}"></script>
 </body>
 </html>`;
@@ -151,7 +157,8 @@ for (const trade of trades) {
   }));
 }
 
-for (const o of opportunities) {
+for (const rawOpportunity of opportunities) {
+  const o = opportunityQuality.enrichOpportunity(rawOpportunity);
   const relPath = `/bids/${o.state}/${o.trade}/${o.postedDate}/${o.slug}/`;
   const canonicalUrl = `${siteBase}${relPath}`;
   const title = `${o.title} — ${tradeLabel(o.trade)} Bids in ${o.city || 'Colorado'} | BidSniffer`;
@@ -172,7 +179,7 @@ for (const o of opportunities) {
     description: description,
     canonicalUrl: canonicalUrl,
     metaExtra: metaExtra,
-    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${dueDatePill(o)}${urgencyPill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div>${o.dueDate ? `<div><strong>Due</strong><p>${escapeHtml(o.dueDate)}</p></div>` : ''}${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
+    body: `<main class="main"><section class="card"><div class="meta"><span class="pill">${escapeHtml(tradeLabel(o.trade))}</span>${deadlinePill(o)}${confidencePill(o)}<span class="pill">${escapeHtml(o.city)}, CO</span></div><h1 style="font-size:48px">${escapeHtml(o.title)}</h1><p>${escapeHtml(o.summary)}</p><h2>Bid Snapshot</h2><div class="grid"><div><strong>Agency</strong><p>${escapeHtml(o.agency)}</p></div><div><strong>Estimated Value</strong><p>${escapeHtml(displayValue(o.estimatedValue))}</p></div><div><strong>Posted</strong><p>${escapeHtml(o.postedDate)}</p></div><div><strong>Deadline Status</strong><p>${escapeHtml(o.deadlineStatus)}</p></div><div><strong>Source Confidence</strong><p>${escapeHtml(o.sourceConfidence.label)} (${o.sourceConfidence.score}/100)</p></div>${o.solicitationNumber ? `<div><strong>Solicitation Number</strong><p>${escapeHtml(o.solicitationNumber)}</p></div>` : ''}${o.buyer ? `<div><strong>Buyer</strong><p>${escapeHtml(o.buyer)}</p></div>` : ''}${o.buyerEmail ? `<div><strong>Buyer Email</strong><p>${escapeHtml(o.buyerEmail)}</p></div>` : ''}<div><strong>Source</strong><p>${escapeHtml(o.sourceName || 'Original source')}</p></div></div>${sourceLookupBlock(o)}<h2>Potential Requirements</h2>${requirementsList(o.requirements)}</section></main>`
   }));
 }
 

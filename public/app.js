@@ -1,6 +1,7 @@
 async function loadOpportunities() {
   const res = await fetch('/data/opportunities.json');
-  return res.json();
+  const items = await res.json();
+  return items.map(item => BidSnifferOpportunityQuality.enrichOpportunity(item));
 }
 
 function escapeHtml(value) {
@@ -203,15 +204,18 @@ function shouldShowForProfile(item, profile) {
 }
 
 
-function dueDateBadge(item) {
-  const dueDate = String(item.dueDate ?? '').trim();
-  return dueDate ? `<span class="pill warn">Due ${escapeHtml(dueDate)}</span>` : '';
+function deadlineBadge(item) {
+  const kindClass = ['today', 'tomorrow', 'soon', 'expired'].includes(item.deadlineKind)
+    ? 'urgent'
+    : 'warn';
+  return `<span class="pill ${kindClass}">${escapeHtml(item.deadlineStatus)}</span>`;
 }
 
-function urgencyBadge(item) {
-  const dueStatus = String(item.dueStatus ?? '').trim();
-  if (!/^(?:Due Today|Due Tomorrow|Due in (?:[2-9]|\d{2,}) days)$/.test(dueStatus)) return '';
-  return `<span class="pill urgent">${escapeHtml(dueStatus)}</span>`;
+function confidenceBadge(item) {
+  const confidence = item.sourceConfidence;
+  const className = confidence.score >= 70 ? 'good' : confidence.score >= 40 ? 'warn' : 'suspect';
+  const title = `Source confidence: ${confidence.label} (${confidence.score}/100)`;
+  return `<span class="pill ${className}" title="${escapeHtml(title)}">${escapeHtml(confidence.label)} ${confidence.score}</span>`;
 }
 
 function displayValue(value) {
@@ -235,7 +239,7 @@ function card(item, match) {
     : '';
 
   return `<article class="card opportunity" data-trade="${escapeHtml(item.trade)}" data-city="${escapeHtml(item.city)}">
-    <div class="meta"><span class="pill">${tradeLabel(item.trade)}</span>${dueDateBadge(item)}${urgencyBadge(item)}${matchPill}</div>
+    <div class="meta"><span class="pill">${tradeLabel(item.trade)}</span>${deadlineBadge(item)}${confidenceBadge(item)}${matchPill}</div>
     <h3><a href="${url}">${escapeHtml(item.title)}</a></h3>
     <p>${escapeHtml(item.summary)}</p>
     ${matchMarkup(match)}
@@ -248,7 +252,8 @@ async function initOpportunityList() {
   if (!mount) return;
   const trade = mount.dataset.trade || '';
   const items = await loadOpportunities();
-  const filtered = trade ? items.filter(x => x.trade === trade) : items;
+  const filtered = (trade ? items.filter(x => x.trade === trade) : items)
+    .sort(BidSnifferOpportunityQuality.compareDeadline);
   mount.innerHTML = filtered.map(x => card(x)).join('');
 }
 
@@ -264,7 +269,8 @@ async function initProfileMatcher() {
     const ranked = items
       .filter(item => shouldShowForProfile(item, profile))
       .map(item => ({ item, match: estimateMatch(item, profile) }))
-      .sort((a,b) => b.match.score - a.match.score || String(a.item.dueDate).localeCompare(String(b.item.dueDate)));
+      .sort((a,b) => b.match.score - a.match.score
+        || BidSnifferOpportunityQuality.compareDeadline(a.item, b.item));
 
     results.innerHTML = ranked.length
       ? ranked.map(({item, match}) => card(item, match)).join('')
