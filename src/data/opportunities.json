@@ -1,5 +1,66 @@
 [
   {
+    "id": "bidnet-9279786554",
+    "title": "2026 Asphalt Skim Patching Project",
+    "slug": "2026-asphalt-skim-patching-project-0000429183",
+    "state": "colorado",
+    "city": "Colorado",
+    "county": "",
+    "trade": "concrete",
+    "agency": "Member Agency Bids",
+    "postedDate": "2026-06-29",
+    "dueDate": "2026-07-13",
+    "daysUntilDue": 14,
+    "expiresSoon": false,
+    "dueStatus": "",
+    "estimatedValue": "Not listed",
+    "projectType": "general-construction",
+    "projectTypeLabel": "General Construction",
+    "contractorFit": "medium",
+    "filterTags": [
+      "construction",
+      "general",
+      "concrete",
+      "member agency bids"
+    ],
+    "summary": "2026 Asphalt Skim Patching Project. Member Agency Bids listed on BidNet Direct for Colorado construction opportunities.",
+    "requirements": [
+      "BidNet category: Member Agency Bids",
+      "Published: 2026-06-29",
+      "Closing: 2026-07-13",
+      "Time remaining: 14 day(s) left",
+      "BidNet reference: 0000429183"
+    ],
+    "sourceName": "BidNet Direct",
+    "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Asphalt-Skim-Patching-Project/0000429183?origin=0",
+    "sourceLookupInstructions": "Open BidNet Direct and use the direct source link, or search BidNet for reference 0000429183.",
+    "sourceLookupSteps": [
+      "Open BidNet Direct open solicitations.",
+      "Filter to Colorado and Construction if needed.",
+      "Search or locate reference 0000429183.",
+      "Open the matching solicitation record."
+    ],
+    "solicitationRef": "0000429183",
+    "solicitationNumber": "0000429183",
+    "buyer": "",
+    "buyerEmail": "",
+    "tradeConfidence": "medium",
+    "matchedTradeKeywords": [
+      "paving/asphalt"
+    ],
+    "canonicalKey": "2026 asphalt skim patching project|member agency bids|2026-07-13",
+    "sourceId": "9279786554",
+    "lastSeenAt": "2026-06-29T14:30:25.873Z",
+    "matchKeywords": [
+      "concrete",
+      "bidnet",
+      "colorado",
+      "member agency bids",
+      "0000429183",
+      "paving/asphalt"
+    ]
+  },
+  {
     "id": "public-agency-city-of-evans-37th-street-streetlight-design-open",
     "title": "37th Street Streetlight Design",
     "slug": "37th-street-streetlight-design-city-of-evans",
@@ -8,7 +69,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -42,7 +103,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "37th street streetlight design|city of evans|",
     "sourceId": "city-of-evans:37th-street-streetlight-design",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -58,7 +119,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -92,7 +153,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "37th street widening phase iii design|city of evans|",
     "sourceId": "city-of-evans:37th-street-widening-phase-iii-design",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -108,7 +169,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -142,7 +203,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "42nd street non potable water line replacement|city of evans|",
     "sourceId": "city-of-evans:42nd-street-non-potable-water-line-replacement",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -158,7 +219,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -192,7 +253,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "automated vehicle identification system|city of evans|",
     "sourceId": "city-of-evans:automated-vehicle-identification-system",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -208,7 +269,7 @@
     "county": "Boulder",
     "trade": "general",
     "agency": "Boulder County",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -239,7 +300,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "contractor name|boulder county|",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:24.736Z",
+    "lastSeenAt": "2026-06-29T14:30:14.948Z",
     "matchKeywords": [
       "contractor name",
       "settlement date",
@@ -256,7 +317,7 @@
     "county": "La Plata",
     "trade": "general",
     "agency": "Fort Lewis College",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -289,7 +350,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "field house program plan|fort lewis college|",
     "sourceId": "fort-lewis-college:field-house-program-plan",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -305,7 +366,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -339,7 +400,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "gateway sign and beautification at evans junction|city of evans|",
     "sourceId": "city-of-evans:gateway-sign-and-beautification-at-evans-junction",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -355,7 +416,7 @@
     "county": "La Plata",
     "trade": "general",
     "agency": "Fort Lewis College",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -388,7 +449,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "landscape repairs|fort lewis college|",
     "sourceId": "fort-lewis-college:landscape-repairs",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -404,7 +465,7 @@
     "county": "La Plata",
     "trade": "general",
     "agency": "Fort Lewis College",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -437,7 +498,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nclex training software|fort lewis college|",
     "sourceId": "fort-lewis-college:nclex-training-software",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -453,7 +514,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -488,7 +549,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "on call general engineering services|city of evans|",
     "sourceId": "city-of-evans:on-call-general-engineering-services",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -504,7 +565,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -539,7 +600,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "parks system master plan|city of evans|",
     "sourceId": "city-of-evans:parks-system-master-plan",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -555,7 +616,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -589,7 +650,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "peakview construction plans sanitary sewer|city of evans|",
     "sourceId": "city-of-evans:peakview-construction-plans-sanitary-sewer",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -605,7 +666,7 @@
     "county": "La Plata",
     "trade": "concrete",
     "agency": "Fort Lewis College",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -640,7 +701,7 @@
     ],
     "canonicalKey": "sidewalk replacement|fort lewis college|",
     "sourceId": "fort-lewis-college:sidewalk-replacement",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "fort lewis college",
       "durango",
@@ -657,7 +718,7 @@
     "county": "Weld",
     "trade": "general",
     "agency": "City of Evans",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "",
     "daysUntilDue": null,
     "expiresSoon": false,
@@ -691,7 +752,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "state street sanitary sewer design|city of evans|",
     "sourceId": "city-of-evans:state-street-sanitary-sewer-design",
-    "lastSeenAt": "2026-06-28T12:00:12.166Z",
+    "lastSeenAt": "2026-06-29T14:31:05.446Z",
     "matchKeywords": [
       "city of evans",
       "evans",
@@ -707,9 +768,9 @@
     "county": "Boulder",
     "trade": "concrete",
     "agency": "Boulder County",
-    "postedDate": "2026-06-28",
+    "postedDate": "2026-06-29",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -740,7 +801,7 @@
     ],
     "canonicalKey": "west coal creek drive over community 1 canal bridge replacement|boulder county|2026-07-16",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:24.736Z",
+    "lastSeenAt": "2026-06-29T14:30:14.948Z",
     "matchKeywords": [
       "west coal creek drive over community 1 canal bridge replacement",
       "public works",
@@ -760,7 +821,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -779,7 +840,8 @@
       "Closing: 2026-07-10",
       "Time remaining: 13 day(s) left",
       "BidNet reference: 0000429091",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Concrete-Panel-Replacement/0000429091?origin=0",
@@ -800,7 +862,7 @@
     ],
     "canonicalKey": "2026 concrete panel replacement|member agency bids|2026-07-10",
     "sourceId": "9250363003",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -820,7 +882,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-31",
-    "daysUntilDue": 33,
+    "daysUntilDue": 32,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -839,7 +901,8 @@
       "Closing: 2026-07-31",
       "Time remaining: 34 day(s) left",
       "BidNet reference: 0000429159",
-      "Time remaining: 33 day(s) left"
+      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Construction-Manager-General-Contractor-for-MERGE/0000429159?origin=0",
@@ -858,7 +921,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "construction manager general contractor for merge|member agency bids|2026-07-31",
     "sourceId": "9265356051",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.873Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -878,7 +941,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-08-07",
-    "daysUntilDue": 40,
+    "daysUntilDue": 39,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -897,7 +960,8 @@
       "Closing: 2026-08-07",
       "Time remaining: 41 day(s) left",
       "BidNet reference: 0000428818",
-      "Time remaining: 40 day(s) left"
+      "Time remaining: 40 day(s) left",
+      "Time remaining: 39 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Hickory-Street-24-Inch-Water-Transmission-Main-Replacement-Project/0000428818?origin=0",
@@ -916,7 +980,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "hickory street 24 inch water transmission main replacement project|member agency bids|2026-08-07",
     "sourceId": "9236253306",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -936,9 +1000,9 @@
     "agency": "City of Wheat Ridge",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-procurement",
     "projectTypeLabel": "Construction Procurement",
@@ -978,7 +1042,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "historic property rehabilitation|city of wheat ridge|2026-07-02",
     "sourceId": "wheatridgeco:279123",
-    "lastSeenAt": "2026-06-28T11:59:36.377Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -1002,7 +1066,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-24",
-    "daysUntilDue": 26,
+    "daysUntilDue": 25,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1021,7 +1085,8 @@
       "Closing: 2026-07-24",
       "Time remaining: 27 day(s) left",
       "BidNet reference: 0000429158",
-      "Time remaining: 26 day(s) left"
+      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/NW-Aurora-Intersection-Pedestrian-Safety-Enhancements/0000429158?origin=0",
@@ -1040,7 +1105,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nw aurora intersection pedestrian safety enhancements|member agency bids|2026-07-24",
     "sourceId": "9247314774",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1061,7 +1126,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-28",
-    "daysUntilDue": 30,
+    "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1080,7 +1145,8 @@
       "Closing: 2026-07-28",
       "Time remaining: 31 day(s) left",
       "BidNet reference: 0000420135",
-      "Time remaining: 30 day(s) left"
+      "Time remaining: 30 day(s) left",
+      "Time remaining: 29 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Power-Trail-Keenland-Drive-to-Sumpter-Square/0000420135?origin=0",
@@ -1099,7 +1165,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "power trail keenland drive to sumpter square|member agency bids|2026-07-28",
     "sourceId": "8713422760",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1119,7 +1185,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1138,7 +1204,8 @@
       "Closing: 2026-07-16",
       "Time remaining: 19 day(s) left",
       "BidNet reference: 444075208700",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Region-2-Fairplay-Mobility-Hub-Improvements/444075208700?origin=0&target=view",
@@ -1157,7 +1224,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "region 2 fairplay mobility hub improvements|state & local bids|2026-07-16",
     "sourceId": "444075208700",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1177,7 +1244,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1196,7 +1263,8 @@
       "Closing: 2026-07-16",
       "Time remaining: 19 day(s) left",
       "BidNet reference: 444075261889",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Region-4-SH-7-Intersection-and-Turn-Lane-Improvements/444075261889?origin=0&target=view",
@@ -1215,7 +1283,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "region 4 sh 7 intersection and turn lane improvements|state & local bids|2026-07-16",
     "sourceId": "444075261889",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1235,7 +1303,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-07",
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1255,7 +1323,8 @@
       "Closing: 2026-07-07",
       "Time remaining: 10 day(s) left",
       "BidNet reference: 2703218072",
-      "Time remaining: 9 day(s) left"
+      "Time remaining: 9 day(s) left",
+      "Time remaining: 7 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/TM-Fiber-Optic-Network/2703218072?origin=0&target=view",
@@ -1276,7 +1345,7 @@
     ],
     "canonicalKey": "tm fiber optic network|federal bids|2026-07-07",
     "sourceId": "2703218072",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.873Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -1297,7 +1366,7 @@
     "agency": "CDPHE - Department of Public Health and Environment",
     "postedDate": "2026-06-26",
     "dueDate": "2026-07-13",
-    "daysUntilDue": 15,
+    "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1334,7 +1403,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "upgrade deionized water system state public health lab|cdphe - department of public health and environment|2026-07-13",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.704Z",
     "matchKeywords": [
       "general",
       "2026000243",
@@ -1356,7 +1425,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1377,7 +1446,8 @@
       "Time remaining: 14 day(s) left",
       "BidNet reference: 0000429030",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2025-CDBG-FVSC-Lighting-Fountain-Valley-Senior-Center/0000429030?origin=0",
@@ -1398,7 +1468,7 @@
     ],
     "canonicalKey": "2025 cdbg fvsc lighting fountain valley senior center|member agency bids|2026-07-10",
     "sourceId": "9248043151",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -1419,7 +1489,7 @@
     "agency": "Montrose County",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1462,7 +1532,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 b 139 corrugated steel structural plate culvert|montrose county|2026-07-21",
     "sourceId": "montrose-county:301",
-    "lastSeenAt": "2026-06-28T12:00:07.740Z",
+    "lastSeenAt": "2026-06-29T14:31:01.198Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -1487,7 +1557,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-31",
-    "daysUntilDue": 33,
+    "daysUntilDue": 32,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1507,7 +1577,8 @@
       "Time remaining: 35 day(s) left",
       "BidNet reference: 0000428208",
       "Time remaining: 34 day(s) left",
-      "Time remaining: 33 day(s) left"
+      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-DIRP-5-Sanitary-Sewer-Rehabilitation-Capital-Improvement-Project/0000428208?origin=0",
@@ -1526,7 +1597,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 dirp 5 sanitary sewer rehabilitation capital improvement project|member agency bids|2026-07-31",
     "sourceId": "9207005555",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -1546,7 +1617,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-23",
-    "daysUntilDue": 25,
+    "daysUntilDue": 24,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1567,7 +1638,8 @@
       "Time remaining: 27 day(s) left",
       "BidNet reference: 0000428746",
       "Time remaining: 26 day(s) left",
-      "Time remaining: 25 day(s) left"
+      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Town-of-Johnstown-Weld-County-Road-15-Resurfacing-Project/0000428746?origin=0",
@@ -1588,7 +1660,7 @@
     ],
     "canonicalKey": "2026 town of johnstown weld county road 15 resurfacing project|member agency bids|2026-07-23",
     "sourceId": "9233703755",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -1609,9 +1681,9 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -1648,7 +1720,7 @@
     ],
     "canonicalKey": "nhpp 052a-067 (27449)|colorado department of transportation|2026-07-02",
     "sourceId": "NHPP 052A-067 (27449)",
-    "lastSeenAt": "2026-06-28T11:59:21.510Z",
+    "lastSeenAt": "2026-06-29T14:30:10.087Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1672,7 +1744,7 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-30",
-    "daysUntilDue": 32,
+    "daysUntilDue": 31,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1711,7 +1783,7 @@
     ],
     "canonicalKey": "nhpp 0761-252 (26370combo)|colorado department of transportation|2026-07-30",
     "sourceId": "NHPP 0761-252 (26370Combo)",
-    "lastSeenAt": "2026-06-28T11:59:21.510Z",
+    "lastSeenAt": "2026-06-29T14:30:10.088Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1735,9 +1807,9 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -1772,7 +1844,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nhpp 2873-227 (25717)|colorado department of transportation|2026-07-02",
     "sourceId": "NHPP 2873-227 (25717)",
-    "lastSeenAt": "2026-06-28T11:59:21.510Z",
+    "lastSeenAt": "2026-06-29T14:30:10.087Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1795,9 +1867,9 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -1834,7 +1906,7 @@
     ],
     "canonicalKey": "she 095a-024 (25543)|colorado department of transportation|2026-07-02",
     "sourceId": "SHE 095A-024 (25543)",
-    "lastSeenAt": "2026-06-28T11:59:21.510Z",
+    "lastSeenAt": "2026-06-29T14:30:10.087Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1858,9 +1930,9 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -1897,7 +1969,7 @@
     ],
     "canonicalKey": "ste 0704-266 (26936)|colorado department of transportation|2026-07-02",
     "sourceId": "STE 0704-266 (26936)",
-    "lastSeenAt": "2026-06-28T11:59:21.509Z",
+    "lastSeenAt": "2026-06-29T14:30:10.087Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1921,7 +1993,7 @@
     "agency": "Colorado Department of Transportation",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -1959,7 +2031,7 @@
     ],
     "canonicalKey": "stm r200-300 (26858)|colorado department of transportation|2026-07-16",
     "sourceId": "STM R200-300 (26858)",
-    "lastSeenAt": "2026-06-28T11:59:21.510Z",
+    "lastSeenAt": "2026-06-29T14:30:10.087Z",
     "matchKeywords": [
       "cdot",
       "transportation",
@@ -1982,7 +2054,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-25",
     "dueDate": "2026-08-03",
-    "daysUntilDue": 36,
+    "daysUntilDue": 35,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2002,7 +2074,8 @@
       "Time remaining: 38 day(s) left",
       "BidNet reference: 0000428916",
       "Time remaining: 37 day(s) left",
-      "Time remaining: 36 day(s) left"
+      "Time remaining: 36 day(s) left",
+      "Time remaining: 35 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/County-Line-Road-Shoulder-Improvements/0000428916?origin=0",
@@ -2023,7 +2096,7 @@
     ],
     "canonicalKey": "county line road shoulder improvements|member agency bids|2026-08-03",
     "sourceId": "9242162952",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -2044,7 +2117,7 @@
     "agency": "DMVA - Department of Military and Veterans Affairs",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-23",
-    "daysUntilDue": 25,
+    "daysUntilDue": 24,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2060,7 +2133,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-26",
       "Closing: 2026-07-23",
-      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left",
       "BidNet reference: 444075295010",
       "Solicitation reference: [IFB1,OAAA,2026000202,1][IFB1-OAAA-2026000202-1]",
       "Solicitation number: 2026000202",
@@ -2089,7 +2162,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "oaaa 2010 082612 jfhq j9 suite remodel|dmva - department of military and veterans affairs|2026-07-23",
     "sourceId": "444075295010",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.874Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2115,7 +2188,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-25",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2135,7 +2208,8 @@
       "Time remaining: 14 day(s) left",
       "BidNet reference: 2702842457",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/VAULT-PUMPING-WASTE-WATER-PUMPING_COOS-B/2702842457?origin=0&target=view",
@@ -2154,7 +2228,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "vault pumping waste water pumping coos b|federal bids|2026-07-10",
     "sourceId": "2702842457",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2174,7 +2248,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-22",
-    "daysUntilDue": 24,
+    "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2195,7 +2269,8 @@
       "BidNet reference: 0000428715",
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
-      "Time remaining: 24 day(s) left"
+      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Communications-1551-N-17th-Avenue-Roof-Replacement/0000428715?origin=0",
@@ -2216,7 +2291,7 @@
     ],
     "canonicalKey": "communications 1551 n 17th avenue roof replacement|member agency bids|2026-07-22",
     "sourceId": "9231980456",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "roofing",
       "bidnet",
@@ -2237,7 +2312,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-30",
-    "daysUntilDue": 32,
+    "daysUntilDue": 31,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2258,7 +2333,8 @@
       "BidNet reference: 0000428711",
       "Time remaining: 34 day(s) left",
       "Time remaining: 33 day(s) left",
-      "Time remaining: 32 day(s) left"
+      "Time remaining: 32 day(s) left",
+      "Time remaining: 31 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Compressed-Natural-Gas-CNG-Compressor-Replacement/0000428711?origin=0",
@@ -2277,7 +2353,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "compressed natural gas cng compressor replacement|member agency bids|2026-07-30",
     "sourceId": "9234285601",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2297,7 +2373,7 @@
     "agency": "City of Pueblo",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2337,7 +2413,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "diesel fuel and gasoline for various departments|city of pueblo|2026-07-08",
     "sourceId": "pueblo:240203",
-    "lastSeenAt": "2026-06-28T11:59:36.377Z",
+    "lastSeenAt": "2026-06-29T14:30:27.215Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -2359,7 +2435,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2380,7 +2456,8 @@
       "BidNet reference: 2702371727",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Fort-Carson-Equipment-Concentration-Site-Potential-Use-of-Progressive-Design-Build-using-Other-Transaction-Authority-OTA/2702371727?origin=0&target=view",
@@ -2399,7 +2476,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "fort carson equipment concentration site potential use of progressive design build using other transaction authority ota|federal bids|2026-07-10",
     "sourceId": "2702371727",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2419,7 +2496,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-17",
-    "daysUntilDue": 19,
+    "daysUntilDue": 18,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2440,7 +2517,8 @@
       "BidNet reference: 444072033030",
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/General-Contractor-Services/444072033030?origin=0&target=view",
@@ -2459,7 +2537,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "general contractor services|state & local bids|2026-07-17",
     "sourceId": "444072033030",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2479,7 +2557,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-17",
-    "daysUntilDue": 19,
+    "daysUntilDue": 18,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2501,7 +2579,8 @@
       "Time remaining: 22 day(s) left",
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
-      "Time remaining: 19 day(s) left"
+      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Gondola-Parking-Garage-DC-Fast-Chargers-Construction/444071633363?origin=0&target=view",
@@ -2520,7 +2599,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "gondola parking garage dc fast chargers construction|state & local bids|2026-07-17",
     "sourceId": "444071633363",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2540,7 +2619,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2561,7 +2640,8 @@
       "BidNet reference: 0000428740",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Park-County-Government-Propane/0000428740?origin=0",
@@ -2580,7 +2660,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "park county government propane|member agency bids|2026-07-14",
     "sourceId": "9231980461",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z",
+    "lastSeenAt": "2026-06-29T14:30:25.888Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2600,7 +2680,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-08-07",
-    "daysUntilDue": 40,
+    "daysUntilDue": 39,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2621,7 +2701,8 @@
       "BidNet reference: 2702744537",
       "Time remaining: 42 day(s) left",
       "Time remaining: 41 day(s) left",
-      "Time remaining: 40 day(s) left"
+      "Time remaining: 40 day(s) left",
+      "Time remaining: 39 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Poncha-Substation-Service/2702744537?origin=0&target=view",
@@ -2642,7 +2723,7 @@
     ],
     "canonicalKey": "poncha substation service|federal bids|2026-08-07",
     "sourceId": "2702744537",
-    "lastSeenAt": "2026-06-28T11:59:34.645Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -2663,7 +2744,7 @@
     "agency": "Clear Creek County",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2707,7 +2788,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for unified communications microsoft teams phone system|clear creek county|2026-07-08",
     "sourceId": "clear-creek-county:379",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -2731,9 +2812,9 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-24",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -2753,7 +2834,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Town-of-Hartman-Water-System-Operations/444072033003?origin=0&target=view",
@@ -2772,7 +2854,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "town of hartman water system operations|state & local bids|2026-07-02",
     "sourceId": "444072033003",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2792,7 +2874,7 @@
     "agency": "City of Steamboat Springs",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2815,7 +2897,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-23",
       "Closing: 2026-07-21",
-      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left",
       "BidNet reference: 0000428629",
       "Category: 2026 Bid's & RFP'S",
       "Status: Open",
@@ -2844,7 +2926,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 sanitary sewer jetting video inspection|city of steamboat springs|2026-07-21",
     "sourceId": "steamboat-springs:533",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2874,7 +2956,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-06",
-    "daysUntilDue": 8,
+    "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2896,7 +2978,8 @@
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
       "Time remaining: 9 day(s) left",
-      "Time remaining: 8 day(s) left"
+      "Time remaining: 8 day(s) left",
+      "Time remaining: 7 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Administration-Restroom-Addition/0000428631?origin=0",
@@ -2915,7 +2998,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "administration restroom addition|member agency bids|2026-07-06",
     "sourceId": "9223939464",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2935,7 +3018,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-22",
-    "daysUntilDue": 24,
+    "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -2957,7 +3040,8 @@
       "Time remaining: 27 day(s) left",
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
-      "Time remaining: 24 day(s) left"
+      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/First-Creek-High-Point-and-Single-Tree-Lift-Station/0000428588?origin=0",
@@ -2976,7 +3060,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "first creek high point and single tree lift station|member agency bids|2026-07-22",
     "sourceId": "9223502571",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -2996,7 +3080,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3018,7 +3102,8 @@
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
       "Time remaining: 24 day(s) left",
-      "Time remaining: 23 day(s) left"
+      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Loop-Water-Authority-Request-for-Proposals-for-CMAR/0000428632?origin=0",
@@ -3037,7 +3122,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "loop water authority request for proposals for cmar|member agency bids|2026-07-21",
     "sourceId": "9221229125",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3057,7 +3142,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-23",
-    "daysUntilDue": 25,
+    "daysUntilDue": 24,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3101,7 +3186,7 @@
     ],
     "canonicalKey": "park n ride asphalt improvements 2026 sbe goal 15|regional transportation district|2026-07-23",
     "sourceId": "rtd-denver:271496",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "paving",
       "opengov",
@@ -3125,7 +3210,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3147,7 +3232,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/QUINCY-60-INCH-RAW-APPURTENANCES-REHABILITATION/0000428650?origin=0",
@@ -3166,7 +3252,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "quincy 60 inch raw appurtenances rehabilitation|member agency bids|2026-07-14",
     "sourceId": "9227555155",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.875Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3186,7 +3272,7 @@
     "agency": "City of Pueblo",
     "postedDate": "2026-06-23",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3227,7 +3313,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "wastewater reclamation facility primary scum flushing loop|city of pueblo|2026-07-15",
     "sourceId": "pueblo:269388",
-    "lastSeenAt": "2026-06-28T11:59:36.377Z",
+    "lastSeenAt": "2026-06-29T14:30:27.215Z",
     "matchKeywords": [
       "utilities",
       "opengov",
@@ -3249,7 +3335,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-24",
-    "daysUntilDue": 26,
+    "daysUntilDue": 25,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3272,7 +3358,8 @@
       "Time remaining: 29 day(s) left",
       "Time remaining: 28 day(s) left",
       "Time remaining: 27 day(s) left",
-      "Time remaining: 26 day(s) left"
+      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CMAR-Services-for-WTRF-Secondary-Clarifier-Upgrades/0000428458?origin=0",
@@ -3291,7 +3378,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "cmar services for wtrf secondary clarifier upgrades|member agency bids|2026-07-24",
     "sourceId": "9219512508",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3311,7 +3398,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3334,7 +3421,8 @@
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
       "Time remaining: 24 day(s) left",
-      "Time remaining: 23 day(s) left"
+      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/DAKAN-ROAD-BRIDGE-REPLACEMENT-PROJECT/0000427727?origin=0",
@@ -3356,7 +3444,7 @@
     ],
     "canonicalKey": "dakan road bridge replacement project|member agency bids|2026-07-21",
     "sourceId": "9179749751",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -3378,7 +3466,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3401,7 +3489,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/FY27-RMHI-C27HI1-Highline-West-Asphalt-Paving/444069205162?origin=0&target=view",
@@ -3422,7 +3511,7 @@
     ],
     "canonicalKey": "fy27 rmhi c27hi1 highline west asphalt paving|state & local bids|2026-07-14",
     "sourceId": "444069205162",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -3443,7 +3532,7 @@
     "agency": "DNR - Division of Parks & Wildlife",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3480,7 +3569,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "notice of contractor settlement big beaver dam construct|dnr - division of parks & wildlife|2026-07-09",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.703Z",
     "matchKeywords": [
       "general",
       "2026000239",
@@ -3502,7 +3591,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-17",
-    "daysUntilDue": 19,
+    "daysUntilDue": 18,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3525,7 +3614,8 @@
       "Time remaining: 22 day(s) left",
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
-      "Time remaining: 19 day(s) left"
+      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Odyssey-Turf-Playing-Field/0000428356?origin=0",
@@ -3544,7 +3634,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "odyssey turf playing field|member agency bids|2026-07-17",
     "sourceId": "9217620801",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3564,7 +3654,7 @@
     "agency": "City and County of Denver Department of Transportation & Infrastructure",
     "postedDate": "2026-06-22",
     "dueDate": "2026-08-12",
-    "daysUntilDue": 45,
+    "daysUntilDue": 44,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3608,7 +3698,7 @@
     ],
     "canonicalKey": "rfq national western center triangle sitewide design services on call|city and county of denver department of transportation & infrastructure|2026-08-12",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:24.382Z",
+    "lastSeenAt": "2026-06-29T14:30:14.321Z",
     "matchKeywords": [
       "concrete",
       "denver",
@@ -3632,7 +3722,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-07-17",
-    "daysUntilDue": 19,
+    "daysUntilDue": 18,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3655,7 +3745,8 @@
       "Time remaining: 22 day(s) left",
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
-      "Time remaining: 19 day(s) left"
+      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Snowmass-Creek-Trailhead-Improvements/0000428461?origin=0",
@@ -3674,7 +3765,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "snowmass creek trailhead improvements|member agency bids|2026-07-17",
     "sourceId": "9218962317",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3694,9 +3785,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-22",
     "dueDate": "2026-06-29",
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -3755,9 +3846,9 @@
     "agency": "DPA - Capital Construction/Controlled Maintenance",
     "postedDate": "2026-06-19",
     "dueDate": "2026-06-29",
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -3792,7 +3883,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2024 078m23 1881 exterior caulking and window replacement|dpa - capital construction/controlled maintenance|2026-06-29",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.703Z",
     "matchKeywords": [
       "general",
       "2026000238",
@@ -3814,7 +3905,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-19",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3873,7 +3964,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-19",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3898,7 +3989,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/TRANSIENT-APRON-RECONSTRUCTION/444066575145?origin=0&target=view",
@@ -3917,7 +4009,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "transient apron reconstruction|state & local bids|2026-07-09",
     "sourceId": "444066575145",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -3937,7 +4029,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-18",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -3962,7 +4054,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/15th-Street-Waterline-Replacement/0000428230?origin=0",
@@ -3981,7 +4074,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "15th street waterline replacement|member agency bids|2026-07-15",
     "sourceId": "9204326462",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4001,7 +4094,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-18",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4026,7 +4119,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-HVAC-Services/0000428088?origin=0",
@@ -4047,7 +4141,7 @@
     ],
     "canonicalKey": "on call hvac services|member agency bids|2026-07-15",
     "sourceId": "9195360472",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "hvac",
       "bidnet",
@@ -4067,7 +4161,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-18",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4092,7 +4186,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/PCC-Enrollment-Center-Remodel/444065465316?origin=0&target=view",
@@ -4111,7 +4206,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pcc enrollment center remodel|state & local bids|2026-07-14",
     "sourceId": "444065465316",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.877Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4131,7 +4226,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-18",
     "dueDate": "2026-07-17",
-    "daysUntilDue": 19,
+    "daysUntilDue": 18,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4156,7 +4251,8 @@
       "Time remaining: 22 day(s) left",
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
-      "Time remaining: 19 day(s) left"
+      "Time remaining: 19 day(s) left",
+      "Time remaining: 18 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Service-Center-Building-Renovation/0000428206?origin=0",
@@ -4175,7 +4271,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "southeast service center building renovation|member agency bids|2026-07-17",
     "sourceId": "9204289558",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.876Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4195,7 +4291,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4221,7 +4317,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-EV-Parking-Lot-Construction/0000427994?origin=0",
@@ -4242,7 +4339,7 @@
     ],
     "canonicalKey": "2026 ev parking lot construction|member agency bids|2026-07-10",
     "sourceId": "9195590906",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -4263,7 +4360,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-07",
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4289,7 +4386,8 @@
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
-      "Time remaining: 9 day(s) left"
+      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Water-Main-Replacement/0000427985?origin=0",
@@ -4308,7 +4406,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 water main replacement|member agency bids|2026-07-07",
     "sourceId": "9195850553",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4328,9 +4426,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-06-29",
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -4355,7 +4453,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 5 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-26925-D-Capital-IT-Project-Phase-I-CCD-Fiber/0000428113?origin=0",
@@ -4376,7 +4475,7 @@
     ],
     "canonicalKey": "ahec 26925 d capital it project phase i ccd fiber|member agency bids|2026-06-29",
     "sourceId": "9195313971",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.877Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -4397,7 +4496,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4423,7 +4522,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Aquatic-Leak-Detection-Pipe-Repair-Rehabilitation/0000428046?origin=0",
@@ -4442,7 +4542,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "aquatic leak detection pipe repair rehabilitation|member agency bids|2026-07-09",
     "sourceId": "9194593467",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4462,7 +4562,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4488,7 +4588,8 @@
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
-      "Time remaining: 10 day(s) left"
+      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Buchanan-Park-Restroom-Renovation-Project/0000428130?origin=0",
@@ -4507,7 +4608,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "buchanan park restroom renovation project|member agency bids|2026-07-08",
     "sourceId": "9195360481",
-    "lastSeenAt": "2026-06-28T11:59:34.646Z",
+    "lastSeenAt": "2026-06-29T14:30:25.877Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4527,7 +4628,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4553,7 +4654,8 @@
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
-      "Time remaining: 10 day(s) left"
+      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Denver-Zoo-Construction-Proposal-Request-Guest-Experience-Hub/0000428129?origin=0",
@@ -4572,7 +4674,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "denver zoo construction proposal request guest experience hub|member agency bids|2026-07-08",
     "sourceId": "9200729002",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.877Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4593,7 +4695,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-08-03",
-    "daysUntilDue": 36,
+    "daysUntilDue": 35,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4619,7 +4721,8 @@
       "Time remaining: 39 day(s) left",
       "Time remaining: 38 day(s) left",
       "Time remaining: 37 day(s) left",
-      "Time remaining: 36 day(s) left"
+      "Time remaining: 36 day(s) left",
+      "Time remaining: 35 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Glendo-Lusk-Rural-Tap-and-Quinn-Creek-Substation/2700832037?origin=0&target=view",
@@ -4640,7 +4743,7 @@
     ],
     "canonicalKey": "glendo lusk rural tap and quinn creek substation|federal bids|2026-08-03",
     "sourceId": "2700832037",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -4661,7 +4764,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-08-11",
-    "daysUntilDue": 44,
+    "daysUntilDue": 43,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4687,7 +4790,8 @@
       "Time remaining: 47 day(s) left",
       "Time remaining: 46 day(s) left",
       "Time remaining: 45 day(s) left",
-      "Time remaining: 44 day(s) left"
+      "Time remaining: 44 day(s) left",
+      "Time remaining: 43 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Gold-Strike-Park-Construction/0000427939?origin=0",
@@ -4706,7 +4810,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "gold strike park construction|member agency bids|2026-08-11",
     "sourceId": "9190575703",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4726,7 +4830,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4753,7 +4857,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Multi-Facility-ARC-Flash-Study-and-Predictive-IR-Scan/0000428045?origin=0",
@@ -4772,7 +4877,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "multi facility arc flash study and predictive ir scan|member agency bids|2026-07-09",
     "sourceId": "9195313962",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -4792,7 +4897,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-17",
     "dueDate": "2026-08-03",
-    "daysUntilDue": 36,
+    "daysUntilDue": 35,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4833,7 +4938,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "paratransit eligibility determinations travel training|regional transportation district|2026-08-03",
     "sourceId": "rtd-denver:271922",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.217Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -4856,9 +4961,9 @@
     "agency": "DNR - Division of Reclamation Mining & Safety",
     "postedDate": "2026-06-17",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -4893,7 +4998,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pkaa wandering prospector project|dnr - division of reclamation mining & safety|2026-07-01",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.703Z",
     "matchKeywords": [
       "general",
       "2026000476",
@@ -4915,7 +5020,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-17",
     "dueDate": "2026-08-05",
-    "daysUntilDue": 38,
+    "daysUntilDue": 37,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -4941,7 +5046,8 @@
       "Time remaining: 41 day(s) left",
       "Time remaining: 40 day(s) left",
       "Time remaining: 39 day(s) left",
-      "Time remaining: 38 day(s) left"
+      "Time remaining: 38 day(s) left",
+      "Time remaining: 37 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Steam-Tunnel-Ventilation-Replacement/2701027877?origin=0&target=view",
@@ -4962,7 +5068,7 @@
     ],
     "canonicalKey": "steam tunnel ventilation replacement|federal bids|2026-08-05",
     "sourceId": "2701027877",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "hvac",
       "bidnet",
@@ -4983,7 +5089,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5010,7 +5116,8 @@
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Sanitary-Sewer-Replacement-Project-Phases-1-11/0000427854?origin=0",
@@ -5029,7 +5136,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 sanitary sewer replacement project phases 1 11|member agency bids|2026-07-16",
     "sourceId": "9185647302",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5049,7 +5156,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5076,7 +5183,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/GLCA-318882-Bullfrog/2700231767?origin=0&target=view",
@@ -5095,7 +5203,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "glca 318882 bullfrog|federal bids|2026-07-15",
     "sourceId": "2700231767",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5115,7 +5223,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5142,7 +5250,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/GLCA-Hite/2700572447?origin=0&target=view",
@@ -5161,7 +5270,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "glca hite|federal bids|2026-07-15",
     "sourceId": "2700572447",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5181,7 +5290,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5222,7 +5331,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "health examinations and drug screening|regional transportation district|2026-07-15",
     "sourceId": "rtd-denver:264106",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -5245,7 +5354,7 @@
     "agency": "City of Wheat Ridge",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5287,7 +5396,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "linkage fee nexus study|city of wheat ridge|2026-07-16",
     "sourceId": "wheatridgeco:259388",
-    "lastSeenAt": "2026-06-28T11:59:36.378Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -5311,7 +5420,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5338,7 +5447,8 @@
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
       "Time remaining: 24 day(s) left",
-      "Time remaining: 23 day(s) left"
+      "Time remaining: 23 day(s) left",
+      "Time remaining: 22 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/NIST-Boulder-Sitewide-Exterior-Lighting-Inspection-and-Repair/2700526802?origin=0&target=view",
@@ -5359,7 +5469,7 @@
     ],
     "canonicalKey": "nist boulder sitewide exterior lighting inspection and repair|federal bids|2026-07-21",
     "sourceId": "2700526802",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -5381,7 +5491,7 @@
     "agency": "DMVA - Department of Military and Veterans Affairs",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-31",
-    "daysUntilDue": 33,
+    "daysUntilDue": 32,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5398,7 +5508,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-17",
       "Closing: 2026-07-31",
-      "Time remaining: 33 day(s) left",
+      "Time remaining: 32 day(s) left",
       "BidNet reference: 444063633118",
       "Solicitation reference: [RFQ1,OAAA,2026000046,1][RFQ1-OAAA-2026000046-1]",
       "Solicitation number: 2026000046",
@@ -5427,7 +5537,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "oaaa 2010 082609 pueblo west master plan|dmva - department of military and veterans affairs|2026-07-31",
     "sourceId": "444063633118",
-    "lastSeenAt": "2026-06-28T11:59:34.652Z",
+    "lastSeenAt": "2026-06-29T14:30:25.888Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5454,7 +5564,7 @@
     "agency": "DMVA - Department of Military and Veterans Affairs",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-31",
-    "daysUntilDue": 33,
+    "daysUntilDue": 32,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5492,7 +5602,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "oaaa 2010 082613 statewide real property development plan|dmva - department of military and veterans affairs|2026-07-31",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.704Z",
     "matchKeywords": [
       "general",
       "2026000043",
@@ -5514,7 +5624,7 @@
     "agency": "DMVA - Department of Military and Veterans Affairs",
     "postedDate": "2026-06-16",
     "dueDate": "2026-08-11",
-    "daysUntilDue": 44,
+    "daysUntilDue": 43,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5531,7 +5641,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-17",
       "Closing: 2026-08-11",
-      "Time remaining: 44 day(s) left",
+      "Time remaining: 43 day(s) left",
       "BidNet reference: 444063633117",
       "Solicitation reference: [RFQ1,OAAA,2026000045,1][RFQ1-OAAA-2026000045-1]",
       "Solicitation number: 2026000045",
@@ -5560,7 +5670,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "oaaa 2010 082615 jfhq master plan|dmva - department of military and veterans affairs|2026-08-11",
     "sourceId": "444063633117",
-    "lastSeenAt": "2026-06-28T11:59:34.652Z",
+    "lastSeenAt": "2026-06-29T14:30:25.888Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5586,9 +5696,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -5613,7 +5723,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Public-Works-Sidewalk-Snow-Melt-System-Concrete/0000427871?origin=0",
@@ -5635,7 +5746,7 @@
     ],
     "canonicalKey": "public works sidewalk snow melt system concrete|member agency bids|2026-07-02",
     "sourceId": "9186052904",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -5656,9 +5767,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -5684,7 +5795,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Public-Works-Sidewalk-Snow-Melt-System-Electrical/0000427863?origin=0",
@@ -5705,7 +5817,7 @@
     ],
     "canonicalKey": "public works sidewalk snow melt system electrical|member agency bids|2026-07-02",
     "sourceId": "9186052903",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -5725,7 +5837,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-13",
-    "daysUntilDue": 15,
+    "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5752,7 +5864,8 @@
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
       "Time remaining: 16 day(s) left",
-      "Time remaining: 15 day(s) left"
+      "Time remaining: 15 day(s) left",
+      "Time remaining: 14 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Smuggler-Bridge-Replacement-CM-GC-Services/0000427852?origin=0",
@@ -5773,7 +5886,7 @@
     ],
     "canonicalKey": "smuggler bridge replacement cm gc services|member agency bids|2026-07-13",
     "sourceId": "9184035255",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -5794,7 +5907,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-20",
-    "daysUntilDue": 22,
+    "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5821,7 +5934,8 @@
       "Time remaining: 25 day(s) left",
       "Time remaining: 24 day(s) left",
       "Time remaining: 23 day(s) left",
-      "Time remaining: 22 day(s) left"
+      "Time remaining: 22 day(s) left",
+      "Time remaining: 21 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Village-Court-Apartments-Building-2-Roof-Replacement/444061950795?origin=0&target=view",
@@ -5842,7 +5956,7 @@
     ],
     "canonicalKey": "village court apartments building 2 roof replacement|state & local bids|2026-07-20",
     "sourceId": "444061950795",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "roofing",
       "bidnet",
@@ -5863,7 +5977,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-16",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5890,7 +6004,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Vista-Ridge-High-School-Dance-Studio/0000427185?origin=0",
@@ -5909,7 +6024,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "vista ridge high school dance studio|member agency bids|2026-07-10",
     "sourceId": "9142776063",
-    "lastSeenAt": "2026-06-28T11:59:34.647Z",
+    "lastSeenAt": "2026-06-29T14:30:25.878Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5929,7 +6044,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -5956,7 +6071,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-CIPP/0000427745?origin=0",
@@ -5975,7 +6091,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 cipp|member agency bids|2026-07-14",
     "sourceId": "9178605110",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -5995,7 +6111,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-08-14",
-    "daysUntilDue": 47,
+    "daysUntilDue": 46,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6023,7 +6139,8 @@
       "Time remaining: 50 day(s) left",
       "Time remaining: 49 day(s) left",
       "Time remaining: 48 day(s) left",
-      "Time remaining: 47 day(s) left"
+      "Time remaining: 47 day(s) left",
+      "Time remaining: 46 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-City-of-Colorado-Springs-Vendor-Fair-NO-RSVP-REQUIRED/0000427721?origin=0",
@@ -6042,7 +6159,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 city of colorado springs vendor fair no rsvp required|member agency bids|2026-08-14",
     "sourceId": "9176942154",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6063,7 +6180,7 @@
     "agency": "City and County of Denver Department of Transportation & Infrastructure",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6079,7 +6196,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-15",
       "Closing: 2026-07-16",
-      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left",
       "BidNet reference: 0000426601",
       "Reference number: Contract No. 202684820",
       "Status: Open",
@@ -6116,7 +6233,7 @@
     ],
     "canonicalKey": "peoria street hsip 23 vision zero project|city and county of denver department of transportation & infrastructure|2026-07-16",
     "sourceId": "9109466401",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6145,7 +6262,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6172,7 +6289,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Pioneer-Park-Renovations/0000427737?origin=0",
@@ -6191,7 +6309,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "pioneer park renovations|member agency bids|2026-07-15",
     "sourceId": "9178605108",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6211,9 +6329,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "hvac-work",
     "projectTypeLabel": "Hvac Work",
@@ -6239,7 +6357,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/PUEBLO-WATER-TERM-CONTRACT-FOR-HVAC-MECHANICAL-SERVICES/0000427712?origin=0",
@@ -6261,7 +6380,7 @@
     ],
     "canonicalKey": "pueblo water term contract for hvac mechanical services|member agency bids|2026-06-30",
     "sourceId": "9179044501",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "hvac",
       "bidnet",
@@ -6283,7 +6402,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-13",
-    "daysUntilDue": 15,
+    "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6310,7 +6429,8 @@
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
       "Time remaining: 16 day(s) left",
-      "Time remaining: 15 day(s) left"
+      "Time remaining: 15 day(s) left",
+      "Time remaining: 14 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/R26-055MZ-Flanagan-Park-Improvements-Concrete-Irrigation-Electrical/0000427734?origin=0",
@@ -6331,7 +6451,7 @@
     ],
     "canonicalKey": "r26 055mz flanagan park improvements concrete irrigation electrical|member agency bids|2026-07-13",
     "sourceId": "9176942156",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -6351,7 +6471,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6378,7 +6498,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-Colorado-State-Forest-Service-Forester-Training-Facility/0000427783?origin=0",
@@ -6397,7 +6518,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for interest colorado state forest service forester training facility|member agency bids|2026-07-14",
     "sourceId": "9176942160",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6417,7 +6538,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-24",
-    "daysUntilDue": 26,
+    "daysUntilDue": 25,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6444,7 +6565,8 @@
       "Time remaining: 29 day(s) left",
       "Time remaining: 28 day(s) left",
       "Time remaining: 27 day(s) left",
-      "Time remaining: 26 day(s) left"
+      "Time remaining: 26 day(s) left",
+      "Time remaining: 25 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Sidney-Substation-Breaker-Replacement/2700006857?origin=0&target=view",
@@ -6465,7 +6587,7 @@
     ],
     "canonicalKey": "sidney substation breaker replacement|federal bids|2026-07-24",
     "sourceId": "2700006857",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -6486,7 +6608,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6513,7 +6635,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Terry-Town-Well-Development-Grand-Mesa-Uncompahgre-and-Gunnison-NF-CO/2699888537?origin=0&target=view",
@@ -6532,7 +6655,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "terry town well development grand mesa uncompahgre and gunnison nf co|federal bids|2026-07-15",
     "sourceId": "2699888537",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.879Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6553,7 +6676,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-15",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6580,7 +6703,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Efficiency-Plan-Update/0000427714?origin=0",
@@ -6599,7 +6723,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "water efficiency plan update|member agency bids|2026-07-15",
     "sourceId": "9178605105",
-    "lastSeenAt": "2026-06-28T11:59:34.652Z",
+    "lastSeenAt": "2026-06-29T14:30:25.888Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6619,7 +6743,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-07",
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6649,7 +6773,8 @@
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
-      "Time remaining: 9 day(s) left"
+      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Gypsum-Street-Renovations-Paving/0000427653?origin=0",
@@ -6670,7 +6795,7 @@
     ],
     "canonicalKey": "2026 gypsum street renovations paving|member agency bids|2026-07-07",
     "sourceId": "9173875306",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -6691,7 +6816,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6721,7 +6846,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/COLORADO-BLVD-WCR13-REALIGNMENT-CONSTRUCTION/0000427652?origin=0",
@@ -6740,7 +6866,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "colorado blvd wcr13 realignment construction|member agency bids|2026-07-10",
     "sourceId": "9174204954",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6760,7 +6886,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6790,7 +6916,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Design-for-Remodel-of-South-27th-Police-Department-Building/0000427586?origin=0",
@@ -6809,7 +6936,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "design for remodel of south 27th police department building|member agency bids|2026-07-15",
     "sourceId": "9169842806",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6829,7 +6956,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6859,7 +6986,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/NIST-Boulder-B1-Wing-6-Seal-Above-Hallway-Doors/2699383382?origin=0&target=view",
@@ -6878,7 +7006,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nist boulder b1 wing 6 seal above hallway doors|federal bids|2026-07-15",
     "sourceId": "2699383382",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6899,7 +7027,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-14",
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -6930,7 +7058,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Time remaining: 17 day(s) left",
-      "Time remaining: 16 day(s) left"
+      "Time remaining: 16 day(s) left",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/OAAA-2010-082610-Replace-Flooring-at-Watkins-RC/444057598864?origin=0&target=view",
@@ -6949,7 +7078,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "oaaa 2010 082610 replace flooring at watkins rc|state & local bids|2026-07-14",
     "sourceId": "444057598864",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -6969,9 +7098,9 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -7001,7 +7130,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Region-1-I-70-Pavement-Rehabilitation/444059011904?origin=0&target=view",
@@ -7022,7 +7152,7 @@
     ],
     "canonicalKey": "region 1 i 70 pavement rehabilitation|state & local bids|2026-07-02",
     "sourceId": "444059011904",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -7043,9 +7173,9 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -7073,7 +7203,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Region-1-US-287-Intersection-Improvements/444058923345?origin=0&target=view",
@@ -7092,7 +7223,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "region 1 us 287 intersection improvements|state & local bids|2026-07-02",
     "sourceId": "444058923345",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7112,9 +7243,9 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -7143,7 +7274,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Region-4-CO52-Resurfacing/444059011905?origin=0&target=view",
@@ -7162,7 +7294,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "region 4 co52 resurfacing|state & local bids|2026-07-02",
     "sourceId": "444059011905",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7182,7 +7314,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7212,7 +7344,8 @@
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Roof-Repair-Services-Citywide/0000427616?origin=0",
@@ -7233,7 +7366,7 @@
     ],
     "canonicalKey": "roof repair services citywide|member agency bids|2026-07-16",
     "sourceId": "9170602213",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "roofing",
       "bidnet",
@@ -7254,7 +7387,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-12",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7284,7 +7417,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-GRCA-318719_Temporary-WWTP-at-North-Rim/2699424692?origin=0&target=view",
@@ -7303,7 +7437,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "y grca 318719 temporary wwtp at north rim|federal bids|2026-07-15",
     "sourceId": "2699424692",
-    "lastSeenAt": "2026-06-28T11:59:34.648Z",
+    "lastSeenAt": "2026-06-29T14:30:25.880Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7323,9 +7457,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -7355,7 +7489,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-Storm-CCTV-and-Cleaning/0000426675?origin=0",
@@ -7376,7 +7511,7 @@
     ],
     "canonicalKey": "2026 storm cctv and cleaning|member agency bids|2026-07-01",
     "sourceId": "9113046106",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -7397,7 +7532,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-28",
-    "daysUntilDue": 30,
+    "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7429,7 +7564,8 @@
       "Time remaining: 33 day(s) left",
       "Time remaining: 32 day(s) left",
       "Time remaining: 31 day(s) left",
-      "Time remaining: 30 day(s) left"
+      "Time remaining: 30 day(s) left",
+      "Time remaining: 29 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Fort-Collins-Road-Repairs-NIST-Boulder-CO/2699129147?origin=0&target=view",
@@ -7450,7 +7586,7 @@
     ],
     "canonicalKey": "fort collins road repairs nist boulder co|federal bids|2026-07-28",
     "sourceId": "2699129147",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -7472,9 +7608,9 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -7504,7 +7640,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Hillcrest-Drive-Sidewalk-Replacement-Project/444057254833?origin=0&target=view",
@@ -7525,7 +7662,7 @@
     ],
     "canonicalKey": "hillcrest drive sidewalk replacement project|state & local bids|2026-06-30",
     "sourceId": "444057254833",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -7546,7 +7683,7 @@
     "agency": "State & Local Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7577,7 +7714,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Jackson-Lake-SP-PRT-Office-Remodel-S26PNE-7787/444057590826?origin=0&target=view",
@@ -7596,7 +7734,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "jackson lake sp prt office remodel s26pne 7787|state & local bids|2026-07-10",
     "sourceId": "444057590826",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7616,7 +7754,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-16",
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7647,7 +7785,8 @@
       "Time remaining: 21 day(s) left",
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
-      "Time remaining: 18 day(s) left"
+      "Time remaining: 18 day(s) left",
+      "Time remaining: 17 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Library-Roof-Replacement/0000427491?origin=0",
@@ -7668,7 +7807,7 @@
     ],
     "canonicalKey": "library roof replacement|member agency bids|2026-07-16",
     "sourceId": "9165637354",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "roofing",
       "bidnet",
@@ -7689,7 +7828,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7721,7 +7860,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Justice-Center-RTU-Replacements/0000426737?origin=0",
@@ -7742,7 +7882,7 @@
     ],
     "canonicalKey": "mesa county justice center rtu replacements|member agency bids|2026-07-09",
     "sourceId": "9116122057",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "hvac",
       "bidnet",
@@ -7763,7 +7903,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-15",
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -7807,7 +7947,7 @@
     ],
     "canonicalKey": "traction power substation tpss 27 repairs phase 2|regional transportation district|2026-07-15",
     "sourceId": "rtd-denver:256258",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "electrical",
       "opengov",
@@ -7831,9 +7971,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -7862,7 +8002,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Vegetative-Fuels-Reduction-for-Wildfire-Mitigation/0000427513?origin=0",
@@ -7881,7 +8022,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "vegetative fuels reduction for wildfire mitigation|member agency bids|2026-07-02",
     "sourceId": "9167741801",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7901,9 +8042,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -7932,7 +8073,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-Grand-Canyon-Industry-Day-for-upcoming-projects/2698998077?origin=0&target=view",
@@ -7951,7 +8093,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "y grand canyon industry day for upcoming projects|federal bids|2026-07-02",
     "sourceId": "2698998077",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -7971,9 +8113,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-06-29",
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -8003,7 +8145,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 29 minute(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-ZION-240182-South-Entrance-and-Visitor-Center-Road-Rehabilitation/2699242877?origin=0&target=view",
@@ -8024,7 +8167,7 @@
     ],
     "canonicalKey": "y zion 240182 south entrance and visitor center road rehabilitation|federal bids|2026-06-29",
     "sourceId": "2699242877",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -8045,9 +8188,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-11",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -8075,7 +8218,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Closing: 2026-07-02",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Z1DA-Demo-Remove-Replace-Flooring-8N-Mental-Health/2699124047?origin=0&target=view",
@@ -8094,7 +8238,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "z1da demo remove replace flooring 8n mental health|federal bids|2026-07-02",
     "sourceId": "2699124047",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.881Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8114,9 +8258,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "concrete-work",
     "projectTypeLabel": "Concrete Work",
@@ -8149,7 +8293,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Deer-Creek-Road-and-Woodmoor-Drive-Improvements/0000427199?origin=0",
@@ -8171,7 +8316,7 @@
     ],
     "canonicalKey": "deer creek road and woodmoor drive improvements|member agency bids|2026-07-01",
     "sourceId": "9142776066",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -8194,7 +8339,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-07",
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -8236,7 +8381,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "executive search gm ceo|regional transportation district|2026-07-07",
     "sourceId": "rtd-denver:271945",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -8259,7 +8404,7 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -8292,7 +8437,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Fence-Remove-and-Install/2698840997?origin=0&target=view",
@@ -8311,7 +8457,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "fence remove and install|federal bids|2026-07-10",
     "sourceId": "2698840997",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8331,7 +8477,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -8364,7 +8510,8 @@
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
-      "Time remaining: 10 day(s) left"
+      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/G-Road-HVAC/0000427293?origin=0",
@@ -8385,7 +8532,7 @@
     ],
     "canonicalKey": "g road hvac|member agency bids|2026-07-08",
     "sourceId": "9150147955",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "hvac",
       "bidnet",
@@ -8405,9 +8552,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -8437,7 +8584,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/GARDEN-OF-THE-GODS-RANGER-HOUSE-RENOVATION/0000427347?origin=0",
@@ -8456,7 +8604,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "garden of the gods ranger house renovation|member agency bids|2026-07-01",
     "sourceId": "9150147959",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8518,7 +8666,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "grand county historical preservation board|grand county|",
     "sourceId": "grand-county:166",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "general",
       "civicengage",
@@ -8532,68 +8680,6 @@
     ]
   },
   {
-    "id": "colorado-vss-ncs1-pmaa-2026000231-1",
-    "title": "Hugo SWA - Road Improvements, MAINTAIN",
-    "slug": "hugo-swa-road-improvements-maintain-ncs1-pmaa-2026000231-1",
-    "state": "colorado",
-    "city": "Colorado",
-    "county": "",
-    "trade": "concrete",
-    "agency": "DNR - Division of Parks & Wildlife",
-    "postedDate": "2026-06-10",
-    "dueDate": "2026-06-28",
-    "daysUntilDue": 0,
-    "expiresSoon": true,
-    "dueStatus": "Due Today",
-    "estimatedValue": "Not listed",
-    "projectType": "concrete-work",
-    "projectTypeLabel": "Concrete Work",
-    "contractorFit": "high",
-    "filterTags": [
-      "construction",
-      "concrete"
-    ],
-    "summary": "Hugo SWA - Road Improvements, MAINTAIN. Notice of Contractor Settlement (NCS1) posted by DNR - Division of Parks & Wildlife.",
-    "requirements": [
-      "Solicitation reference: [NCS1,PMAA,2026000231,1][NCS1-PMAA-2026000231-1]",
-      "Solicitation number: 2026000231",
-      "Notice of Contractor Settlement (NCS1)",
-      "Status code: O",
-      "Buyer: JOSEPH DECRESCENTIS",
-      "Buyer email: joe.decrescentis@state.co.us"
-    ],
-    "sourceName": "Colorado Vendor Self Service",
-    "sourceUrl": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4",
-    "sourceLookupInstructions": "Open Colorado VSS, choose \"View Published Solicitations,\" then search for solicitation number 2026000231.",
-    "sourceLookupSteps": [
-      "Open Colorado VSS.",
-      "Click \"View Published Solicitations.\"",
-      "Enter 2026000231 in the keyword/search field.",
-      "Open the matching solicitation record."
-    ],
-    "solicitationRef": "[NCS1,PMAA,2026000231,1][NCS1-PMAA-2026000231-1]",
-    "solicitationNumber": "2026000231",
-    "buyer": "JOSEPH DECRESCENTIS",
-    "buyerEmail": "joe.decrescentis@state.co.us",
-    "tradeConfidence": "medium",
-    "matchedTradeKeywords": [
-      "paving/asphalt"
-    ],
-    "canonicalKey": "hugo swa road improvements maintain|dnr - division of parks & wildlife|2026-06-28",
-    "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.155Z",
-    "matchKeywords": [
-      "concrete",
-      "2026000231",
-      "ncs1",
-      "notice of contractor settlement (ncs1)",
-      "dnr - division of parks & wildlife",
-      "joseph decrescentis",
-      "joe.decrescentis@state.co.us",
-      "paving/asphalt"
-    ]
-  },
-  {
     "id": "bidnet-9155754154",
     "title": "Letter of Interest for Lochbuie to MWR NTP Lift Station and Pipeline Project",
     "slug": "letter-of-interest-for-lochbuie-to-mwr-ntp-lift-station-and-pipeline-project-0000427352",
@@ -8604,9 +8690,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -8639,7 +8725,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Letter-of-Interest-for-Lochbuie-to-MWR-NTP-Lift-Station-and-Pipeline-Project/0000427352?origin=0",
@@ -8659,7 +8746,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "letter of interest for lochbuie to mwr ntp lift station and pipeline project|member agency bids|2026-06-30",
     "sourceId": "9155754154",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8680,9 +8767,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-10",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -8712,7 +8799,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Prairie-Dog-Fence-at-Broomfield-County-Commons-Open-Space/0000427339?origin=0",
@@ -8731,7 +8819,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "prairie dog fence at broomfield county commons open space|member agency bids|2026-07-01",
     "sourceId": "9148643118",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8751,7 +8839,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-09",
     "dueDate": "2026-07-29",
-    "daysUntilDue": 31,
+    "daysUntilDue": 30,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -8784,7 +8872,8 @@
       "Time remaining: 34 day(s) left",
       "Time remaining: 33 day(s) left",
       "Time remaining: 32 day(s) left",
-      "Time remaining: 31 day(s) left"
+      "Time remaining: 31 day(s) left",
+      "Time remaining: 30 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Ballard-House-Renovation-and-Barn-Shed-Addition/0000427204?origin=0",
@@ -8803,7 +8892,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "ballard house renovation and barn shed addition|member agency bids|2026-07-29",
     "sourceId": "9143035613",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.882Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8823,9 +8912,9 @@
     "agency": "Front Range Community College",
     "postedDate": "2026-06-09",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "design-services",
     "projectTypeLabel": "Design Services",
@@ -8861,7 +8950,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "commissioning service for longmont urban campus|front range community college|2026-07-02",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.703Z",
     "matchKeywords": [
       "general",
       "2026000044",
@@ -8883,7 +8972,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-09",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -8916,7 +9005,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Evaluation-of-Metro-s-Northern-Treatment-Plant-Direct-Potable-Reuse-Connection/0000427107?origin=0",
@@ -8935,7 +9025,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "evaluation of metro s northern treatment plant direct potable reuse connection|member agency bids|2026-07-09",
     "sourceId": "9138217156",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.883Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -8955,9 +9045,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-09",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-work",
     "projectTypeLabel": "Construction Work",
@@ -8988,7 +9078,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/NIST-Boulder-Building-2-1330-Fume-Hood-Replacement/2698399082?origin=0&target=view",
@@ -9007,7 +9098,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "nist boulder building 2 1330 fume hood replacement|federal bids|2026-07-01",
     "sourceId": "2698399082",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.883Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9028,9 +9119,9 @@
     "agency": "Federal Bids",
     "postedDate": "2026-06-09",
     "dueDate": "2026-06-29",
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "estimatedValue": "Not listed",
     "projectType": "general-construction",
     "projectTypeLabel": "General Construction",
@@ -9061,7 +9152,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 4 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Renovate-Building-A-and-Site-Work-for-Department-of-Energy-Legacy-Management-DOE-LM-Grand-Junction-Field-Service-Center-FSC/2698412597?origin=0&target=view",
@@ -9080,7 +9172,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "renovate building a and site work for department of energy legacy management doe lm grand junction field service center fsc|federal bids|2026-06-29",
     "sourceId": "2698412597",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.883Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9101,7 +9193,7 @@
     "agency": "City and County of Denver Department of Transportation & Infrastructure",
     "postedDate": "2026-06-09",
     "dueDate": "2026-08-04",
-    "daysUntilDue": 37,
+    "daysUntilDue": 36,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -9117,7 +9209,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-09",
       "Closing: 2026-08-04",
-      "Time remaining: 37 day(s) left",
+      "Time remaining: 36 day(s) left",
       "BidNet reference: 0000424997",
       "Reference number: Contract No. 202684690",
       "Status: Open",
@@ -9154,7 +9246,7 @@
     ],
     "canonicalKey": "tower road sanitary interceptor phase 1|city and county of denver department of transportation & infrastructure|2026-08-04",
     "sourceId": "9001684713",
-    "lastSeenAt": "2026-06-28T11:59:34.649Z",
+    "lastSeenAt": "2026-06-29T14:30:25.883Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -9183,7 +9275,7 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-08",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -9217,7 +9309,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/East-Colfax-Avenue-Bus-Rapid-Transit-BRT-Custodial-and-Snow-Removal-Services/0000426998?origin=0",
@@ -9236,7 +9329,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "east colfax avenue bus rapid transit brt custodial and snow removal services|member agency bids|2026-07-09",
     "sourceId": "9131246169",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z",
+    "lastSeenAt": "2026-06-29T14:30:25.883Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -9256,7 +9349,7 @@
     "agency": "City and County of Denver Department of Transportation & Infrastructure",
     "postedDate": "2026-06-08",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -9298,7 +9391,7 @@
     ],
     "canonicalKey": "rfp colfax bus rapid transit brt custodial snow removal services|city and county of denver department of transportation & infrastructure|2026-07-09",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:24.382Z",
+    "lastSeenAt": "2026-06-29T14:30:14.321Z",
     "matchKeywords": [
       "concrete",
       "denver",
@@ -9322,9 +9415,9 @@
     "agency": "Southgate Water and Sanitation Districts",
     "postedDate": "2026-06-05",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "construction-procurement",
     "projectTypeLabel": "Construction Procurement",
@@ -9365,7 +9458,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "2026 sewer rehabilitation project|southgate water and sanitation districts|2026-06-30",
     "sourceId": "southgate-water-sanitation:17",
-    "lastSeenAt": "2026-06-28T12:00:07.740Z",
+    "lastSeenAt": "2026-06-29T14:31:01.198Z",
     "matchKeywords": [
       "concrete",
       "civicengage",
@@ -9423,7 +9516,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Duroux-Park-Boat-Ramp-Project/0000426850?origin=0",
@@ -9449,10 +9543,10 @@
       "member agency bids",
       "0000426850"
     ],
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.883Z"
   },
   {
     "id": "bidnet-2697411722",
@@ -9498,7 +9592,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/NIST-Boulder-Site-Wide-Road-Painting/2697411722?origin=0&target=view",
@@ -9531,10 +9626,10 @@
       "general",
       "road painting / striping excluded from concrete"
     ],
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-9085267817",
@@ -9580,7 +9675,8 @@
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
-      "Time remaining: 9 day(s) left"
+      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sanitary-Sewer-Creek-Crossing-Program-Construction_-Task-Order-Based/0000426320?origin=0",
@@ -9606,10 +9702,10 @@
       "member agency bids",
       "0000426320"
     ],
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-2697346442",
@@ -9655,7 +9751,8 @@
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
       "Time remaining: 9 day(s) left",
-      "Time remaining: 8 day(s) left"
+      "Time remaining: 8 day(s) left",
+      "Time remaining: 7 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-DEWA-310424-Safety-and-Pavement-Improvements-to/2697346442?origin=0&target=view",
@@ -9684,10 +9781,10 @@
       "2697346442",
       "paving/asphalt"
     ],
-    "daysUntilDue": 8,
+    "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.883Z"
   },
   {
     "id": "bidnet-2697501482",
@@ -9733,7 +9830,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-Weld-Substation-Stage-05/2697501482?origin=0&target=view",
@@ -9762,10 +9860,10 @@
       "2697501482",
       "electrical gear"
     ],
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.883Z"
   },
   {
     "id": "bidnet-9116115903",
@@ -9811,7 +9909,8 @@
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
       "Time remaining: 9 day(s) left",
-      "Time remaining: 8 day(s) left"
+      "Time remaining: 8 day(s) left",
+      "Time remaining: 7 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/19-W-Water-Place-Renovation/0000426700?origin=0",
@@ -9837,10 +9936,10 @@
       "member agency bids",
       "0000426700"
     ],
-    "daysUntilDue": 8,
+    "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-9109466402",
@@ -9886,7 +9985,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/AEJ-Airport-New-Automated-Weather-Observing-System-AWOS/0000426613?origin=0",
@@ -9912,10 +10012,10 @@
       "member agency bids",
       "0000426613"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-2697007802",
@@ -9961,7 +10061,8 @@
       "Time remaining: 27 day(s) left",
       "Time remaining: 26 day(s) left",
       "Time remaining: 25 day(s) left",
-      "Time remaining: 24 day(s) left"
+      "Time remaining: 24 day(s) left",
+      "Time remaining: 23 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/B2A-Demolition-NIST-Boulder-CO/2697007802?origin=0&target=view",
@@ -9988,10 +10089,10 @@
       "federal bids",
       "2697007802"
     ],
-    "daysUntilDue": 24,
+    "daysUntilDue": 23,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "colorado-vss-rfq1-gjea-2026000042-1",
@@ -10004,7 +10105,7 @@
     "agency": "Front Range Community College",
     "postedDate": "2026-06-04",
     "dueDate": "2026-07-10",
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -10042,7 +10143,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "frcc facilities master plan|front range community college|2026-07-10",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:21.156Z",
+    "lastSeenAt": "2026-06-29T14:30:09.703Z",
     "matchKeywords": [
       "general",
       "2026000042",
@@ -10097,7 +10198,8 @@
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
-      "Time remaining: 9 day(s) left"
+      "Time remaining: 9 day(s) left",
+      "Time remaining: 8 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Island-Grove-Event-Center-Roof-Replacement/0000426769?origin=0",
@@ -10126,10 +10228,10 @@
       "0000426769",
       "roof"
     ],
-    "daysUntilDue": 9,
+    "daysUntilDue": 8,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-9112727812",
@@ -10175,7 +10277,8 @@
       "Time remaining: 28 day(s) left",
       "Time remaining: 27 day(s) left",
       "Time remaining: 26 day(s) left",
-      "Time remaining: 25 day(s) left"
+      "Time remaining: 25 day(s) left",
+      "Time remaining: 24 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Miscellaneous-Concrete-Services/0000426672?origin=0",
@@ -10203,10 +10306,10 @@
       "member agency bids",
       "0000426672"
     ],
-    "daysUntilDue": 25,
+    "daysUntilDue": 24,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "opengov-wheatridgeco-266523",
@@ -10219,9 +10322,9 @@
     "agency": "City of Wheat Ridge",
     "postedDate": "2026-06-04",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "professional-services",
     "projectTypeLabel": "Professional Services",
@@ -10262,7 +10365,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "public art management plan update|city of wheat ridge|2026-06-30",
     "sourceId": "wheatridgeco:266523",
-    "lastSeenAt": "2026-06-28T11:59:36.377Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -10286,9 +10389,9 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-06-04",
     "dueDate": "2026-07-02",
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
+    "dueStatus": "Due in 3 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-procurement",
     "projectTypeLabel": "Construction Procurement",
@@ -10328,7 +10431,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "trash and recycling collection service 2026|regional transportation district|2026-07-02",
     "sourceId": "rtd-denver:263716",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -10384,7 +10487,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Centennial-Plaza-ADA-Renovation/0000426593?origin=0",
@@ -10411,10 +10515,10 @@
       "member agency bids",
       "0000426593"
     ],
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "dueStatus": "Due in 3 days",
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "opengov-ouraycountyco-270978",
@@ -10427,7 +10531,7 @@
     "agency": "County of Ouray, CO",
     "postedDate": "2026-06-03",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -10469,7 +10573,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "log cabin disassembly and removal|county of ouray, co|2026-07-08",
     "sourceId": "ouraycountyco:270978",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "paving",
       "opengov",
@@ -10528,7 +10632,8 @@
       "Time remaining: 20 day(s) left",
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
-      "Time remaining: 17 day(s) left"
+      "Time remaining: 17 day(s) left",
+      "Time remaining: 16 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Museum-of-Northwest-Colorado-Re-Roof/0000426488?origin=0",
@@ -10560,10 +10665,10 @@
       "state & local bids",
       "444056572761"
     ],
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-9105931015",
@@ -10606,7 +10711,8 @@
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
-      "Time remaining: 10 day(s) left"
+      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-Bear-Creek-Maintenance-Shop-Remodel/0000426590?origin=0",
@@ -10632,10 +10738,10 @@
       "member agency bids",
       "0000426590"
     ],
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-9107505104",
@@ -10705,10 +10811,10 @@
       "0000426605",
       "electrical gear"
     ],
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.884Z"
   },
   {
     "id": "bidnet-9108138252",
@@ -10754,7 +10860,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 5 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Roof-Replacement-at-Clarifier-Building-at-Persigo-WWTP/0000426573?origin=0",
@@ -10783,10 +10890,10 @@
       "0000426573",
       "roof"
     ],
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "dueStatus": "Due Today",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-2696712257",
@@ -10832,7 +10939,8 @@
       "Time remaining: 11 day(s) left",
       "Time remaining: 10 day(s) left",
       "Time remaining: 9 day(s) left",
-      "Time remaining: 8 day(s) left"
+      "Time remaining: 8 day(s) left",
+      "Time remaining: 7 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Y-North-Gunnison-Substation-115kV-Switch-Install/2696712257?origin=0&target=view",
@@ -10862,10 +10970,10 @@
       "2696712257",
       "electrical gear"
     ],
-    "daysUntilDue": 8,
+    "daysUntilDue": 7,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-9094714303",
@@ -10911,7 +11019,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 3 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CR-150-Bridge-Repair/0000426326?origin=0",
@@ -10940,10 +11049,10 @@
       "0000426326",
       "bridge/civil"
     ],
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "dueStatus": "Due Today",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-9099085602",
@@ -10956,9 +11065,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-02",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "design-services",
     "projectTypeLabel": "Design Services",
@@ -10988,7 +11097,8 @@
       "Time remaining: 2 day(s) left",
       "Time remaining: 9 hour(s) left",
       "Closing: 2026-06-30",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Engineering-Services-for-the-Shop-Creek-Secondary-Backup-Generator/0000426414?origin=0",
@@ -11009,7 +11119,7 @@
     ],
     "canonicalKey": "engineering services for the shop creek secondary backup generator|member agency bids|2026-06-30",
     "sourceId": "9099085602",
-    "lastSeenAt": "2026-06-28T11:59:34.652Z",
+    "lastSeenAt": "2026-06-29T14:30:25.889Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -11063,7 +11173,8 @@
       "Time remaining: 8 day(s) left",
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
-      "Time remaining: 5 day(s) left"
+      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/General-Contractor-for-REHAB-Repairs/0000426369?origin=0",
@@ -11089,10 +11200,10 @@
       "member agency bids",
       "0000426369"
     ],
-    "daysUntilDue": 5,
+    "daysUntilDue": 4,
     "expiresSoon": true,
-    "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 4 days",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-9095054760",
@@ -11135,7 +11246,8 @@
       "Time remaining: 10 day(s) left",
       "Time remaining: 8 day(s) left",
       "Time remaining: 7 day(s) left",
-      "Closing: 2026-07-14"
+      "Closing: 2026-07-14",
+      "Time remaining: 15 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/IFB-2026-WA-2409-Water-Storage-Facility-Expansion-Tank-140/0000426370?origin=0",
@@ -11161,10 +11273,10 @@
       "member agency bids",
       "0000426370"
     ],
-    "daysUntilDue": 16,
+    "daysUntilDue": 15,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "civicengage-steamboat-springs-529",
@@ -11177,7 +11289,7 @@
     "agency": "City of Steamboat Springs",
     "postedDate": "2026-06-02",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -11199,7 +11311,7 @@
       "BidNet category: Member Agency Bids",
       "Published: 2026-06-01",
       "Closing: 2026-07-09",
-      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left",
       "BidNet reference: 0000426169",
       "Category: 2026 Bid's & RFP'S",
       "Status: Open",
@@ -11231,7 +11343,7 @@
     ],
     "canonicalKey": "meadow lane culvert replacement|city of steamboat springs|2026-07-09",
     "sourceId": "steamboat-springs:529",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -11295,7 +11407,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/North-Recreation-Path-Improvements/444046484304?origin=0&target=view",
@@ -11321,10 +11434,10 @@
       "state & local bids",
       "444046484304"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-9099086957",
@@ -11370,7 +11483,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Radial-Gate-Recoating/0000426445?origin=0",
@@ -11396,10 +11510,10 @@
       "member agency bids",
       "0000426445"
     ],
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z"
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "civicengage-gunnison-county-107",
@@ -11412,9 +11526,9 @@
     "agency": "Gunnison County",
     "postedDate": "2026-06-02",
     "dueDate": "2026-07-01",
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
+    "dueStatus": "Due in 2 days",
     "estimatedValue": "Not listed",
     "projectType": "construction-procurement",
     "projectTypeLabel": "Construction Procurement",
@@ -11434,7 +11548,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-04",
       "Closing: 2026-07-01",
-      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left",
       "BidNet reference: 444047367424",
       "Category: Public Works",
       "Status: Open",
@@ -11466,7 +11580,7 @@
     ],
     "canonicalKey": "request for proposals 2026 paving services|gunnison county|2026-07-01",
     "sourceId": "gunnison-county:107",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "concrete",
       "bidnet",
@@ -11527,7 +11641,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Concrete-Replacement-Project/0000425795?origin=0",
@@ -11555,10 +11670,10 @@
       "member agency bids",
       "0000425795"
     ],
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 2 days",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-9084598754",
@@ -11571,9 +11686,9 @@
     "agency": "Member Agency Bids",
     "postedDate": "2026-06-01",
     "dueDate": "2026-06-30",
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
+    "dueStatus": "Due Tomorrow",
     "estimatedValue": "Not listed",
     "projectType": "planning-consulting",
     "projectTypeLabel": "Planning / Consulting",
@@ -11606,7 +11721,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CWCB-Grant-for-John-Griffin-Reservoir-Feasibility-Study/0000426196?origin=0",
@@ -11625,7 +11741,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "cwcb grant for john griffin reservoir feasibility study|member agency bids|2026-06-30",
     "sourceId": "9084598754",
-    "lastSeenAt": "2026-06-28T11:59:34.652Z",
+    "lastSeenAt": "2026-06-29T14:30:25.889Z",
     "matchKeywords": [
       "general",
       "bidnet",
@@ -11678,7 +11794,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/N-UMESC-HYDRONIC-BOILER-REPLACEMENT/2695739942?origin=0&target=view",
@@ -11707,10 +11824,10 @@
       "2695739942",
       "boiler/chiller"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-2695701692",
@@ -11755,7 +11872,8 @@
       "Time remaining: 19 day(s) left",
       "Time remaining: 18 day(s) left",
       "Closing: 2026-07-20",
-      "Time remaining: 23 day(s) left"
+      "Time remaining: 23 day(s) left",
+      "Time remaining: 21 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Pike-Underground-Utility-Upgrade/2695701692?origin=0&target=view",
@@ -11781,10 +11899,10 @@
       "federal bids",
       "2695701692"
     ],
-    "daysUntilDue": 22,
+    "daysUntilDue": 21,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "denver-202684561",
@@ -11797,7 +11915,7 @@
     "agency": "City and County of Denver Department of Transportation & Infrastructure",
     "postedDate": "2026-06-01",
     "dueDate": "2026-07-21",
-    "daysUntilDue": 23,
+    "daysUntilDue": 22,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -11840,7 +11958,7 @@
     ],
     "canonicalKey": "rfq boettcher concert hall renovation|city and county of denver department of transportation & infrastructure|2026-07-21",
     "sourceId": "",
-    "lastSeenAt": "2026-06-28T11:59:24.382Z",
+    "lastSeenAt": "2026-06-29T14:30:14.321Z",
     "matchKeywords": [
       "general",
       "denver",
@@ -11897,7 +12015,8 @@
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
-      "Time remaining: 4 day(s) left"
+      "Time remaining: 4 day(s) left",
+      "Time remaining: 3 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/SMFR-26-1007-Station-23-Shower-Room-Remodel/0000426260?origin=0",
@@ -11923,10 +12042,10 @@
       "member agency bids",
       "0000426260"
     ],
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 3 days",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z"
   },
   {
     "id": "bidnet-444042168502",
@@ -11972,7 +12091,8 @@
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
       "Time remaining: 11 day(s) left",
-      "Time remaining: 10 day(s) left"
+      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/2026-Sewer-Rehabilitation/444042168502?origin=0&target=view",
@@ -11998,10 +12118,10 @@
       "state & local bids",
       "444042168502"
     ],
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "opengov-rtd-denver-270000",
@@ -12014,7 +12134,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-05-29",
     "dueDate": "2026-07-13",
-    "daysUntilDue": 15,
+    "daysUntilDue": 14,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -12056,7 +12176,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "public opinion polling consulting|regional transportation district|2026-07-13",
     "sourceId": "rtd-denver:270000",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -12112,7 +12232,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Sky-Ranch-CAB-Filing-9-Wet-Utilities-Project/444041369818?origin=0&target=view",
@@ -12138,10 +12259,10 @@
       "state & local bids",
       "444041369818"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "colorado-vss-ifb1-oaaa-2026000193-1",
@@ -12154,7 +12275,7 @@
     "agency": "DMVA - Department of Military and Veterans Affairs",
     "postedDate": "2026-05-28",
     "dueDate": "2026-07-08",
-    "daysUntilDue": 10,
+    "daysUntilDue": 9,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -12170,7 +12291,7 @@
       "BidNet category: State & Local Bids",
       "Published: 2026-06-02",
       "Closing: 2026-07-08",
-      "Time remaining: 10 day(s) left",
+      "Time remaining: 9 day(s) left",
       "BidNet reference: 444047169200",
       "Solicitation reference: [IFB1,OAAA,2026000193,1][IFB1-OAAA-2026000193-1]",
       "Solicitation number: 2026000193",
@@ -12201,7 +12322,7 @@
     ],
     "canonicalKey": "oaaa 2010 082519 fort collins emergency generator|dmva - department of military and veterans affairs|2026-07-08",
     "sourceId": "444047169200",
-    "lastSeenAt": "2026-06-28T11:59:34.650Z",
+    "lastSeenAt": "2026-06-29T14:30:25.885Z",
     "matchKeywords": [
       "electrical",
       "bidnet",
@@ -12262,7 +12383,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Quiet-Zones-Railroad-Crossing-Improvements-Package-2-Construction/0000425816?origin=0",
@@ -12288,10 +12410,10 @@
       "member agency bids",
       "0000425816"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-2694685007",
@@ -12357,10 +12479,10 @@
       "federal bids",
       "2694685007"
     ],
-    "daysUntilDue": 17,
+    "daysUntilDue": 16,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "opengov-rtd-denver-264137",
@@ -12373,7 +12495,7 @@
     "agency": "Regional Transportation District",
     "postedDate": "2026-05-27",
     "dueDate": "2026-07-28",
-    "daysUntilDue": 30,
+    "daysUntilDue": 29,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -12415,7 +12537,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "ticket vending machine tvm replacements 5 sbe goal|regional transportation district|2026-07-28",
     "sourceId": "rtd-denver:264137",
-    "lastSeenAt": "2026-06-28T11:59:36.379Z",
+    "lastSeenAt": "2026-06-29T14:30:27.216Z",
     "matchKeywords": [
       "general",
       "opengov",
@@ -12491,10 +12613,10 @@
       "federal bids",
       "2694411647"
     ],
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-9037071007",
@@ -12539,7 +12661,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/STORMWATER-INFRASTRUCTURE-MAINTENANCE-PROJECT/0000425600?origin=0",
@@ -12568,10 +12691,10 @@
       "0000425600",
       "bridge/civil"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-9018581916",
@@ -12640,10 +12763,10 @@
       "member agency bids",
       "0000425408"
     ],
-    "daysUntilDue": 4,
+    "daysUntilDue": 3,
     "expiresSoon": true,
-    "dueStatus": "Due in 4 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 3 days",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-8895116721",
@@ -12689,7 +12812,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/26th-Ave-E-470-to-the-Aurora-Highlands-Parkway/0000423456?origin=0",
@@ -12716,10 +12840,10 @@
       "member agency bids",
       "0000423456"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.886Z"
   },
   {
     "id": "bidnet-8879986411",
@@ -12765,7 +12889,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Homestake-Pipeline-Carbon-Fiber-Repairs-On-Call-Services/0000423119?origin=0",
@@ -12794,10 +12919,10 @@
       "0000423119",
       "low voltage"
     ],
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "civicengage-fort-morgan-975",
@@ -12810,7 +12935,7 @@
     "agency": "City of Fort Morgan",
     "postedDate": "2026-05-19",
     "dueDate": "2026-07-09",
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
     "estimatedValue": "Not listed",
@@ -12854,7 +12979,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "city of fort morgan wastewater treatment facility expansion project|city of fort morgan|2026-07-09",
     "sourceId": "fort-morgan:975",
-    "lastSeenAt": "2026-06-28T12:00:07.740Z",
+    "lastSeenAt": "2026-06-29T14:31:01.198Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -12926,9 +13051,9 @@
       "member agency bids",
       "0000424485"
     ],
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
+    "dueStatus": "Due Today",
     "lastSeenAt": "2026-06-15T16:06:58.047Z"
   },
   {
@@ -12976,7 +13101,8 @@
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
       "Time remaining: 12 day(s) left",
-      "Time remaining: 11 day(s) left"
+      "Time remaining: 11 day(s) left",
+      "Time remaining: 10 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Relay-Ground-Station-South-RGS-S-Antenna/2690889077?origin=0&target=view",
@@ -13005,10 +13131,10 @@
       "2690889077",
       "low voltage"
     ],
-    "daysUntilDue": 11,
+    "daysUntilDue": 10,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-2688715202",
@@ -13054,7 +13180,8 @@
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
       "Time remaining: 2 day(s) left",
-      "Time remaining: 1 day(s) left"
+      "Time remaining: 1 day(s) left",
+      "Time remaining: 4 hour(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Bear-Creek-Service-Emergency-Gates-Replacement/2688715202?origin=0&target=view",
@@ -13080,10 +13207,10 @@
       "federal bids",
       "2688715202"
     ],
-    "daysUntilDue": 1,
+    "daysUntilDue": 0,
     "expiresSoon": true,
-    "dueStatus": "Due Tomorrow",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Today",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-2686723397",
@@ -13126,7 +13253,8 @@
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
       "Time remaining: 3 day(s) left",
-      "Time remaining: 2 day(s) left"
+      "Time remaining: 2 day(s) left",
+      "Time remaining: 1 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/Safety-Shower-and-Eyewash-Corrections-Phase-1/2686723397?origin=0&target=view",
@@ -13152,10 +13280,10 @@
       "federal bids",
       "2686723397"
     ],
-    "daysUntilDue": 2,
+    "daysUntilDue": 1,
     "expiresSoon": true,
-    "dueStatus": "Due in 2 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due Tomorrow",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-8835216470",
@@ -13201,7 +13329,8 @@
       "Time remaining: 15 day(s) left",
       "Time remaining: 14 day(s) left",
       "Time remaining: 13 day(s) left",
-      "Time remaining: 12 day(s) left"
+      "Time remaining: 12 day(s) left",
+      "Time remaining: 11 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/South-Ark-Neighborhood-Phase-1-Residential-Development-Opportunity/0000422507?origin=0",
@@ -13227,10 +13356,10 @@
       "member agency bids",
       "0000422507"
     ],
-    "daysUntilDue": 12,
+    "daysUntilDue": 11,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-2684955482",
@@ -13300,10 +13429,10 @@
       "federal bids",
       "2684955482"
     ],
-    "daysUntilDue": 18,
+    "daysUntilDue": 17,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-8752812659",
@@ -13348,7 +13477,8 @@
       "Time remaining: 6 day(s) left",
       "Time remaining: 5 day(s) left",
       "Time remaining: 4 day(s) left",
-      "Time remaining: 3 day(s) left"
+      "Time remaining: 3 day(s) left",
+      "Time remaining: 2 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/South-Rifle-Lift-Station/0000420965?origin=0",
@@ -13374,10 +13504,10 @@
       "member agency bids",
       "0000420965"
     ],
-    "daysUntilDue": 3,
+    "daysUntilDue": 2,
     "expiresSoon": true,
-    "dueStatus": "Due in 3 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 2 days",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-8679606263",
@@ -13422,7 +13552,8 @@
       "Time remaining: 37 day(s) left",
       "Time remaining: 36 day(s) left",
       "Time remaining: 35 day(s) left",
-      "Time remaining: 34 day(s) left"
+      "Time remaining: 34 day(s) left",
+      "Time remaining: 33 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Forecasted-Projects-2026/0000419615?origin=0",
@@ -13448,10 +13579,10 @@
       "member agency bids",
       "0000419615"
     ],
-    "daysUntilDue": 34,
+    "daysUntilDue": 33,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-8586496110",
@@ -13496,7 +13627,8 @@
       "Time remaining: 112 day(s) left",
       "Time remaining: 111 day(s) left",
       "Time remaining: 110 day(s) left",
-      "Time remaining: 109 day(s) left"
+      "Time remaining: 109 day(s) left",
+      "Time remaining: 108 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Rocky-Mountain-Metropolitan-Airport-Southwest-Aeronautical-Development/0000417727?origin=0",
@@ -13522,10 +13654,10 @@
       "member agency bids",
       "0000417727"
     ],
-    "daysUntilDue": 109,
+    "daysUntilDue": 108,
     "expiresSoon": false,
     "dueStatus": "",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-443901897990",
@@ -13570,7 +13702,8 @@
       "Time remaining: 8 day(s) left",
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
-      "Time remaining: 5 day(s) left"
+      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/On-call-Concrete-Repair/443901897990?origin=0&target=view",
@@ -13598,10 +13731,10 @@
       "state & local bids",
       "443901897990"
     ],
-    "daysUntilDue": 5,
+    "daysUntilDue": 4,
     "expiresSoon": true,
-    "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 4 days",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "bidnet-443901897993",
@@ -13646,7 +13779,8 @@
       "Time remaining: 8 day(s) left",
       "Time remaining: 7 day(s) left",
       "Time remaining: 6 day(s) left",
-      "Time remaining: 5 day(s) left"
+      "Time remaining: 5 day(s) left",
+      "Time remaining: 4 day(s) left"
     ],
     "sourceName": "BidNet Direct",
     "sourceUrl": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/statewide/On-call-Masonry-Repair/443901897993?origin=0&target=view",
@@ -13672,10 +13806,10 @@
       "state & local bids",
       "443901897993"
     ],
-    "daysUntilDue": 5,
+    "daysUntilDue": 4,
     "expiresSoon": true,
-    "dueStatus": "Due in 5 days",
-    "lastSeenAt": "2026-06-28T11:59:34.651Z"
+    "dueStatus": "Due in 4 days",
+    "lastSeenAt": "2026-06-29T14:30:25.887Z"
   },
   {
     "id": "civicengage-san-miguel-county-159",
@@ -13731,7 +13865,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "request for quote material hauling|san miguel county|",
     "sourceId": "san-miguel-county:159",
-    "lastSeenAt": "2026-06-28T12:00:07.739Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "paving",
       "civicengage",
@@ -13799,7 +13933,7 @@
     "matchedTradeKeywords": [],
     "canonicalKey": "harvest grass hay on county owned property|park county|",
     "sourceId": "park-county:120",
-    "lastSeenAt": "2026-06-28T12:00:07.740Z",
+    "lastSeenAt": "2026-06-29T14:31:01.197Z",
     "matchKeywords": [
       "general",
       "civicengage",
